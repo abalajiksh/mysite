@@ -14,6 +14,12 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"
 
+    github_url = "https://github.com"
+    goodreads_url = "https://instagram.com"
+    instagram_url = "https://instagram.com"
+    steam_url= "https://instagram.com"
+    strava_url = "https://instagram.com"
+
 
 menu = [
     {Name = "About", URL = "/about/", HasChildren = false},
