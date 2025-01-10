@@ -43,7 +43,7 @@ Let's have a look at a few examples as shown below:
 ## Experiment Time
 Here is a simple playground to experiment with the Game of Life.
 
-{{ <highlight text> }}
+{{<highlight text>}}
 let w;
 let columns;
 let rows;
@@ -197,9 +197,11 @@ function generate() {
   board = next;
   next = temp;
 }
-{{ </highlight> }}
+{{</highlight>}}
 
 `<iframe src="https://ashwinbalaji0811.github.io/game-of-life/" width="870" height="530" style="border:1px solid black;"></iframe>`
+
+You can run this program by pasting it here in the editor provided by `p5.js` to meet the dependencies of the above code. [`p5.js` Editor](https://editor.p5js.org/)
 
 - The **input** option will take input from us for an **initial state** of the cells in the grid.
 - The **simulate** option helps to traverse the generation using the game rules.
