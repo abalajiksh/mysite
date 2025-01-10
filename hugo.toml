@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://ashwinbalaji.xyz'
 languageCode = 'en-us'
 title = 'Ashwin Balaji'
 theme = "poison"
