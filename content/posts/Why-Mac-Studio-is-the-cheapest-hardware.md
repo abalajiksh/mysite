@@ -32,7 +32,7 @@ In the far future, the hardware requirements would be close to a speced-out Comi
 
 ## Enter Mac Studio
 
-The developers constantly optimize AI tools like Pytorch and Tensorflow for the ARM processors of Apple Devices. A fully speced-out Mac Studio[^3] costs \$ 8800 only. The one I might require only costs \$ 6700. Now that is one order-of-magnitude reduction of costs. This Mac Studio has 192GB RAM that is shared by both CPU and GPU. Not to mention, dedicated AI cores available in the SOC also shares it. This implies that the CPU and GPU can work simultaneously and efficiently. Not to mention the power efficiency of the machine, it saves the costs of running a server multifold. The power consumption of Mac Studio is 370 Watts only. Whereas the Linux Server from Comino is around 2.5kW. So, Mac Studio as a server is very cost effective and climate friendly.
+The developers constantly optimize AI tools like Pytorch and Tensorflow for the ARM processors of Apple Devices. A fully speced-out Mac Studio[^3] costs 8800 USD only. The one I might require only costs 6700 USD. Now that is one order-of-magnitude reduction of costs. This Mac Studio has 192GB RAM that is shared by both CPU and GPU. Not to mention, dedicated AI cores available in the SOC also shares it. This implies that the CPU and GPU can work simultaneously and efficiently. Not to mention the power efficiency of the machine, it saves the costs of running a server multifold. The power consumption of Mac Studio is 370 Watts only. Whereas the Linux Server from Comino is around 2.5kW. So, Mac Studio as a server is very cost effective and climate friendly.
 
 ## Issues
 
