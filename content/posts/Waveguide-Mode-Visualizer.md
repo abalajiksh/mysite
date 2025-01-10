@@ -29,7 +29,7 @@ I procrastinated for a long time, hoping for that surge of energy to kick in to 
 I shared with him some screenshots from my side and told him, he needs to install certain packages before he can run that. When he did that, this is what he was looking at ...
 
 {{< details summary="Video and Source" >}}
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/424267794?h=c9bb7e4047" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+[Video](https://player.vimeo.com/video/424267794?h=c9bb7e4047) and
 
 [GitHub](https://github.com/ashwinbalaji0811/WaveGuide-Mode-Visualizer?ref=ashwin-balaji)
 {{< /details >}}
