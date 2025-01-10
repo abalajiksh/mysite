@@ -6,7 +6,7 @@ draft= false
 tags= ["Philosophy", "Time", "Reality", "McTaggart"]
 +++
 
-![Photo by [Aron Visuals](https://unsplash.com/@aronvisuals?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)]([img/](https://github.com/abalajiksh/gifabxyz/raw/main/)photo-1501139083538-0139583c060f.jpeg "Photo by [Aron Visuals](https://unsplash.com/@aronvisuals?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)")
+![Photo by [Aron Visuals](https://unsplash.com/@aronvisuals?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)]([](https://github.com/abalajiksh/gifabxyz/raw/main/)photo-1501139083538-0139583c060f.jpeg "Photo by [Aron Visuals](https://unsplash.com/@aronvisuals?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)")
 
 
 {{< details summary="Warning!" >}}
