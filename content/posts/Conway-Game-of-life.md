@@ -199,7 +199,7 @@ function generate() {
 }
 {{ </highlight> }}
 
-<iframe src="https://ashwinbalaji0811.github.io/game-of-life/" width="870" height="530" style="border:1px solid black;"></iframe>
+`<iframe src="https://ashwinbalaji0811.github.io/game-of-life/" width="870" height="530" style="border:1px solid black;"></iframe>`
 
 - The **input** option will take input from us for an **initial state** of the cells in the grid.
 - The **simulate** option helps to traverse the generation using the game rules.
