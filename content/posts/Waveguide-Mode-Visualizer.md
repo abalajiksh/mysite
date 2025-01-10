@@ -4,6 +4,7 @@ date= 2022-02-23T02:37:28+01:00
 draft= false
 tags= ["Electrodynamics", "Visualization", "Simulation", "Computation"]
 +++
+![](img/WaveGuide-Mode-Visualizer.png)
 
 {{< details summary="Warning!" >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.

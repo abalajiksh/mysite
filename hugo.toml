@@ -9,7 +9,7 @@ pluralizelisttitles = false
 front_page_content = ["posts", "projects"]
 
 brand = "Ashwin Balaji"                      # name of your site - appears in the sidebar
-    # brand_image = "images/dont_know.png"    # path to the image shown in the sidebar
+    brand_image = "dont_know.png"    # path to the image shown in the sidebar
     description = "The Void's Whispers, a Journal of my Distractions and everything in-between." # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"
@@ -20,3 +20,7 @@ menu = [
     {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     {Name = "Projects", URL = "/projects/"},
     ]
+
+[taxonomies]
+    series = 'series'
+    tags = 'tags'
