@@ -5,7 +5,7 @@ draft= false
 tags= ["Mathematics", "Calculus", "Linear-Algebra", "Matrix"]
 +++
 
-![](img/calculus-to-linear-algebra.png)
+![Calculus to LA](img/calculus-to-linear-algebra.png)
 
 {{< details summary="Warning!" >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
@@ -50,24 +50,24 @@ $$
 Now, our idea here is that any linear transformation on a finitedimensional vector space can be represented by a finite-dimensional matrix. If we are to entertain the infinite-dimensional vector spaces like in Quantum Mechanics, there are certain things we can and can't do, but we can discuss that in another article. So, let us represent $D$ as a matrix operator on $V$. We have taken $e^x \sin x$ and $e^x \cos x$ to be the basis vector of our vector space, hence, we can use a $2-\mathrm{d}$ matrix to represent $D$ and 2-d row vector for basis. Putting those words in the math, we can write the above transformation as
 $$
 D\left[\begin{array}{l}
-a \\
+a \\\\
 b
 \end{array}\right]=\left[\begin{array}{l}
-a-b \\
+a-b \\\\
 a+b
 \end{array}\right]
 $$
 we can deduce $D$ as follows:
 $$
 D=\left[\begin{array}{cc}
-1 & -1 \\
+1 & -1 \\\\
 1 & 1
 \end{array}\right]
 $$
 Now, taking anti-derivative or integral is the reverse of derivative, hence, we need $D^{-1}$ to entertain such transformations. We have,
 $$
 D^{-1}=\frac{1}{2}\left[\begin{array}{cc}
-1 & 1 \\
+1 & 1 \\\\
 -1 & 1
 \end{array}\right]
 $$
@@ -79,19 +79,19 @@ $$
 This is as simple as applying the linear transformation of $D^{-1}$ now. The integral can be written as
 $$
 I \rightarrow\left[\begin{array}{l}
-1 \\
+1 \\\\
 0
 \end{array}\right]
 $$
 and applying
 $$D^{-1} I=\frac{1}{2}\left[\begin{array}{cc}
-1 & 1 \\
+1 & 1 \\\\
 -1 & 1
 \end{array}\right]\left[\begin{array}{l}
-1 \\
+1 \\\\
 0
 \end{array}\right]=\left[\begin{array}{c}
-1 / 2 \\
+1 / 2 \\\\
 -1 / 2
 \end{array}\right]$$
 
