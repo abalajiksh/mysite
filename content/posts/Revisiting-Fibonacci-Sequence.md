@@ -73,10 +73,16 @@ Now let us put this stuff to testing in the programming environment. I chose to 
 
 Code used to Run the below programs:
 
-{{< tabs tabTotal="3" >}}
+{{< tabs tabTotal="4" >}}
 
-{{ tab tabName="fibo_func.cpp" }}
+{{% tab tabName="First Tab" %}}
+1. `fibo_func.cpp` - program implementing the functional approach.
+1. `fibo_loop.cpp` - program implementing the loop approach.
+1. `fibo_recu.cpp` - program implementing the recursive approach.
 
+{{% /tab %}}
+
+{{< tab tabName="fibo_func.cpp" >}}
 {{< highlight text >}}
 #include <iostream>
 #include <cmath>
@@ -97,8 +103,7 @@ int fibo(int x){
     return (int) 0.4472135955 * (pow(phi1, x) - pow(phi2, x));
 }
 {{< /highlight >}}
-
-{{ /tab }}
+{{< /tab >}}
 
 {{< tab tabName="fibo_loop.cpp" >}}
 {{< highlight text >}}
