@@ -197,7 +197,7 @@ function generate() {
   board = next;
   next = temp;
 }
-{{ /highlight }}
+{{ </highlight> }}
 
 <iframe src="https://ashwinbalaji0811.github.io/game-of-life/" width="870" height="530" style="border:1px solid black;"></iframe>
 
