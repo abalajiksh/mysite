@@ -2,7 +2,7 @@
 title= "WaveGuide Mode Visualizer"
 date= 2022-02-23T02:37:28+01:00
 draft= false
-tags= ["Electrodynamics", "Visualization", "Simulation", "Computation"]
+tags= ["Physics", "Electrodynamics", "Visualization", "Simulation", "Computation"]
 +++
 ![](img/WaveGuide-Mode-Visualizer.png)
 
