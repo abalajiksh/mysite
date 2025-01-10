@@ -73,7 +73,85 @@ Now let us put this stuff to testing in the programming environment. I chose to 
 
 Code used to Run the below programs:
 
-<script src="https://gist.github.com/ashwinbalaji0811/c36ecebe857243c0dc708d0e504aca4f.js"></script>
+{{< tabs tabTotal="3" >}}
+
+{{ tab tabName="fibo_func.cpp" }}
+
+{{< highlight text >}}
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+float phi1 = 1.618033989, phi2 = -0.6180339887;
+
+int fibo(int x);
+
+int main() {
+
+    int n = 40;
+
+    cout << "The " << n << "th Fibonacci Series number is : " << fibo(n) << endl;
+}
+
+int fibo(int x){
+    return (int) 0.4472135955 * (pow(phi1, x) - pow(phi2, x));
+}
+{{< /highlight >}}
+
+{{ /tab }}
+
+{{< tab tabName="fibo_loop.cpp" >}}
+{{< highlight text >}}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int fir, sec, thir;
+    fir = sec = 1;
+
+    int n = 40;
+
+    for(int i = 2; i < n; ++i) {
+        thir = sec + fir;
+        fir = sec;
+        sec = thir;
+    }
+
+    cout << "The " << n << "th Fibonacci Series number is : " << thir << endl;
+
+    return 0;
+}
+{{< /highlight >}}
+{{< /tab >}}
+
+{{< tab tabName="fibo_recu.cpp" >}}
+{{< highlight text >}}
+#include <iostream>
+using namespace std;
+
+int fibo(int x);
+
+int main() {
+
+    int n = 40;
+
+    cout << "The " << n << "th Fibonacci Series number is : " << fibo(n) << endl;
+}
+
+int fibo(int x){
+    if ((x == 1) || (x == 0))
+    {
+        return 1;
+    }
+    else
+    {
+        return fibo(x - 1) + fibo(x - 2);
+    }
+}
+{{< /highlight >}}
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ## Benchmarks and Remarks
 
