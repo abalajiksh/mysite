@@ -5,7 +5,7 @@ draft= false
 tags= ["Mathematics", "Calculus", "Linear-Algebra", "Matrix"]
 +++
 
-![Calculus to LA](img/calculus-to-linear-algebra.png)
+![Calculus to LA](https://github.com/abalajiksh/gifabxyz/raw/main/calculus-to-linear-algebra.png)
 
 {{< details summary="Warning!" >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
