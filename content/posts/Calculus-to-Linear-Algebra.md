@@ -16,7 +16,7 @@ $$
 \int e^x \sin x d x
 $$
 
-# Calculus Method:
+## Calculus Method:
 A traditional calculus course teaches us to implement this integral by using integration by parts:
 
 $$
@@ -37,7 +37,7 @@ I=\int e^x \sin x d x=\frac{1}{2}\left(e^x \sin x-e^x \cos x\right)+C_2
 $$
 with $C_2=C / 2$. Quite a simple calculation you might say, but here is a more simpler method to get us to this solution. Let us employ Linear Algebra here.
 
-# Linear Algebra Method
+## Linear Algebra Method
 
 Consider a vector space $ V=\operatorname{span}\\{e^x \sin x, e^x \cos x\\}$. This is a 2-dimensional vector space. Let us take a linear transformation
 $$
