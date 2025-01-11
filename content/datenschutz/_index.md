@@ -1,7 +1,7 @@
 +++
 date = '2025-01-11T13:55:19+01:00'
 draft = false
-title = 'Privacy First'
+title = 'Datenschutz'
 +++
 
 ## TLDR
