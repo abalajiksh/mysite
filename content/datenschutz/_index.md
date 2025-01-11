@@ -10,6 +10,6 @@ This site uses a little vanilla JavaScript, a dash of CSS, and the power of Hugo
 
 Readers are offered the choice to read in light or dark mode. The user’s preference is remembered and saved in local storage. Dark mode is the default for first time visitors.
 
-The pages are served from CloudFlare Pages service, so Cloudflare will get some basic analytics.
+The pages are served from CloudFlare Pages service, so Cloudflare will get some basic analytics like the time and URL opened, geolocation and other basic information your browser attaches to it's `GET` request.
 
 **Coming Soon:** [Remark42](https://remark42.com/) is a lightweight, open source commenting engine that doesn’t spy on you, the user. It is hosted in a private server by Hetzner cloud in Nurmberg, Germany. You don't have to login to comment on any article. Just say hi or comment away your views.
