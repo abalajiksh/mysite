@@ -15,3 +15,8 @@ This site is primarily filled with my rantings over some topics but hopefully ca
 Other than all these I love to sink myself in books, SciFi, Fantasy or Non-fiction. I also do a lot of Road Cycling and Mountain Biking, with former being the major part of it. You can check me out on [Goodreads](https://www.goodreads.com/ashwinbalaji) and/or [Strava](https://www.strava.com/athletes/ashwinbalaji) to see what I am upto.
 
 You can contact me on [Instagram](https://www.instagram.com/ashwinbalaji00/), but like most people if I dont reply, don't hesitate to ping me back.
+
+| Education                    | Timeline           | Institute             |
+|------------------------------|--------------------|-----------------------|
+| MS in Physics                | Oct 22 - Ongoing   | Heidelberg University |
+| BTech in Engineering Physics | July 17 - April 21 | NIT Calicut           |
