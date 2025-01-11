@@ -3,10 +3,16 @@ title= "DIY HPC Grid Cluster: Part 1"
 date= 2024-03-12T15:40:46+01:00
 draft= false
 tags= ["Physics", "Computers"]
+series = "HPC Grid Cluster at Home"
 +++
 
 
 ![](https://github.com/abalajiksh/gifabxyz/raw/main/supercomputing_grid_cluster_3064264560.png)
+
+
+This article is part of the series : [HPC Grid Cluster at Home]()
+
+
 ## Why
 
 I am interested in Theoretical Physics. However, I can bring many fancy ideas using the Mathematics and Theoretical Laws into new theories, I would waste my time if there is no way to test them. Einstein and his colleagues could come up with calculations that helped test General Relativity. It may not always be the case. With theories becoming more abstract and complicated, and experimental setup getting exorbitant as time passes; I believe, numerical computations and simulations stand to be the first line of defense for further pursued interest in experimental verification of new ideas.
