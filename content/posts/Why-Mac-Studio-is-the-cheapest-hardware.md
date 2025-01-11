@@ -36,7 +36,7 @@ The developers constantly optimize AI tools like Pytorch and Tensorflow for the 
 
 ## Issues
 
-Mac Studio comes pre-installed with MacOS Ventura or Sonoma, which is a desktop OS. To turn it into a server, we can use NGINX or Apache and deploy the software we wish to use. The Graphical User Interface and Mac programs would run in the background, reducing the performance of the hardware. One solution is to install Asahi Linux[^4], which is an Arch-based distro specific to Apple Silicon Macs. However, Arch-based systems are upstream and have unstable packages and still require heavy development. To host a server, one needs a downstream OS with stability and security battle-tested.
+Mac Studio comes pre-installed with MacOS Ventura or Sonoma, which is a desktop OS. To turn it into a server, we can use NGINX or Apache and deploy the software we wish to use. The Graphical User Interface and Mac programs would run in the background, reducing the performance of the hardware. One solution is to install Asahi Linux[^4], which is an Arch-based distro specific to Apple Silicon Macs. However, Arch-based systems are upstream and have unstable packages and still require heavy development. To host a server, one needs a downstream OS with stability and battle-tested security.
 
 
 [^1]: https://huggingface.co/tiiuae/falcon-40b-instruct
