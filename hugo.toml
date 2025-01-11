@@ -23,9 +23,9 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
 
 menu = [
     {Name = "About", URL = "/about/", HasChildren = false},
-    {Name = "Privacy-First", URL = "/privacy-first/", HasChildren = false},
-    {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+    {Name = "Privacy-First", URL = "/Privacy-First/", HasChildren = false},
     {Name = "Projects", URL = "/projects/"},
+    {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 3},
     ]
 
 [taxonomies]
