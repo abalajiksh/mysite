@@ -4,7 +4,7 @@ draft = false
 title = 'Privacy First'
 +++
 
-## TL;DR
+## TLDR
 
 This site uses a little vanilla JavaScript, a dash of CSS, and the power of Hugo. It is just a bunch of HTML pages with no annoying pop-ups or site-wide tracking. It’s also **tiny** and **privacy conscious**. No JavaScript frameworks, icon packs, or Google fonts. No ads or trackers polluting your console window.
 
