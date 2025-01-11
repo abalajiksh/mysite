@@ -3,6 +3,7 @@ title= "DIY HPC Grid Cluster: Part 1"
 date= 2024-03-12T15:40:46+01:00
 draft= false
 tags= ["Physics", "Computers"]
+series = "HPC Compute Cluster at Home"
 +++
 
 
