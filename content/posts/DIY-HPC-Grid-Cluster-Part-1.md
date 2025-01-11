@@ -3,14 +3,10 @@ title= "DIY HPC Grid Cluster: Part 1"
 date= 2024-03-12T15:40:46+01:00
 draft= false
 tags= ["Physics", "Computers"]
-series = "HPC Grid Cluster at Home"
 +++
 
 
 ![](https://github.com/abalajiksh/gifabxyz/raw/main/supercomputing_grid_cluster_3064264560.png)
-
-
-This article is part of the series : [HPC Grid Cluster at Home]()
 
 
 ## Why
