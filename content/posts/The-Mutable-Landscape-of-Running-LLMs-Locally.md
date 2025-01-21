@@ -2,6 +2,7 @@
 date = '2025-01-21T17:01:21+01:00'
 draft = false
 title = 'The Mutable Landscape of Running LLMs Locally'
+tags= ["Computers", "Server", "Technology", "Linux", "LLMs", "Inference"]
 +++
 
 **Warning:** Large image files, specifically 3 files that are each around 50MB in size, and aren't in Dark Mode: don't scorch your eyeballs.
