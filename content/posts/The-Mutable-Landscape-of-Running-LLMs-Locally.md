@@ -4,7 +4,7 @@ draft = true
 title = 'The Mutable Landscape of Running LLMs Locally'
 +++
 
-
+**Warning:** Large image files, specifically 3 files that are each around 50MB in size, and aren't in Dark Mode: don't scorch your eyeballs.
 
 ## Background
 
@@ -40,11 +40,36 @@ docker run -d -p 3010:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/da
 
 I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook Pro as all of these devices are connected locally. Notice I have ``3010`` as port number rather than ``3000`` as provided by the ``openwebui`` documentation. I have Grafana using that port and don’t want to conflict that by running this service also on the same port. After few simple steps of creaing a local account and login, I was presented with a chat-like window to play around. I had to download the models themselves from the web, and so I did that. Once that is done, I was able to use local LLMs. Here are some screen recordings of some LLMs and how well they perform on this Mini-PC.
 
+### Test Run
+
+![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182258.JPG)
+![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182251.JPG)
+
+The above images represent test run and the system resource usage. I shall update the power drawn by the system in the near future.
+
+### `llama3.3`
+
+![](https://github.com/abalajiksh/gifabxyz/raw/main/llama33.gif)
+
+The above image is 30x speed and the actual time it took to provide the complete answer was 00:26:09.
+
+### `mistral`
+
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screen-Recording-2025-01-21-at-16.29.56.gif)
+
+This is in real time. Elapsed time: 00:01:16. `mistral` seems fine for normal use cases.
+
+### `wizard-math`
+
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screen-Recording-2025-01-21-at-16.31.33.gif)
+
+This is also in real time. Elapsed time: 00:04:20. This seems to provide more mathematical data and is interesting for me to look further into it.
+
 ## Results
 
 I like `llama3.3` more than `Gemini Flash 2.0 Experimental` or `ChatGPT 4o`. It does take a lot of time to start to give any output, but once started, it is a slow-streamlined output. It is a 70B parameter model, so I intened to use it only occasionally. I can use `mistral` or `wizard-math` or `qwen2-math` for most use cases. I believe that the first response takes some time as the model needs to be loaded onto the system memory to start processing. I reason this on the basis that the subsequent inferences don't take such long times. A point to note, the fans start to run at full speed and it is a high-pitched noise that may be annoying to many. If that is the case, then I would recommend you place this somewhere else than the workplace.
 
 ### What would I do different to improve this setup?
 
-I might get a more recently released CPU that has some sort of AI accelerator circuits built into it that also supports DDR5 memory to improve the inference. This is still cheaper than buying a GPU to run inference - it may be fast but where would you go for a GPU with 96 GB of RAM? One can consider the Mac-Mini or Mac Studio like described [here](https://ashwinbalaji.xyz/posts/why-mac-studio-is-the-cheapest-hardware/) but this CPU-based inference sounds more budget-friendly than other alternatives.
+I might get a more recently released CPU that has some sort of AI accelerator circuits built into it that also supports DDR5 memory to improve the inference, both in terms of performance and due to faster memory. This is still cheaper than buying a GPU to run inference - it may be fast but where would you go for a GPU with 96 GB of RAM? One can consider the Mac-Mini or Mac Studio like described [here](https://ashwinbalaji.xyz/posts/why-mac-studio-is-the-cheapest-hardware/) but this CPU-based inference sounds more budget-friendly than other alternatives. Running on a x86-64 platform is energy hungry compared to a Mac Studio, but not definitive as it can be different depending on the hardware choices.
 
