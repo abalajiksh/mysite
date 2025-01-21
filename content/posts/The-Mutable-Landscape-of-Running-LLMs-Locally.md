@@ -1,6 +1,6 @@
 +++
 date = '2025-01-21T17:01:21+01:00'
-draft = true
+draft = false
 title = 'The Mutable Landscape of Running LLMs Locally'
 +++
 
