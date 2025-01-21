@@ -10,11 +10,13 @@ I am Ashwin Balaji. My primary interests are:
 
 I am a Master's student at [Heidelberg University](https://www.physik.uni-heidelberg.de/?lang=en) and earned my Bachelor's (BTech) at National Institute of Technology, Calicut ([NITC](https://depcent.nitc.ac.in/physics/)). I worked on 2 theses titled "Introduction to Lattice Gauge Theory with Wilson Loops" and "Coherent State Path Integral Formalism for Fermions in Quantum Mechanics" under my esteemed supervisor [Dr. Sreeraj](https://nitc.ac.in/department/physics/faculty-and-staff/faculty/3a45fbe4-3831-4589-bfdc-27d07d5dfa49).
 
+My primary source of inspiration to pursue physics is Lev Davidovich Landau (Russian: Лев Дави́дович Ланда́у). His books and other Russian texts enhanced my passion for Physics.
+
 This site is primarily filled with my rantings over some topics but hopefully can bring out some useful ideas that could help with understanding of concepts a little more easier. It also includes a lot of thought processes that I go through everyday and record them here. I am passionate about Theoretical Physics, however, I am also interested in some basic Electronics, CAD designs, and a lot of Computations.
 
 Other than all these I love to sink myself in books: SciFi, Fantasy or Non-fiction. I also do a lot of Road Cycling and Mountain Biking, with former being the major part of it. You can check me out on [Goodreads](https://www.goodreads.com/ashwinbalaji) and/or [Strava](https://www.strava.com/athletes/ashwinbalaji) to see what I am upto.
 
-You can contact me on [Instagram](https://www.instagram.com/ashwinbalaji00/), but like most people if I dont reply, don't hesitate to ping me again.
+You can indulge in my distractions by following the articles or other social media sites I have linked here, and if you feel like it leave a comment, or just say hi. You can contact me on [Instagram](https://www.instagram.com/ashwinbalaji00/), but like most people if I dont reply, don't hesitate to ping me again.
 
 | Education                    | Timeline           | Institute             |
 |------------------------------|--------------------|-----------------------|
