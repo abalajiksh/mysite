@@ -28,23 +28,21 @@ I caved in and installed docker as the choices of software I had only supported 
 
 The softwares I needed to use are:
 
-- [ollama](https://ollama.com/)
+- [`ollama`](https://ollama.com/)
 
-- [openweb ui](https://github.com/open-webui/open-webui)
+- [`openweb ui`](https://github.com/open-webui/open-webui)
 
-Luckily, there is an installation process that ties these two nicely in one simple command. I am ruunig inferences on CPU only and don’t plan on adding a GPU; for reasons, see the last subsection of this article. 
+Luckily, there is an installation process that ties these two nicely in one simple command. I am running inferences on CPU only and don’t plan on adding a GPU; for reasons, see the last subsection of this article. 
 
-{{highlight text}}
-
+{{<highlight text>}}
 docker run -d -p 3010:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
+{{</highlight>}}
 
-{{/highlight}}
-
-I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook Pro as all of these devices are connected locally. Notice I have 3010 as port number rather than 3000 as provided by the openwebui website. I have Grafana using that port and don’t want to conflict that by running this service also on the same port. After few simple steps of creaing a local account and login, I was presented with a chat-like window to play around. I had to download the models themselves from the web, and so I did that. Once that is done, I was able to use local LLMs. Here are some screen recordings of some LLMs and how well they perform on this Mini-PC.
+I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook Pro as all of these devices are connected locally. Notice I have ``3010`` as port number rather than ``3000`` as provided by the ``openwebui`` documentation. I have Grafana using that port and don’t want to conflict that by running this service also on the same port. After few simple steps of creaing a local account and login, I was presented with a chat-like window to play around. I had to download the models themselves from the web, and so I did that. Once that is done, I was able to use local LLMs. Here are some screen recordings of some LLMs and how well they perform on this Mini-PC.
 
 ## Results
 
-I like llama3.3 more than Gemini Flash 2.0 Experimental or ChatGPT 4o. It does take a lot of time to start to give any output, but once started, it is a slow-streamlined output. It is a 70B parameter model, so I intened to use it only occasionally. I can use mistral or wizard-math or qwen2-math for most use cases. I believe that the first response takes some time as the model needs to be loaded onto the system memory to start processing. I reason this on the basis that the subsequent inferences don#t take such long times. A point to note, the fans start to run at full swing and it is a high-pitched noise that may be annoying to many. If that is the case, then I would recommend you place this somewhere else than the workplace.
+I like `llama3.3` more than `Gemini Flash 2.0 Experimental` or `ChatGPT 4o`. It does take a lot of time to start to give any output, but once started, it is a slow-streamlined output. It is a 70B parameter model, so I intened to use it only occasionally. I can use `mistral` or `wizard-math` or `qwen2-math` for most use cases. I believe that the first response takes some time as the model needs to be loaded onto the system memory to start processing. I reason this on the basis that the subsequent inferences don't take such long times. A point to note, the fans start to run at full speed and it is a high-pitched noise that may be annoying to many. If that is the case, then I would recommend you place this somewhere else than the workplace.
 
 ### What would I do different to improve this setup?
 
