@@ -46,7 +46,10 @@ I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook P
 ![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182258.JPG)
 ![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182251.JPG)
 
-The above images represent test run and the system resource usage. I shall update the power drawn by the system in the near future.
+The above images represent test run and the system resource usage. ~~I shall update the power drawn by the system in the near future.~~
+
+**EDIT:** I have measured the power draw for the usage of LLMs on this Mini-PC. It idles around 5-8W and when LLMs are inferenced, it draws around 55-70W of power.
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot_20250123-115835.png)
 
 ### `llama3.3`
 
