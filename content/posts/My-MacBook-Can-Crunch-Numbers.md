@@ -1,6 +1,6 @@
 +++
 date = '2025-01-24T14:36:19+01:00'
-draft = true
+draft = false
 title = 'My MacBook Can Crunch Numbers'
 tags= ["Computers", "Technology", "LLMs", "Inference"]
 series = "Local LLMs"
@@ -13,7 +13,7 @@ As I described [here](https://ashwinbalaji.xyz/posts/the-mutable-landscape-of-ru
 
 **NOTE:** All the executable commands for `bash`/`zsh` are copied from `openwebui` or other respective official docs. If you don’t know what you are running, research it before you do!
 
-## Achtung 
+## *l'attention* 
 
 I tried running the same `docker` command as posted on the previous article and it doesn’t setup `ollama` that is optimized for Apple Silicon. It was slow as it wasn’t using the NPU/GPU or whatever they call those tensor/matrix circuits on SoC. It was using just the CPU. I had to install `ollama` bare-metal to get it use the hardware-acceleration(HWA). Another slap in the face for trusting `docker`. I still run `openwebui` using `docker` but give access to host’s `zsh`(??) to access `ollama`.
 
@@ -39,6 +39,8 @@ Check [`vLLM`](https://github.com/vllm-project/vllm) and [`llama.cpp`](https://g
 
 ## Models and their properties
 
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-14.55.36.png)
+
 My tests are neither comprehensive nor representative of everyone’s needs. They represent topics and ideas that I usually want an opinion on or some insight I wish to nail that I overlooked in the past. The list of models I’m testing on my MacBook Pro are as follows:
 
 - `llama3.3`
@@ -55,7 +57,7 @@ My tests are neither comprehensive nor representative of everyone’s needs. The
 
 - `codestral`
 
-I can classify the above list of models into 3 categories:
+I can classify the above list of models into 4 categories:
 
 1. Wont Execute or Don’t Bother: `llama3.3`, `mixtral`
 2. 7B Parameters ~ 4-10 GB in Size and requires approximately +2GB of VRAM(GPU)/RAM(CPU) respectively: - `llama3.1`, `mistral`, `falcon3`
@@ -68,7 +70,11 @@ I have an interesting question to put forth to all these models. I recently fini
 
 All those comments were true and are similar to another character I hate to my core, Rachel Green from Friends. So, I was astounded to see how I can like one and dislike another when they portray very similar characteristics. So, I came up with a rather long prompt that describes the situation and asks about why I liked one and not the other.
 
-**Results:** All the models in 7B and 14B category and `mixtral` performed well, they explained different contexts why that is the case. However, `llama3.3`, which doesn’t run on my MacBook Pro simply beacuse there isn’t much memory (although the system can create swap memory and use that to run it, more on that in the later part of the article), outperformed all the models, including what I presume is `mistral-large-2` model that works when you use the [Le Chat](https://chat.mistral.ai/) of Mistral AI website. It gave me a lot of open ended questions think about this topic further on my own, and I like that more than just reading some standalone regurgitated answers.
+**Results:** All the models in 7B and 14B category and `mixtral` performed well, they explained different contexts why that is the case. However, `llama3.3`, which doesn’t run on my MacBook Pro simply beacuse there isn’t much memory (although the system can create swap memory and use that to run it, more on that in the later part of the article), outperformed all the models, including what I presume is `mistral-large-2` model that works when you use the [Le Chat](https://chat.mistral.ai/) of Mistral AI website. It gave me a lot of open ended questions think about this topic further on my own, and I like that more than just reading some standalone regurgitated answers. Here is the end of the response from `llama3.3`.
+
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-15.15.12.png)
+
+A Mentat is a human computer, trained to perform complex calculations and analyses. They use questions to probe and understand the underlying patterns and structures of information. Know where this quote is from? Well, it is true for us too, not just mentats.
 
 Ofcourse the screenshot above with the list of the models have more models than I have talked about so far. Here is a quick breakdown of those left-outs.
 
@@ -90,6 +96,8 @@ Use LaTeX for all mathematical expressions. For example, represent a quadratic e
 
 {{</highlight>}}
 
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-12.34.36.png)
+
 And the query is: what is sum of abelian groups in homology theory? demonstrate it with an example using $R^2$ and 2d torus as example topological spaces
 
 **Results:** All the 7B and 14B models performed similarly, 14B running a tad bit slower. `llama3.1` had problems with LaTeX syntax and half the answer turned red because of a syntax error. I re-ran the same prompt and only half the equations were in LaTeX and other half were just underscores and flowery brackets. 
@@ -110,15 +118,27 @@ compute koszul tate resolution of cohomology for a free qed/maxwell theory
 
 Almost all the models failed. Only `llama3.3`and `mistral-large-2`gave proper answers. I wouldn’t blame LLMs for that, this is an extreme example and I would refer a textbook like „Quantization of Gauge Systems by Marc Henneaux and Claudio Teitelboim“ to learn the topic rather than trust the LLMs. 
 
+Check out the answers *Le Chat* provided [here](https://chat.mistral.ai/chat/8cc96db2-a635-4207-aee3-e9c75cb9bcb8).
+
 *Nerd Alert:* Or I could upload the PDF of the book and ask the LLM to do, but it is a resource heavy process as something called a „transformer“ should convert all the text into vectors(list of numbers if you will) and then convert the query also as vector, do a cosine search which tells what is the closest paragraph resembling the query, feed that data to LLM and LLM will give the answer to us.
 
 ### Test 03: Programming
 
 All the 7B and 14B models gave very satisfactory answers to the questions I asked them. One of the questions was about HLS and SystemVerilog code generation to do some floating point operations on FPGA. These are highly specialized but LLMs gave me a good starting point to work with.
 
+### Test 04: RAG
+
+Will do it in the near future and update this section. This is to deal with Google Search and summarizing results. Say, we ask something about current events to LLMs, this method, using the „transformer“ will provide results. I find it useful at times to ask an LLM rather than search through the web.
+
 ## What now?
 
 For most use cases, I would say all the 7B or 14B parameter models gave very useful and satisfactory answers for everyday use. The only use case for larger parameter models is when you want some sort of philosophical discussion with open-ended questions that will help you stay inside your head forgetting time passing by. Or to ask for a long complicated Mathematical Physics calculation few graduate physics students learn. Otherwise for all other cases, I feel comfortable to use just 7/14B parameter models for math and programming.
+
+`mixtral` is a different kind of model. It is huge, and not really fit to run on my MacBook Pro. If you want to know about this specific model, try reading about „sparse mixture of experts model (SMoE)“. Look at the `htop` image below.
+
+![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-14.50.15.png)
+
+My MacBook Pro usually functions with 2GB of Swap memory, but because there isn't enough memory to run it, it increased the swap memory size. Where did it come from? Part of my SSD storage. It is not good to rely on Swap memory. SSD's data deletion procedure is just plain absurd, power hungry and damaging to electronic circuits. But thats the best we got and have to live with it. I might write an article about SSD's data delete cycles in another article.
 
 `codestral` is good for code completion, and needs to be setup with your favourite code editor. There are alternatives, but here comes my favorable predisposition to the French.
 
