@@ -40,7 +40,10 @@ Luckily, there is an installation process that ties these two nicely in one simp
 docker run -d -p 3010:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
 {{</highlight>}}
 
-I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook Pro as all of these devices are connected locally. Notice I have ``3010`` as port number rather than ``3000`` as provided by the ``openwebui`` documentation. I have Grafana using that port and don’t want to conflict that by running this service also on the same port. After few simple steps of creaing a local account and login, I was presented with a chat-like window to play around. I had to download the models themselves from the web, and so I did that. Once that is done, I was able to use local LLMs. Here are some screen recordings of some LLMs and how well they perform on this Mini-PC.
+I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook Pro as all of these devices are connected locally. However, If I haven't mentioned already, I have Tailscale Zero-Tier VPN installed on this Mini-PC and other devices I own. This means I can access the webui as long as I am connected to the internet and have one of the devices on my hand.
+
+
+Notice I have ``3010`` as port number rather than ``3000`` as provided by the ``openwebui`` documentation. I have Grafana using that port and don’t want to conflict that by running this service also on the same port. After few simple steps of creaing a local account and login, I was presented with a chat-like window to play around. I had to download the models themselves from the web, and so I did that. Once that is done, I was able to use local LLMs. Here are some screen recordings of some LLMs and how well they perform on this Mini-PC.
 
 ### Test Run
 
