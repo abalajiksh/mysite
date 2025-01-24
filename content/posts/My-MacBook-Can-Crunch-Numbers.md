@@ -74,7 +74,7 @@ All those comments were true and are similar to another character I hate to my c
 
 ![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-15.15.12.png)
 
-A Mentat is a human computer, trained to perform complex calculations and analyses. They use questions to probe and understand the underlying patterns and structures of information. Know where this quote is from? Well, it is true for us too, not just mentats.
+„A Mentat is a human computer, trained to perform complex calculations and analyses. They use questions to probe and understand the underlying patterns and structures of information.“ Know where this quote is from? Well, it is true for us too, not just mentats.
 
 Ofcourse the screenshot above with the list of the models have more models than I have talked about so far. Here is a quick breakdown of those left-outs.
 
