@@ -83,4 +83,8 @@ Secondly, which happens to be eco-friendly(to an extent), get a used server rack
 
 I can't think of anything else to run LLMs locally.
 
+## Updates
+
+Turns out, my M3 Pro MacBook Pro with 18GB RAM is more optimed to run `mistral` and `wizard-math` and is more usable than the whole Mini-PC setup. However, I can only run small models and/or large models that are quantized(quantized ~ reducing the precision of the parameters of every node of the neural network) which have low precision and that implies not very good answers. At this point all my thoughts are subjective and I'll do some test runs to see how much I can salvage from my laptop, perhaps write another article soon.
+
 
