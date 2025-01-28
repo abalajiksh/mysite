@@ -64,6 +64,8 @@ I can classify the above list of models into 4 categories:
 3. 14B Parameters: `phi4`
 4. Addon Model: `codestral`
 
+All the tests were done with 20+ Chrome tabs open, Spotify playing music, Mathematica Notebooks open and bunch of other stuff running in the background, so close to what and when I will be using. Your mileage may vary.
+
 ### Test 01: General Thoughs and Insights
 
 I have an interesting question to put forth to all these models. I recently finished watching Silo Season 2. I started binge watching the series’ season 1, 3 weeks ago when I didnt realise the season 2 was in the running. After finishing the season 1, I continued on with season 2 and loved every second of it. I loved the character Juliette Nichols, the protagonist of the series. After I finished watching, I was googling something about the series and came across some mean comments about the abovementioned character. 
