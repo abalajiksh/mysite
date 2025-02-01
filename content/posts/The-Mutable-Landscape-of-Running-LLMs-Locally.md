@@ -10,9 +10,9 @@ series = "Local LLMs"
 
 ## Background
 
-Recenty, I find myself using Gemini and ChatGPT frequently, with the former being more prominent. They save a lot of time on searching web to find answers. Before these LLMs, It was a great triumph to find an answer we are looking for just searching the web. Hours and hours of time spent reading different forums and the forbidden second and third page of search results from Google when the first page results don’t happen to have the answers. It was a mission accomplished feel when we found answers at all. Today, LLMs have taken away such pleasures and provide us with concise answers in few seconds.
+Recently, I use Gemini and ChatGPT frequently, with the former being more prominent. They save a lot of time on searching web to find answers. Before these LLMs, It was a great triumph to find an answer we are looking for just searching the web. Hours and hours of time spent reading different forums and the forbidden second and third page of search results from Google when the first page results don’t have the answers. It was a mission accomplished feel when we found answers at all. Today, LLMs have taken away such pleasures and provide us with concise answers in a few seconds.
 
-However, both the above-mentioned LLMs are closed-source and are provided as a service by data-hogging corporates. So, I decided to try and run LLMs locally on a machine I already have. I self-host a Plex Server on a Mini-PC that is kind of over-speced. Here are the specifications of the said machine:
+However, data-hogging corporations provide both of the above LLMs as closed-source services. So, I tried to run LLMs locally on a machine I already have. I self-host a Plex Server on a Mini-PC that is a kind of over-speced. Here are the specifications of the said machine:
 
 - AMD Ryzen™ 7 4800H - 8c|16t processor
 
@@ -20,13 +20,13 @@ However, both the above-mentioned LLMs are closed-source and are provided as a s
 
 - 512 GB Crucial NVMe SSD + 4 TB Crucial NVMe SSD (media library for Plex Server)
 
-The only processes running on this server are Plex Server, Prometheus and Grafana. All these applications run bare-metal(no-virtualization or emulated environment like docker) utilizing all the hardware resources. However, there is a small overhead for the Operating System as I installed Ubuntu 24.04 LTS desktop version which comes with proprietary encoding and decoding drivers for media streaming by default. I tried running headless-Fedora Server(no GUI, just terminal and SSH) and installing all proprietary drivers for maximum efficiency, but ran into some troubles I just can’t be bothered to tend to everytime; hence the Ubuntu Desktop. I have a Plex Pass Lifetime account so hardware-encoding is enabledby default. I have also setup the Plex server to „Hurt my CPU“ mode to use all the resources. However, I never saw CPU or RAM usage go beyond 15% and 10% respectively.
+The only processes running on this server are Plex Server, Prometheus and Grafana. All these applications run bare-metal(no-virtualization or emulated environment like docker) using all the hardware resources. However, there is a small overhead for the Operating System as I installed the Ubuntu 24.04 LTS desktop version, which comes with proprietary encoding and decoding drivers for media streaming by default. I attempted a headless Fedora Server installation (no GUI, only terminal and SSH), installing all proprietary drivers for optimal performance, but I experienced persistent issues I’m unwilling to troubleshoot continuously. Default enabled hardware-encoding because of my Plex Pass Lifetime account. I have also setup the Plex server to „Hurt my CPU“ mode to use all the resources. However, I never saw CPU or RAM usage go beyond 15% and 10% respectively.
 
 Prometheus and Grafana are used to monitor my Compute Cluster I had setup as explained [here](https://ashwinbalaji.xyz/series/hpc-compute-cluster-at-home/). I have some experience with using LLMs for some custom projects that never saw the light of the day, so I figured let me use this Mini-PC to self-host LLMs. I can migrate the plex server to a proper NAS device in the future.
 
 ## Setup
 
-I caved in and installed docker as the choices of software I had only supported that. I love to keep things bare-metal as it gives me more control over whats happening on the system and my old habits as a Linux System Administrator. Docker is great if you are running 100s of services in your homelab and want to manage them efficiently. I don’t do that. Just a select few. So, I never use docker except now I have to.
+Reluctantly, I installed the docker as the software. I had only supported that. I love to keep things bare-metal as it gives me more control over what’s happening in the system and my old habits as a Linux System Administrator. Docker is great if you are running 100s of services in your home lab and want to manage them efficiently. I don’t do that. Just a select few. So, I never use a docker except now I have to.
 
 The softwares I needed to use are:
 
@@ -89,6 +89,5 @@ I can't think of anything else to run LLMs locally.
 
 ## Updates
 
-Turns out, my M3 Pro MacBook Pro with 18GB RAM is more optimed to run `mistral` and `wizard-math` and is more usable than the whole Mini-PC setup. However, I can only run small models and/or large models that are quantized(quantized ~ reducing the precision of the parameters of every node of the neural network) which have low precision and that implies not very good answers. At this point all my thoughts are subjective and I'll do some test runs to see how much I can salvage from my laptop, perhaps write another article soon.
-
+Turns out, my M3 Pro MacBook Pro with 18GB RAM is more optimized to run `mistral` and `wizard-math` and is more usable than the whole Mini-PC setup. However, I can only run small models and/or large models that are quantized(quantized ~ reducing the precision of the parameters of every node of the neural network) which have low precision and that implies not appropriate answers. At this point all my thoughts are subjective and I’ll do some test runs to see how much I can salvage from my laptop, perhaps write another article soon.
 
