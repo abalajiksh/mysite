@@ -16,7 +16,7 @@ This site is primarily filled with my rantings over some topics but hopefully ca
 
 Other than all these I love to sink myself in books: SciFi, Fantasy or Non-fiction. I also do a lot of Road Cycling and Mountain Biking, with former being the major part of it. You can check me out on [Goodreads](https://www.goodreads.com/ashwinbalaji) and/or [Strava](https://www.strava.com/athletes/ashwinbalaji) to see what I am up to.
 
-All of this sounds like me chasing after irrelevant things or just trying out new stuff for fun. However, I like to think of all of this just like a fantasy novel rather than a single romance novel. There are world building, complex character arcs, sub-stories, magic system, lore and a lot more excruciating details that make a lots of people think, "when will this get to a point?". All of this will tie up and come together nicely in the end. I would like to think the same for myself.
+All of this sounds like me chasing after irrelevant things or just trying out new stuff for fun. However, I like to think of all of this just like a fantasy novel rather than a single romance novel. There are world building, complex character arcs, sub-stories, magic system, lore and a lot more excruciating details that make a lots of people think, "when will this get to a point?". All of those will tie up and come together nicely in the end of the series. I would like to think the same for myself.
 
 You can indulge in my distractions by following the articles or other social media sites I have linked here, and if you feel like it, leave a comment, or just say hi. You can contact me on [Instagram](https://www.instagram.com/ashwinbalaji00/), but like most people, if I don't reply, ping me again.
 
