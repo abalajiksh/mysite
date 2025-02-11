@@ -1,6 +1,6 @@
 +++
 date = '2025-02-11T13:35:01+01:00'
-draft = true
+draft = false
 title = 'Datenschutz'
 +++
 ## TL;DR:
