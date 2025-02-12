@@ -5,11 +5,11 @@ tags= ["Physics", "Time", "Initial-Conditions", "Cellular Automata", "Lee-Smolin
 title = 'Conway Game of Life'
 +++
 
-{{< details summary="Warning!" >}}
+{{< notice note >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
 
 I wrote a larger article titled as "[An Analogy to Dive Deep Into the Nature of Time](https://website-5m1.pages.dev/posts/an-analogy-to-dive-deep-into-the-nature-of-time/)" but didn't feel comfortable posting the whole thing here, so I just picked the stuff I felt that is worth posting.
-{{< /details >}}
+{{< /notice >}}
 
 Time is a concept many philosophers and physicists pondered upon for centuries. It still remains mysterious besides the metaphysical claims of a few. Here, let us discuss an analogy that might serve in improving the understanding of how time works and draw parallels to the Eastern Philosophical thought which propounds certain properties to the fundamental nature of time.
 
