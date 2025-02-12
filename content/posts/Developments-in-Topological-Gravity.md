@@ -18,7 +18,7 @@ Then we have an overview of matrix models of 2d gravity and get expressions for 
 
 ### Initial Steps
 
-Let $\Sigma$ be a closed Riemann surface of genus $g$ having marked points $p_1, p_2, \cdots, p_n$. Let $\mathcal{L}_i$ be the cotangent space to $p_i$ in $\Sigma$. $\mathcal{L}_i$ varies as a complex line bundle over $\mathcal{M}_{g,n}$, the moduli space of genus $g$ with $n$ punctures as $\Sigma$ and $p_i$ vary. We know for a fact that these line bundles naturally extend over $\bar{\mathcal{M}}_{g,n}$, the Deligne-Mumford compactification of $\mathcal{M}_{g,n}$. We define $\psi_i = c_1(\mathcal{L}_i)$ the first Chern class of $\mathcal{L}_i$ which is a two dimensional cohomology class. For a $d > 0$ we set $\tau_{i,d} = \psi^{d}_i$, a $2d$ dimensional cohomology class.
+Let $\Sigma$ be a closed Riemann surface of genus $g$ having marked points $p_1, p_2, \cdots, p_n$. Let $\mathcal{L}_i$ be the cotangent space to $p_i$ in $\Sigma$. $\mathcal{L}_{i}$ varies as a complex line bundle over $\mathcal{M}_{g,n}$, the moduli space of genus $g$ with $n$ punctures as $\Sigma$ and $p_i$ vary. We know for a fact that these line bundles naturally extend over $\bar{\mathcal{M}}_{g,n}$, the Deligne-Mumford compactification of $\mathcal{M}_{g,n}$. We define $\psi_i = c_1(\mathcal{L}_i)$ the first Chern class of $\mathcal{L}_i$ which is a two dimensional cohomology class. For a $d > 0$ we set $\tau_{i,d} = \psi^{d}_i$, a $2d$ dimensional cohomology class.
 
 The correlation functions of 2d topological gravity are the intersection numbers
 
