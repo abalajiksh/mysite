@@ -9,9 +9,9 @@ tags= ["Philosophy", "Time", "Reality", "McTaggart"]
 ![Photo by [Aron Visuals](https://unsplash.com/@aronvisuals?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)](https://github.com/abalajiksh/gifabxyz/raw/main/photo-1501139083538-0139583c060f.jpeg "Photo by [Aron Visuals](https://unsplash.com/@aronvisuals?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)")
 
 
-{{< details summary="Warning!" >}}
+{{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
-{{< /details >}}
+{{< /notice >}}
 
 McTaggart is a British Idealist who is famous for his paper, "The Unreality of Time", published in 1908, where he argues the case of **atemporal reality**. This is still the starting point to discuss the situation otherwise, even after a century. Nevertheless, a century has brought a lot of developments along this line of thought.
 

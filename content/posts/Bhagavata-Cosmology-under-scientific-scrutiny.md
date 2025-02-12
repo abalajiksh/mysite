@@ -5,10 +5,9 @@ tags= ["Musings", "Srimad-Bhagavatam", "Cosmology", "Scientific-Method"]
 title = 'Bhagavata Cosmology Under Scientific Scrutiny'
 +++
 
-
-{{< details summary="Warning!" >}}
+{{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
-{{< /details >}}
+{{< /notice >}}
 
 
 

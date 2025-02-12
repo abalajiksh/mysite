@@ -7,9 +7,9 @@ tags= ["Virtualization", "Virtual-Machines", "Operating-Systems", "Linux"]
 
 ![Not What I Thought](https://github.com/abalajiksh/gifabxyz/raw/main/Not-What-I-Thought---.png)
 
-{{< details summary="Warning!" >}}
+{{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
-{{< /details >}}
+{{< /notice >}}
 
 ## Introduction
 

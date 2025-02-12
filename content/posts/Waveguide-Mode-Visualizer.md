@@ -6,9 +6,9 @@ tags= ["Physics", "Electrodynamics", "Visualization", "Simulation", "Computation
 +++
 ![WaveGuide-Mode-Visualizer](https://github.com/abalajiksh/gifabxyz/raw/main/WaveGuide-Mode-Visualizer.png)
 
-{{< details summary="Warning!" >}}
+{{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
-{{< /details >}}
+{{< /notice >}}
 
 
 

@@ -7,9 +7,9 @@ tags= ["Mathematics", "Calculus", "Linear-Algebra", "Matrix"]
 
 ![Calculus to LA](https://github.com/abalajiksh/gifabxyz/raw/main/calculus-to-linear-algebra.png)
 
-{{< details summary="Warning!" >}}
+{{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
-{{< /details >}}
+{{< /notice >}}
 
 Consider the anti-derivative of $e^x \sin x$ or more commonly called as integral of $e^x \sin x$.
 $$

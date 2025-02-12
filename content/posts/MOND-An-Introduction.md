@@ -5,9 +5,9 @@ tags= ["Physics", "Gravity", "MOND", "Dark-Matter"]
 title = 'MOND an Introduction'
 +++
 
-{{< details summary="Warning!" >}}
+{{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
-{{< /details >}}
+{{< /notice >}}
 
 ## On Dark Matter
 
