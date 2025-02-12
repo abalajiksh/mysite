@@ -23,7 +23,7 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
 
 menu = [
     {Name = "About", URL = "/about/", HasChildren = false},
-    {Name = "Datenschutz", URL = "/datenschutz/", HasChildren = false},
+    {Name = "Datenschutzerklärung", URL = "/datenschutz/", HasChildren = false},
     {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 2},
     ]
 
