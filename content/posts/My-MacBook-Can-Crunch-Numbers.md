@@ -122,7 +122,11 @@ Almost all the models failed. Only `llama3.3`and `mistral-large-2`gave proper an
 
 Check out the answers *Le Chat* provided [here](https://chat.mistral.ai/chat/8cc96db2-a635-4207-aee3-e9c75cb9bcb8).
 
-*Nerd Alert:* Or I could upload the PDF of the book and ask the LLM to do, but it is a resource heavy process as something called a „transformer“ should convert all the text into vectors (list of numbers if you will) and then convert the query also as vector, do a cosine search which tells what is the closest paragraph resembling the query, feed that data to LLM and LLM will give the answer to us.
+{{< notice info >}}
+*Nerd Alert:* Or I could upload the PDF of the book and ask the LLM to do, but it is a resource heavy process as something called a „transformer“ should convert all the text into vectors (list of numbers if you will) and then convert the query also as vector, do a cosine search which tells what is the closest paragraph resembling the query, feed that data to LLM and LLM will give the answer to us. This is called RAG (Retrieval Augmented Generation).
+{{< /notice >}}
+
+
 
 ### Test 03: Programming
 
