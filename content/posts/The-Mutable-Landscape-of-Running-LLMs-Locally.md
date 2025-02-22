@@ -45,6 +45,10 @@ I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook P
 
 Notice I have ``3010`` as port number rather than ``3000`` as provided by the ``openwebui`` documentation. I have Grafana using that port and don’t want to conflict that by running this service also on the same port. After few simple steps of creaing a local account and login, I was presented with a chat-like window to play around. I had to download the models themselves from the web, and so I did that. Once that is done, I was able to use local LLMs. Here are some screen recordings of some LLMs and how well they perform on this Mini-PC.
 
+{{< notice info >}}
+You will have to enable CPU Virtualization in your BIOS/UEFI settings. This is usually done by pressing a key like `F2`, `F12`, `DEL`, or `ESC` during startup. The exact key may vary depending on your MacBook model. Once in the BIOS/UEFI settings, look for an option related to CPU Virtualization and enable it. Save the changes and exit the BIOS/UEFI settings. However, this is only true for Intel/AMD CPUs. MacBooks with M-series processors appear to have them endabled by default.
+{{< /notice >}}
+
 ### Test Run
 
 ![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182258.JPG)

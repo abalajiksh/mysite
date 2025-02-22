@@ -11,9 +11,17 @@ series = "Local LLMs"
 
 As I described [here](https://ashwinbalaji.xyz/posts/the-mutable-landscape-of-running-llms-locally/#updates), I was wonder-struck on how good the LLMs ran on my MacBook Pro.
 
+{{< notice note >}}
 **NOTE:** All the executable commands for `bash`/`zsh` are copied from `openwebui` or other respective official docs. If you don’t know what you are running, research it before you do!
+{{< /notice >}}
+
+
 
 ## *l'attention* 
+
+{{< notice info >}}
+You will have to enable CPU Virtualization in your BIOS/UEFI settings. This is usually done by pressing a key like `F2`, `F12`, `DEL`, or `ESC` during startup. The exact key may vary depending on your MacBook model. Once in the BIOS/UEFI settings, look for an option related to CPU Virtualization and enable it. Save the changes and exit the BIOS/UEFI settings. However, this is only true for Intel/AMD CPUs. MacBooks with M-series processors appear to have them endabled by default.
+{{< /notice >}}
 
 I tried running the same `docker` command as posted on the previous article and it doesn’t setup `ollama` that is optimized for Apple Silicon. It was slow, as it wasn’t using the NPU/GPU or whatever they call those tensor/matrix circuits on SoC. It was using just the CPU. I had to install `ollama` bare-metal to get it to use the hardware-acceleration(HWA). Another slap in the face for trusting `docker`. I still run `openwebui` using `docker` but give access to the host’s `zsh`(??) to access `ollama`.
 
