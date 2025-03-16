@@ -3,8 +3,7 @@ date = '2025-01-24T14:36:19+01:00'
 draft = false
 title = 'My MacBook Can Crunch Numbers'
 tags= ["Computers", "Technology", "LLMs", "Inference"]
-[series] 
-name = "Local LLMs"
+series = "Local LLMs"
 +++
 
 
