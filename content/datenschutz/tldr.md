@@ -10,6 +10,8 @@ This site uses a little scoop of vanilla JavaScript, a dash of CSS, and the blen
 
 {{< notice info >}}
 Don't wanna take my word for it? Do a privacy inspection yourself [here](https://themarkup.org/blacklight?url=ashwinbalaji.xyz&device=mobile&location=us-ca&force=false).
+
+If you are more tech saavy, then head to Mozilla HTTP Obeservatory Report [here](https://developer.mozilla.org/en-US/observatory/analyze?host=ashwinbalaji.xyz).
 {{< /notice >}}
 
 [Alpine.JS](https://alpinejs.dev/) a lightweight and open-source JavaScript framework, simplifies the creation of blog posts featuring complex calculations and interactive examples for enhanced comprehension. The beauty of this framework is such that you can do all computations right in the middle of the blog, in your browser, and use your own hardware for it. No data upload, no spying on your personal data. Heck, I don't have any-way to send back that data for myself! Not just normal calculations, let’s say I write a series of cascading calculations, then just changing the data at the beginning will reactively change the whole blog to fit that data, making it more personal. This tiny JS framework will load only on pages that require it, and there is a warning in the beginning about it's existence. No scripts will execute on it's own unless you click/interact on it.
