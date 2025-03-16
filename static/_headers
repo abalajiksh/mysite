@@ -5,5 +5,4 @@
   X-Frame-Options: deny
   Referrer-Policy: no-referrer
   Permissions-Policy: microphone=(), payment=(), geolocation=(), midi=(), sync-xhr=(), camera=(), magnetometer=(), gyroscope=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' ajax.cloudflare.com; style-src 'self'; img-src 'self' data: https://raw.githubusercontent.com; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
-  X-XSS-Protection: 1; mode=block
+  
