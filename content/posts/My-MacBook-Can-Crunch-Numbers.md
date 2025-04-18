@@ -47,7 +47,7 @@ Check [`vLLM`](https://github.com/vllm-project/vllm) and [`llama.cpp`](https://g
 
 ## Models and their properties
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-14.55.36.png)
+![](/images/Screenshot-2025-01-24-at-14.55.36.png)
 
 My tests are neither comprehensive nor representative of everyone’s needs. They represent topics and ideas that I usually want an opinion on or some insight I wish to nail that I overlooked in the past. The list of models I’m testing on my MacBook Pro are as follows:
 
@@ -82,7 +82,7 @@ All those comments were true and are like another character I hate to my core, R
 
 **Results:** All the models in 7B and 14B category and `mixtral` performed well, they explained different contexts why that is the case. However, `llama3.3`, which doesn’t run on my MacBook Pro simply because there isn’t much memory (although the system can create swap memory and use that to run it, more on that in the later part of the article), outperformed all the models, including what I presume is `mistral-large-2` model that works when you use the [Le Chat](https://chat.mistral.ai/) of Mistral AI website. It gave me a lot of open-ended questions think about this topic further on my own, and I like that more than just reading some standalone regurgitated answers. Here is the end of the response from `llama3.3`.
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-15.15.12.png)
+![](/images/Screenshot-2025-01-24-at-15.15.12.png)
 
 „A Mentat is a human computer, trained to perform complex calculations and analyses. They use questions to probe and understand the underlying patterns and structures of information.“ Know where this quote is from? Well, it is true for us too, not just mentats.
 
@@ -106,7 +106,7 @@ Use LaTeX for all mathematical expressions. For example, represent a quadratic e
 
 {{</highlight>}}
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-12.34.36.png)
+![](/images/Screenshot-2025-01-24-at-12.34.36.png)
 
 And the query is: what is the sum of Abelian groups in homology theory? demonstrate it with an example using $R^2$ and 2d torus as example topological spaces
 
@@ -150,7 +150,7 @@ For most use cases, I would say all the 7B or 14B parameter models gave very use
 
 `mixtral` is a different kind of model. It is huge, and not really fit to run on my MacBook Pro. If you want to know about this specific model, try reading about „sparse mixture of experts model (SMoE)“. Look at the `htop` image below.
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2025-01-24-at-14.50.15.png)
+![](/images/Screenshot-2025-01-24-at-14.50.15.png)
 
 My MacBook Pro usually functions with 2GB of Swap memory, but because there isn't enough memory to run it, it increased the swap memory size. Where did it come from? Part of my SSD storage. It is not good to rely on Swap memory. SSD's data deletion procedure is just plain absurd, power hungry and damaging to electronic circuits. But thats the best we got and have to live with it. I might write an article about SSD's data delete cycles in another article.
 
