@@ -61,7 +61,7 @@ The above images represent test run and the system resource usage. ~~I shall upd
 
 ### `llama3.3`
 
-![](/images/llama33.gif)
+![](https://github.com/abalajiksh/gifabxyz/blob/main/llama33.gif?raw=true)
 
 The above image is 30x speed and the actual time it took to provide the complete answer was 00:26:09.
 
@@ -73,7 +73,7 @@ This is in real time. Elapsed time: 00:01:16. `mistral` seems fine for normal us
 
 ### `wizard-math`
 
-![](/images/Screen-Recording-2025-01-21-at-16.31.33.gif)
+![](https://github.com/abalajiksh/gifabxyz/blob/main/Screen-Recording-2025-01-21-at-16.31.33.gif?raw=true)
 
 This is also in real time. Elapsed time: 00:04:20. This seems to provide more mathematical data and is interesting for me to look further into it.
 
