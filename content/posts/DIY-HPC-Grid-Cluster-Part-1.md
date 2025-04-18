@@ -7,7 +7,7 @@ series = "HPC Compute Cluster at Home"
 +++
 
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/supercomputing_grid_cluster_3064264560.png)
+![](/images/supercomputing_grid_cluster_3064264560.png)
 
 
 ## Why
@@ -36,7 +36,7 @@ The performance of i5-6500T is much faster than N5095 where the latter is a rece
 
 I can use the Wake-on-LAN feature to remotely turn them off and on as necessary to conserve power. The total idle power consumption and peak power consumption is not yet determined but will report it on next article.
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/20240312_141055.JPG)
+![](/images/20240312_141055.JPG)
 
 Why I didn‘t go for ARM? The options and upgradability are limited, for I can go with multiple Raspberry Pis which is very underperforming and cannot be upgraded later. There is an announcement for Qualcomm‘s own Snapdragon X Elite ARM processor but I would have to wait till its release in June 2024. Even if I wait, I don‘t have any information about the types of hardware that will accompany it. So, due to uncertainty, I decided to drop ARM, even though most new supercomputers use ARM for their power efficiency. I know one can setup a single-node cluster to work with, and I briefly decided to exchange my M1 MacBook Pro for a Mac Mini to do the same since they run on ARM, the support for `slurm` is very limited. So, I waited it out to test my algorithms on ARM when a Thin Client for ARM is released. I could effectively try Microsoft‘s Volterra but support for Linux on that machine is experimental at best.
 

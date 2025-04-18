@@ -5,7 +5,7 @@ tags= ["Mathematics", "Computers", "Fibonacci", "Computing"]
 title = 'Revisiting Fibonacci Sequence'
 +++
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Revisiting-Fibonacci.png)
+![](/images/Revisiting-Fibonacci.png)
 
 {{< notice warning >}}
 This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it.
@@ -68,9 +68,9 @@ $$
 
 Now let us put this stuff to testing in the programming environment. I chose to create a new Ubuntu virtual machine in Linode(not a sponsor) with 1 vCPU and 1GB of RAM to make the test as fair and square as possible. Here is the spec of the machine I used for testing:
 
-![`neofetch` for the Virtual Machine at Linode](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2022-04-06-at-4.37.55-PM.png "`neofetch` for the Virtual Machine at Linode")
+![`neofetch` for the Virtual Machine at Linode](/images/Screenshot-2022-04-06-at-4.37.55-PM.png "`neofetch` for the Virtual Machine at Linode")
 
-![`lscpu` for the Virtual Machine at Linode](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2022-04-06-at-4.38.20-PM.png "`lscpu` for the Virtual Machine at Linode")
+![`lscpu` for the Virtual Machine at Linode](/images/Screenshot-2022-04-06-at-4.38.20-PM.png "`lscpu` for the Virtual Machine at Linode")
 
 Code used to Run the below programs:
 
@@ -161,6 +161,6 @@ int fibo(int x){
 
 ## Benchmarks and Remarks
 
-![Runtime Results for Different Algorithms](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot-2022-04-06-at-5.05.07-PM.png "Runtime Results for Different Algorithms")
+![Runtime Results for Different Algorithms](/images/Screenshot-2022-04-06-at-5.05.07-PM.png "Runtime Results for Different Algorithms")
 
 The recursion, as expected, has taken the longest time as predicted by the Big - O notation from the algorithmic analysis. However, we couldn't see the difference in performance between function implementation and the looping implementation. That depends upon how efficient the `pow(a, b)` function is implemented within `C++ 11` and we hit a bottleneck where the upper limit of `int` datatype is reached faster and the further positive numbers turn out to be negative by the nature of how the negative numbers are represented in the computers. Also, due to the differences in initial conditions in the program, we see different results for different algorithms that can be calibrated easily. However, we can see that the difference in runtime will scale pretty quickly when we discuss simulations in the scales of Quantum Chromodynamics where we use lattice gauges to study the strong interactions' non-perturbative regimes. Hence, the requirement to optimize the programs as much as possible. This simple example is single-threaded and doesn't deal with concurrency. When we add heterogeneous computing to our mix, we have huge possibilities for optimizations.

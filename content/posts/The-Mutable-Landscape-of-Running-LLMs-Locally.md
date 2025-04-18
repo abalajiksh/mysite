@@ -51,29 +51,29 @@ You will have to enable CPU Virtualization in your BIOS/UEFI settings. This is u
 
 ### Test Run
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182258.JPG)
-![](https://github.com/abalajiksh/gifabxyz/raw/main/20250120_182251.JPG)
+![](/images/20250120_182258.JPG)
+![](/images/20250120_182251.JPG)
 
 The above images represent test run and the system resource usage. ~~I shall update the power drawn by the system in the near future.~~
 
 **EDIT:** I have measured the power draw for the usage of LLMs on this Mini-PC. It idles around 5-8W and when LLMs are inferenced, it draws around 55-70W of power.
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screenshot_20250123-115835.png)
+![](/images/Screenshot_20250123-115835.png)
 
 ### `llama3.3`
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/llama33.gif)
+![](/images/llama33.gif)
 
 The above image is 30x speed and the actual time it took to provide the complete answer was 00:26:09.
 
 ### `mistral`
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screen-Recording-2025-01-21-at-16.29.56.gif)
+![](/images/Screen-Recording-2025-01-21-at-16.29.56.gif)
 
 This is in real time. Elapsed time: 00:01:16. `mistral` seems fine for normal use cases.
 
 ### `wizard-math`
 
-![](https://github.com/abalajiksh/gifabxyz/raw/main/Screen-Recording-2025-01-21-at-16.31.33.gif)
+![](/images/Screen-Recording-2025-01-21-at-16.31.33.gif)
 
 This is also in real time. Elapsed time: 00:04:20. This seems to provide more mathematical data and is interesting for me to look further into it.
 

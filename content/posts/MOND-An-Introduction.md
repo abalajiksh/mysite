@@ -11,13 +11,13 @@ This article is one among many salvaged from my previous blog! It is not on par 
 
 ## On Dark Matter
 
-![Playing with a stone fastened to a rope.](https://github.com/abalajiksh/gifabxyz/raw/main/trace.png "Playing with a stone fastened to a rope.")
+![Playing with a stone fastened to a rope.](/images/trace.png "Playing with a stone fastened to a rope.")
 
 Consider a stone fastened to rope. Imagine you are holding the rope in the other end. Now, start rotating with it, but slowly. What do you notice? The stone drags itself along the path on the ground. Now make the rotation faster, the stone starts to levitate in your reference frame.
 
 Now this levitation can be taken to be as stability of rotational motion. A lesson here is that we need sufficient tangential force for stability in the rotational motion. Now enough physicising with small objects. Let's move to something big. Let us take a galaxy for example.
 
-![A Typical Galaxy (Colouring is an Artist's Work)](https://github.com/abalajiksh/gifabxyz/raw/main/pexels-pixabay-2150.jpeg)
+![A Typical Galaxy (Colouring is an Artist's Work)](/images/pexels-pixabay-2150.jpeg)
 
 Here, the stars and planets are moving around a huge massive black hole in the centre of the galaxy. Let us write down Newton's Gravitational Law for such a system.
 
