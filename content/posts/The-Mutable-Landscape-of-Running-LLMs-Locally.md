@@ -6,7 +6,10 @@ tags= ["Computers", "Server", "Technology", "Linux", "LLMs", "Inference"]
 series = "Local LLMs"
 +++
 
+{{< notice warning >}}
 **Warning:** Large image files, specifically 3 files that are each around 50MB in size, and aren't in Dark Mode: don't scorch your eyeballs.
+{{< /notice >}}
+
 
 ## Background
 
