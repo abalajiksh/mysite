@@ -26,7 +26,7 @@ I like to think of myself as a Gardener. I tend to my thoughts often and nurture
 
 Other than all these I love to sink myself in books: SciFi, Fantasy or Non-fiction. Foundation by Asimov is one of my favourites, so is Dune by Frank Herbert. I do enjoy poetry, my favourite being "Forever-is composed of nows" by Emily Dickinson. I also do a lot of Road Cycling and Mountain Biking, with former being the major part of it. You can check me out on [Goodreads](https://www.goodreads.com/ashwinbalaji) and/or [Strava](https://www.strava.com/athletes/ashwinbalaji) to see what I am up to. If I am riding my bicycle, you can most probably track me live [here](https://live.garmin.com/ashwinbalaji).
 
-I do love well written movies, with good audio engineering. Well who doesn't love movies? If you wanna know another piece of me, you may do so [here](https://letterboxd.com/abksh1011/).
+I do love well written movies, with good audio engineering. Well who doesn't love movies? If you wanna know another piece of me(get the reference?, if not ask me!), you may do so [here](https://letterboxd.com/abksh1011/).
 
 All of this sounds like me chasing after irrelevant things or just trying out new stuff for fun. However, I like to think of all of this just like a fantasy novel rather than a single romance novel. There are world building, complex character arcs, sub-stories, magic system, lore and a lot more excruciating details that make a lots of people think, "when will this get to a point?". All of those will tie up and come together nicely in the end of the fantasy series. It is a lot of work, but the reward is out of bounds: for the lack of better phrasing. I would like to think the same about these "distractions" to come together one day.
 
