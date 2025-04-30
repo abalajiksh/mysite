@@ -8,6 +8,14 @@ I am Ashwin Balaji. My primary interests are:
 1. Structure and Quantization of Gauge Theories
 1. Philosophy of Physics - Hans Reichenbach is a personal favourite of mine.
 
+{{< notice note >}}
+## TL;DR
+1. You can contact me on Instagram here(https://www.instagram.com/ashwinbalaji00/).
+1. You can check the books I am reading here(https://www.goodreads.com/ashwinbalaji).
+1. You can check my Cycling Activities here(https://www.strava.com/athletes/ashwinbalaji). Live ones are here(https://live.garmin.com/ashwinbalaji).
+1. You can check my Movie Watchlist here(https://letterboxd.com/abksh1011/). Not an exhaustive list(yet!).
+{{< /notice >}}
+
 I am a Master's student at [Heidelberg University](https://www.physik.uni-heidelberg.de/?lang=en) and earned my Bachelor's (BTech) at National Institute of Technology, Calicut ([NITC](https://depcent.nitc.ac.in/physics/)). I worked on 2 theses titled "Introduction to Lattice Gauge Theory with Wilson Loops" and "Coherent State Path Integral Formalism for Fermions in Quantum Mechanics" under my esteemed supervisor [Dr. Sreeraj](https://nitc.ac.in/department/physics/faculty-and-staff/faculty/3a45fbe4-3831-4589-bfdc-27d07d5dfa49).
 
 My primary source of inspiration for pursuing physics is Lev Davidovich Landau (Russian: Лев Дави́дович Ланда́у). His books and other Russian texts enhanced my passion for Physics.
