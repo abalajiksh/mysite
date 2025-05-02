@@ -10,7 +10,7 @@ I am Ashwin Balaji. My primary interests are:
 
 {{< notice note >}}
 ## TL;DR
-I am studying Masters inb Physics at Ruprecht Karl Universitt Heidelberg. I am crazy about theoretical physics, electronics, mathematics and computations. Some of my hobbies can be checked out in the following links.
+I am studying Masters in Physics at Ruprecht Karl Universität Heidelberg. I am crazy about theoretical physics, electronics, mathematics and computations. Some of my hobbies can be checked out in the following links or just read my blog.
 1. You can contact me on Instagram [here](https://www.instagram.com/ashwinbalaji00/).
 1. You can check the books I am reading [here](https://www.goodreads.com/ashwinbalaji).
 1. You can check my Cycling Activities [here](https://www.strava.com/athletes/ashwinbalaji). Live ones are [here](https://live.garmin.com/ashwinbalaji).
