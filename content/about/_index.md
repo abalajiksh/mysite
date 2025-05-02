@@ -5,7 +5,7 @@ title = 'About'
 +++
 I am Ashwin Balaji. My primary interests are:
 1. The concept of time in Physics - especially in Quantum Gravity
-1. Structure and Quantization of Gauge Theories
+1. Structure, Geometry and Quantization of Gauge Theories
 1. Philosophy of Physics - Hans Reichenbach is a personal favourite of mine.
 
 {{< notice note >}}
