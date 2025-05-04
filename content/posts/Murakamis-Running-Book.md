@@ -41,7 +41,7 @@ Being alone, the solitude, is what appeals to a lot of thinkers. I am not classi
 
 I like to be independent, that encloses me to well up all emotional troubles to myself. There is no one who would listen to me, not judge, be compassionate and understanding of my troubles and help me face them. There may be one or two I know, but I can't bother them because they are themselves in their own problems to be bothered.
 
-PS: As I am writing this section, I am listening to "That's the way it is" by Celine Dion in the background. Quite apt to the thoughts I am having as I write this section.
+**PS:** As I am writing this section, I am listening to "That's the way it is" by Celine Dion in the background. Quite apt to the thoughts I am having as I write this section.
 
 ## 3 Disciplines to ~~Success~~ Growth
 
@@ -53,7 +53,7 @@ You can learn endurance from running or cycling long distances, for they are end
 
 Murakami's mantra as he is running marathons is: 
 
->"I’m not a human. I’m a piece of machinery. I don’t need to feel a thing. Just forge on ahead." 
+>"*I’m not a human. I’m a piece of machinery. I don’t need to feel a thing. Just forge on ahead.*" 
 
 While I don't have any mantras like that for cycling, it makes sense on some level. One of the oldest questions in Eastern Philosophy is the Identity of Self, "Who am I?". Depending on your philosophical inclination, you have variegated answers to that question. Whether any of it is metaphysically accurate, I have given up on, for I don't enjoy judging. My answer has developed over the period of the last 7 years, and I don't contemplate on this anymore. Murakami writes:
 
@@ -63,4 +63,4 @@ This is true of cycling as well. A lot of philosophical ideas I have pondered up
 
 Granted, I am sure by now you must have realized that all of this ranting is going to be left without conclusion. If yes, I have done a decent job organizing my thoughts here, else welcome to my thoughts inside my head. This will go on until the marker of Death puts a stop. However, to end this article, let me quote a passage from Murakami's book:
 
-> It’s precisely because of the pain, precisely because we want to overcome that pain, that we can get the feeling, through this process, of really being alive—or at least a partial sense of it. Your quality of experience is based not on standards such as time or ranking, but on finally awakening to an awareness of the fluidity within action itself. If things go well, that is.
+> It’s precisely because of the pain, precisely because we want to overcome that pain, that we can get the feeling, through this process, of really being *alive*—or at least a partial sense of it. Your quality of experience is based not on standards such as time or ranking, but on finally awakening to an awareness of the fluidity within action itself. If things go well, that is.
