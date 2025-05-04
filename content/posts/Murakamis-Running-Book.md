@@ -2,6 +2,14 @@
 date = '2025-05-04T14:56:58+02:00'
 draft = false
 title = "Murakami's Running Book"
+tags = [
+    "Cycling",
+    "Murakami",
+    "Philosophy",
+    "Endurance Sports",
+    "Personal Growth",
+    "Self-Reflection"
+]
 +++
 
 ## Introduction
