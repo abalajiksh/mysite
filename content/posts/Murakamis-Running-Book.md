@@ -7,7 +7,7 @@ tags = [
     "Murakami",
     "Philosophy",
     "Endurance Sports",
-    "Personal Growth",
+    "Book-Review",
     "Self-Reflection"
 ]
 +++
