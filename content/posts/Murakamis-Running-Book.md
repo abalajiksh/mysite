@@ -63,7 +63,7 @@ Murakami's mantra as he is running marathons is:
 
 >"*I’m not a human. I’m a piece of machinery. I don’t need to feel a thing. Just forge on ahead.*" 
 
-While I don't have any mantras like that for cycling, it makes sense on some level. One of the oldest questions in Eastern Philosophy is the Identity of Self, "Who am I?". Depending on your philosophical inclination, you have variegated answers to that question. Whether any of it is metaphysically accurate, I have given up on, for I don't enjoy judging. My answer has developed over the period of the last 7 years, and I don't contemplate on this anymore. Murakami writes:
+While I don't have any mantras like that for cycling, it makes sense on some level. One of the oldest questions in Eastern Philosophy is the Identity of Self, "Who am I?". Depending on your philosophical inclination, you have variegated answers to that question. Whether any of it is metaphysically accurate, I have given up on, for I don't enjoy judging. My answer has developed over the period of the last 7 years, and I don't contemplate on this anymore. Not because I got the perfect answer, It isn't worth my time anymore, or will it enhance my everyday experiences that I have. Murakami writes:
 
 > The end of the race is just a temporary marker without much significance. It’s the same with our lives. Just because there’s an end doesn’t mean existence has meaning. An end point is simply set up as a temporary marker, or perhaps as an indirect metaphor for the fleeting nature of existence. It’s very philosophical—not that at this point I’m thinking how philosophical it is. I just vaguely experience this idea, not with words, but as a physical sensation.
 
