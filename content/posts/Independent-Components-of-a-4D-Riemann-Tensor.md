@@ -29,18 +29,31 @@ Bianchi Identity: $R_{ijkl} + R_{iklj} + R_{iljk} = 0$
 Let us use just the first two constraints and see how many variables we can reduce. I was lazy to count it by hand, so here is a Python code that will do just that for us.
 
 {{< highlight text >}}
-
 import itertools
 
-def generate_riemann_components():# The Riemann tensor has 4 indices, each ranging from 0 to 3 (for 4 dimensions)indices = range(4)
+def generate_riemann_components():
+    # The Riemann tensor has 4 indices, each ranging from 0 to 3 (for 4 dimensions)
+    indices = range(4)
 
-# We need to consider the antisymmetry of the first two indices and the last two indices# So we generate combinations for the first two indices and the last two indicesfirst_two = list(itertools.combinations(indices, 2))last_two = list(itertools.combinations(indices, 2))
+    # We need to consider the antisymmetry of the first two indices and the last two indices
+    # So we generate combinations for the first two indices and the last two indices
+    first_two = list(itertools.combinations(indices, 2))
+    last_two = list(itertools.combinations(indices, 2))
 
-# Generate all possible combinations of the first two and last two indicescomponents = []for (i, j) in first_two:for (k, l) in last_two:# The Riemann tensor is antisymmetric in the first two indices and the last two indices# So we only consider the case where i < j and k < lcomponents.append(((i, j), (k, l)))
+    # Generate all possible combinations of the first two and last two indices
+    components = []
+    for (i, j) in first_two:
+        for (k, l) in last_two:
+            # The Riemann tensor is antisymmetric in the first two indices and the last two indices
+            # So we only consider the case where i < j and k < l
+            components.append(((i, j), (k, l)))
 
-return components
+    return components
 
-# Generate and print the componentsriemann_components = generate_riemann_components()for component in riemann_components:print(f"R_{component[0][0]}{component[0][1]}{component[1][0]}{component[1][1]}")
+# Generate and print the components
+riemann_components = generate_riemann_components()
+for component in riemann_components:
+    print(f"R_{component[0][0]}{component[0][1]}{component[1][0]}{component[1][1]}")
 
 {{< /highlight >}}
 
@@ -55,22 +68,38 @@ $R_{0101}, R_{0102}, R_{0103}, R_{0112}, R_{0113}, R_{0123}, R_{0201}, R_{0202},
 Initially, we had 256 components for the Riemann Tensor, now using the first two anti-symmetries, we have reduced it to just 36 components. Let us use the third symmetry to reduce the number of components further. As before, I wrote another Python code to achieve exactly the same:
 
 {{< highlight text >}}
-
 import itertools
 
-def generate_riemann_components():# The Riemann tensor has 4 indices, each ranging from 0 to 3 (for 4 dimensions)indices = range(4)
+def generate_riemann_components():
+    # The Riemann tensor has 4 indices, each ranging from 0 to 3 (for 4 dimensions)
+    indices = range(4)
 
-# We need to consider the antisymmetry of the first two indices and the last two indices# So we generate combinations for the first two indices and the last two indicesfirst_two = list(itertools.combinations(indices, 2))last_two = list(itertools.combinations(indices, 2))
+    # We need to consider the antisymmetry of the first two indices and the last two indices
+    # So we generate combinations for the first two indices and the last two indices
+    first_two = list(itertools.combinations(indices, 2))
+    last_two = list(itertools.combinations(indices, 2))
 
-# Generate all possible combinations of the first two and last two indicescomponents = set()for (i, j) in first_two:for (k, l) in last_two:# The Riemann tensor is antisymmetric in the first two indices and the last two indices# So we only consider the case where i < j and k < lcomponent = ((i, j), (k, l))
+    # Generate all possible combinations of the first two and last two indices
+    components = set()
+    for (i, j) in first_two:
+        for (k, l) in last_two:
+            # The Riemann tensor is antisymmetric in the first two indices and the last two indices
+            # So we only consider the case where i < j and k < l
+            component = ((i, j), (k, l))
 
-# Check if swapping the first two and last two indices gives a different componentswapped_component = ((k, l), (i, j))
+            # Check if swapping the first two and last two indices gives a different component
+            swapped_component = ((k, l), (i, j))
 
-# Only add the component if its swapped version is not already in the setif swapped_component not in components:components.add(component)
+            # Only add the component if its swapped version is not already in the set
+            if swapped_component not in components:
+                components.add(component)
 
-return components
+    return components
 
-# Generate and print the componentsriemann_components = generate_riemann_components()for component in riemann_components:print(f"R_{component[0][0]}{component[0][1]}{component[1][0]}{component[1][1]}")
+# Generate and print the components
+riemann_components = generate_riemann_components()
+for component in riemann_components:
+    print(f"R_{component[0][0]}{component[0][1]}{component[1][0]}{component[1][1]}")
 
 {{< /highlight >}}
 
