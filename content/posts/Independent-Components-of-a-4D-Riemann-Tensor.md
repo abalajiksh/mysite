@@ -16,13 +16,13 @@ We have some (anti)symmetries we can exploit to reduce the number of independent
 
 $\forall i,j,k,l = \{1,2,3,4\}$, the following holds
 
-$R_{ijkl} = - R_{jikl} \rightarrow R_{[ij]kl}$
+1. $R_{ijkl} = - R_{jikl} \rightarrow R_{[ij]kl}$
 
-$R_{ijkl} = - R_{ijlk} \rightarrow R_{ij[kl]}$
+1. $R_{ijkl} = - R_{ijlk} \rightarrow R_{ij[kl]}$
 
-$R_{ijkl} = R_{klij} \rightarrow R_{([ij][kl])}$
+1. $R_{ijkl} = R_{klij} \rightarrow R_{([ij][kl])}$
 
-Bianchi Identity: $R_{ijkl} + R_{iklj} + R_{iljk} = 0$
+1. Bianchi Identity: $R_{ijkl} + R_{iklj} + R_{iljk} = 0$
 
 {{< /notice >}}
 
@@ -157,4 +157,6 @@ Exploring the Riemann Tensor in 4-Dimensions has been a ~~fascinating~~ journey,
 
 The Riemann Tensor is not just a theoretical construct; it has profound implications in understanding the fabric of spacetime(for a lack of a better phrase, you will know what I mean in an upcoming article) and the dynamics of gravitational fields. As we delve deeper into the intricacies of general relativity, we uncover the underlying principles that govern our universe.
 
-After two paragraphs of flowery language, I conclude this article with the computations as a reference to look back, and no more. We are better off using a package like `xAct` for Mathematica to do these calculations.
+In general relativity, the Ricci tensor, with its 10 independent components, succinctly captures the essence of spacetime curvature, directly influencing the gravitational dynamics dictated by matter and energy distributions. These components are pivotal in formulating the Einstein tensor, which, despite its intricate derivation, also boasts 10 degrees of freedom. This alignment underscores the Einstein tensor's role in the Einstein field equations, effectively linking the geometric properties of spacetime to the physical presence of mass and energy, thereby shaping our understanding of the universe's fundamental structure.
+
+After three paragraphs of flowery language, I conclude this article with the computations as a reference to look back, and no more. We are better off using a package like `xAct` for Mathematica to do these calculations.
