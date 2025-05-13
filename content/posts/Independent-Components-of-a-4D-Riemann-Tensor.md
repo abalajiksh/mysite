@@ -65,7 +65,7 @@ for component in riemann_components:
 
 {{< /highlight >}}
 
-Running this script provides us with the following list: FIX THE LIST!!
+Running this script provides us with the following list:
 
 {{<notice note>}}
 
