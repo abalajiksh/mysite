@@ -22,7 +22,7 @@ We have some (anti)symmetries we can exploit to reduce the number of independent
 
 {{< notice note >}}
 
-$\forall i,j,k,l = \\{1,2,3,4\\}$, the following holds
+$\forall \ i,j,k,l = \\{1,2,3,4\\}$, the following holds
 
 1. $R_{ijkl} = - R_{jikl} \rightarrow R_{[ij]kl}$
 
