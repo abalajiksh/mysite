@@ -67,7 +67,7 @@ for component in riemann_components:
 
 Running this script provides us with the following list: FIX THE LIST!!
 
-{{<notice info>}}
+{{<notice note>}}
 
 $R_{0101}$, $R_{0102}$, $R_{0103}$, $R_{0112}$, $R_{0113}$, $R_{0123}$, $R_{0201}$, $R_{0202}$, $R_{0203}$
 
@@ -120,7 +120,7 @@ for component in riemann_components:
 
 Running the above script, we have the following:
 
-{{<notice info>}}
+{{<notice note>}}
 
 $R_{1213}$, $R_{0312}$, $R_{2323}$, $R_{0323}$, $R_{0213}$, $R_{0113}$, $R_{0202}$
 
@@ -141,7 +141,7 @@ $$R_{0123}​=−R_{0102}​−R_{0103​}$$
 
 Turning the term $R_{0123}$ to depend on the terms $R_{0102}​$ and $R_{0103​}$. This leaves us with 20 independent components for Riemann tensor in 4 dimensions. They are:
 
-{{<notice info>}}
+{{<notice note>}}
 
 $R_{1213}$, $R_{0312}$, $R_{2323}$, $R_{0323}$, $R_{0213}$, $R_{0113}$, $R_{0202}$, $R_{1323}$, $R_{0102}$, $R_{0203}$
 
@@ -157,7 +157,7 @@ $$R_{ij} = R_{ ilj}^l$$
 
 This means the Ricci tensor is symmetric $R_{(ij)}$, leaving us with 10 independent components, from the 16 total components it has in 4 dimensions. Those 10 components are, and the related 20 components of the Riemann tensor to the Ricci tensor are:
 
-{{<notice info>}}
+{{<notice note>}}
 
 Independent Ricci Tensor components:
 
