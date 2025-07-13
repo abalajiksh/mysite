@@ -10,11 +10,11 @@ tags = [
     "Book-Review",
     "Self-Reflection"
 ]
-description: "I explore Haruki Murakami's memoir, "What I Talk About When I Talk About Running," drawing parallels between the author's experiences with running and my own journey in cycling. I delve into philosophical reflections on endurance sports, the nature of pain and consciousness, and the personal growth I've derived from disciplined physical activity."
-rating: 4.7
-bookTitle: "What I talk about when I talk about Running"
-coverArt: "/images/runningBookCover.jpg" 
-perspectiveChanging: true
+description= "I explore Haruki Murakami's memoir, "What I Talk About When I Talk About Running," drawing parallels between the author's experiences with running and my own journey in cycling. I delve into philosophical reflections on endurance sports, the nature of pain and consciousness, and the personal growth I've derived from disciplined physical activity."
+rating= 4.7
+bookTitle= "What I talk about when I talk about Running"
+coverArt= "/images/runningBookCover.jpg" 
+perspectiveChanging= true
 useAlpine = false
 +++
 
