@@ -3,6 +3,7 @@ date= 2021-12-06T14:00:02+01:00
 draft= false
 tags= ["Physics", "Gravity", "MOND", "Dark-Matter"]
 title = 'MOND an Introduction'
+useAlpine = false
 +++
 
 {{< notice warning >}}

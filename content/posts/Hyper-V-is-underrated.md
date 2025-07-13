@@ -3,6 +3,7 @@ title= "Hyper-V Is Underrated"
 date= 2022-06-30T10:01:24+01:00
 draft= false
 tags= ["Virtualization", "Virtual-Machines", "Operating-Systems", "Linux"]
+useAlpine = false
 +++
 
 ![Not What I Thought](/images/Not-What-I-Thought---.png)

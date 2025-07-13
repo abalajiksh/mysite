@@ -4,6 +4,7 @@ draft = false
 title = 'My MacBook Can Crunch Numbers'
 tags= ["Computers", "Technology", "LLMs", "Inference"]
 series = "Local LLMs"
+useAlpine = false
 +++
 
 

@@ -3,6 +3,7 @@ date= 2022-02-10T16:42:53+01:00
 draft= false
 tags= ["Physics", "Time", "Initial-Conditions", "Cellular Automata", "Lee-Smolin", "Causal-Sets", "John-Conway", "Game-of-Life"]
 title = 'Conway Game of Life'
+useAlpine = false
 +++
 
 {{< notice note >}}

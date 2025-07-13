@@ -15,6 +15,7 @@ rating: 4.7
 bookTitle: "What I talk about when I talk about Running"
 coverArt: "/images/runningBookCover.jpg" 
 perspectiveChanging: true
+useAlpine = false
 +++
 
 ## Introduction

@@ -4,6 +4,7 @@ draft = false
 title = 'The Mutable Landscape of Running LLMs Locally'
 tags= ["Computers", "Server", "Technology", "Linux", "LLMs", "Inference"]
 series = "Local LLMs"
+useAlpine = false
 +++
 
 {{< notice warning >}}

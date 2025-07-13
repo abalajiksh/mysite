@@ -3,6 +3,7 @@ date= 2022-04-06T12:19:01+01:00
 draft= false
 tags= ["Mathematics", "Computers", "Fibonacci", "Computing"]
 title = 'Revisiting Fibonacci Sequence'
+useAlpine = false
 +++
 
 ![](/images/Revisiting-Fibonacci.png)

@@ -3,6 +3,7 @@ date= 2022-08-17T02:01:24+01:00
 draft= false
 tags= ["Musings", "Srimad-Bhagavatam", "Cosmology", "Scientific-Method"]
 title = 'Bhagavata Cosmology Under Scientific Scrutiny'
+useAlpine = false
 +++
 
 {{< notice warning >}}

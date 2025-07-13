@@ -3,6 +3,7 @@ title= "Why Mac Studio Is the Cheapest Hardware"
 date= 2023-07-11T11:08:41+02:00
 draft= false
 tags= ["Computers", "Apple", "Server", "Technology", "Linux"]
+useAlpine = false
 +++
 
 {{< notice warning >}}
