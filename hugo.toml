@@ -19,6 +19,7 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
     instagram_url = "https://www.instagram.com/ashwinbalaji00/"
     steam_url= "https://steamcommunity.com/id/ashwin-balaji/"
     strava_url = "https://www.strava.com/athletes/ashwinbalaji"
+    playstation_url = "https://profile.playstation.com/abksh1011"
 
 
 menu = [
