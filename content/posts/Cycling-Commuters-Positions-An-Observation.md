@@ -27,4 +27,6 @@ Another observation is people's knees pointing outside or inside, and not straig
 
 Another observation is the tyre pressures. There are none on most bikes. I also observe chains not lubricated, brake pads (rim brakes, of course) rubbed to death, broken spokes in the wheels. A local bike mechanic can repair these issues, even though riding with these flaws is dangerous. Pumping air? Come on people, you can at least do that. You are wasting energy by dragging a tractor tyre by not pumping, not to mention the fact that you are ruining the tyre rubber and possibly the tube.
 
+Another observation is that people don't usuaully care about wearing a helmet. Maybe it is fine in Netehrlands, but here in Germany, it is better to wear one and be safe than sorry. Don't get me wrong, the cars here are neither aggressive nor rude towards cyclists. They give right of way usually to cyclists, don't overtake them in dangerous manoeuvres and maintain distance. Same is true for public transportation.
+
 That sums up all the observations and rants that go in my head when I observe people cycling around Heidelberg.
