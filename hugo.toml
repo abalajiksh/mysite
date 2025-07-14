@@ -30,6 +30,10 @@ menu = [
     {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 2},
     ]
 
+    remark42 = true
+    remark42_host = "https://comment.ashwinbalaji.xyz"
+    remark42_site_id = "abkshblog"
+
 [taxonomies]
     series = 'series'
     tags = 'tags'
