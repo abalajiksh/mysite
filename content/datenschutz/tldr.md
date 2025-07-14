@@ -21,6 +21,4 @@ Readers are offered the choice to read in light or dark mode. The user’s prefe
 
 The pages are served from CloudFlare Pages service, so Cloudflare will get some basic analytics like the time and URL opened, geolocation and other basic information your browser attaches to it's `GET` request.
 
-{{< notice info >}}
-**Coming Soon:** [Remark42](https://remark42.com/) is a lightweight, open source commenting engine that doesn’t spy on you, the user. I am hosting it in a private server provided by Hetzner cloud in Nuremberg, Germany. You don't have to login to comment on any article. Just say hi or comment away your views.
-{{< /notice >}}
+[Remark42](https://remark42.com/) is a lightweight, open source commenting engine that doesn’t spy on you, the user. I am hosting it in a private server provided by Hetzner cloud in Nuremberg, Germany. You don't have to login to comment on any article. Just say hi or comment away your views.
