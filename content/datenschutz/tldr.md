@@ -4,7 +4,7 @@ draft = false
 title = 'TL;DR'
 +++
 
-*Last edited: 03/16/25*
+*Last edited: 07/14/25*
 
 This site uses a little scoop of vanilla JavaScript, a dash of CSS, and the blending power of Hugo. It is just a bunch of HTML pages with no annoying pop-ups or site-wide tracking. It’s also **tiny** and **privacy conscious**. No JavaScript frameworks, icon packs, or Google fonts. No ads or trackers polluting your console window. If the webpage you visit have Math and/or Flowcharts then those specific pages have Katex and/or Mermaid Javascript rendering libraries loaded respectively. It’s also compatible with modern security standards, so you don’t have to worry about browsing this website.
 
