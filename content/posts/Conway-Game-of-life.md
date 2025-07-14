@@ -12,7 +12,7 @@ This article is one among many salvaged from my previous blog! It is not on par 
 I wrote a larger article titled as "[An Analogy to Dive Deep Into the Nature of Time](https://website-5m1.pages.dev/posts/an-analogy-to-dive-deep-into-the-nature-of-time/)" but didn't feel comfortable posting the whole thing here, so I just picked the stuff I felt that is worth posting.
 {{< /notice >}}
 
-Time is a concept many philosophers and physicists pondered upon for centuries. It still remains mysterious besides the metaphysical claims of a few. Here, let us discuss an analogy that might serve in improving the understanding of how time works and draw parallels to the Eastern Philosophical thought which propounds certain properties to the fundamental nature of time.
+Time is a concept many philosophers and physicists pondered upon for centuries, and still do. It still remains mysterious besides the metaphysical claims of a few. Here, let us discuss an analogy that might serve in improving the understanding of how time works and draw parallels to the Eastern Philosophical thought which propounds certain properties to the fundamental nature of time.
 
 Let us start with John Conway's Game of Life, then discuss how a computer processor works and see an example of a similar approach in Theoretical Physics research. Finally, we get to ask deep questions while pondering on the axioms set out by Eastern Philosophers. We shall also take multiple detours to address some other related aspects.
 
