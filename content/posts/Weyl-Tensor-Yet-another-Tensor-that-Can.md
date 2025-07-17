@@ -4,6 +4,15 @@ draft = false
 title = 'Weyl Tensor: Yet Another Tensor That Can Save Troubles?'
 useAlpine = false
 series = "Weyl Tensor and All the Good Stuff that comes with it"
+tags = [
+    "Weyl Tensor",
+    "General Relativity",
+    "Physics",
+    "Tensor Analysis",
+    "Gravitational Waves",
+    "Conformal Geometry"
+]
+
 +++
 
 ## Introduction
