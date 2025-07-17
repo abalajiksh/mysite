@@ -12,7 +12,6 @@ tags = [
     "Gravitational Waves",
     "Conformal Geometry"
 ]
-
 +++
 
 ## Introduction
