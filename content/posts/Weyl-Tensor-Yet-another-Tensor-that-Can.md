@@ -1,5 +1,5 @@
 +++
-date = '2025-07-17T16:58:58+02:00'
+date = '2025-07-15T16:58:58+02:00'
 draft = false
 title = 'Weyl Tensor: Yet Another Tensor That Can Save Troubles?'
 useAlpine = false
