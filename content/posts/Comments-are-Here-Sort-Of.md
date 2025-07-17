@@ -23,6 +23,24 @@ If you have visited my site before, and navigated to `Datenschutzerklärung > TL
 
 You won't find it anymore, because I have set up the comments system for this website. Well - sort of. Here is what I have done (so far) to get it working on this site.
 
+## What is Remark42?
+
+Remark42 is a self-hosted, lightweight, and privacy-focused commenting engine designed to be embedded into blogs, articles, or any platform where user interaction is desired. Unlike many commenting systems that track users and compromise privacy, Remark42 is committed to protecting user information while providing a seamless commenting experience.
+
+### Key Features of Remark42:
+
+- Social login options including Google, Facebook, Microsoft, GitHub, Apple, Yandex, Patreon, and Telegram.
+- Support for anonymous comments.
+- Multi-level nested comments with options for tree and plain presentations.
+- Moderation tools for managing comments and blocking users.
+- Notifications via Telegram, Slack, email, and webhooks for new comments.
+- Markdown support and easy image uploads with drag-and-drop functionality.
+- Export and backup options, with no external databases required.
+
+### Why Your Data Stays Yours (And Why I am Not Selling It)
+
+I get it—data privacy can be a real "comment-ary" on today's internet. But rest assured, with this commenting engine, your thoughts and rants stay where they belong: with you. Unlike those shady data dealers out there, I am not in the business of selling your secrets. In fact, my sponsors are my parents (shoutout to Mom and Dad!) and yours truly. And let me tell you, I am about as interested in selling your data as a cat is in taking a bath—spoiler alert: not at all. So feel free to drop your anonymous musings without worry; I've got your back, not your data!
+
 ## Server Setup
 
 I rented a Virtual Private Server (VPS) from Hetzner Cloud running `Ubuntu Server 24.04 LTS` specifically for this purpose. Here are the specifications:
