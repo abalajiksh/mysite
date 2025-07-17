@@ -159,7 +159,7 @@ SECRET=12345
 REMARK_URL=http://127.0.0.1:8080
 {{</highlight>}}
 
-Now, the same routine, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Again, change the `12345`to the number you used before. Let us ensure `www-data` can read this file.
+Now, the same routine, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Again, change the `12345`to the number you used before; do this just after the `Ctrl + V` step. Let us ensure `www-data` can read this file.
 
 {{<highlight text>}}chown www-data /etc/remark42.env && chmod 664 /etc/remark42.env{{</highlight>}}
 
@@ -192,7 +192,7 @@ Group=www-data
 WantedBy=multi-user.target
 {{</highlight>}}
 
-Again, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Note in line 9, change to arm-64, if using an ARM server. Execute these commands to enable and run the server as a service.
+Again, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Note in line 9, change to arm-64, just after the `Ctrl + V`, if using an ARM server. Execute these commands to enable and run the server as a service.
 
 {{<highlight text>}}systemctl enable remark42{{</highlight>}}
 
@@ -258,9 +258,9 @@ server {
 }
 {{</highlight>}}
 
-Now, change `comment.ashwinbalaji.xyz` to whatever domain name you choose to use. Add the proper location for SSL certificates. Next few lines make sure we use only TLS1.2 and above, and corresponding ciphers that make sure we have good security standards. The first server block will redirect all `HTTP` requests to `HTTPS` using a 301 redirect. We could simply not have it, but that will affect your SEO ratings if half the time your website is unreachable. That is what I choose to believe, maybe there are better reasons, I don't know.
+Now, `Ctrl + V` to paste the contents. change `comment.ashwinbalaji.xyz` to whatever domain name you choose to use. Add the proper location for SSL certificates. Next few lines make sure we use only TLS1.2 and above, and corresponding ciphers that make sure we have good security standards. The first server block will redirect all `HTTP` requests to `HTTPS` using a 301 redirect. We could simply not have it, but that will affect your SEO ratings if half the time your website is unreachable. That is what I choose to believe, maybe there are better reasons, I don't know.
 
-Once you have done that, follow our gold standard routine to save the file, yet again, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`.
+Once you have done that, follow our gold standard routine to save the file, yet again, `Ctrl + X`, `Y` and `Return`.
 
 Now execute the following command, so `NGINX` knows that such a configuration file exists. This is called symlinking. It is like creating a shortcut to an original file. So, if you edit the original, the symlinked one will also update automatically.
 
@@ -285,6 +285,8 @@ In case you haven't noticed, my [hugo](https://gohugo.io/) powered site uses [po
     remark42_host = "https://yourhost.com"
     remark42_site_id = "your_site_id"
 {{</highlight>}}
+
+However, it is quite simple to add to your website, if you use Hugo, you just have to add the HTML code, change the credentials and make a `archetypes/layouts/partials`, say `comments.html` and import it to your `posts.html` partial file in you r theme folder. If you use Gatsby or Jekyll, the process is very similar. My best suggestion is to paste the link to the documentation, ask a GPT model of your choice, cloud or [local](https://ashwinbalaji.xyz/series/local-llms/), and you will get a step-by-step instructions on how to do so.
 
 ## Further Problems
 The chat section isn't there online. I checked the webpage's source code, as shown below, it is present, but it is not working.
