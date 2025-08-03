@@ -3,7 +3,7 @@ date = '2025-08-03T12:21:42+02:00'
 draft = false
 title = 'Self Hosting Music Library and DSEE Shenanigans'
 useAlpine = false
-tags = ["Self-Hosting", "Music Library", "Audio Quality", "Storage", "Music Compression", "Audiophile", "DSEE Ultimate", "Experiment"]
+tags = ["Self-Hosting", "Music Library", "Audio Quality", "Music Compression", "Audiophile", "DSEE Ultimate", "Experiment"]
 +++
 
 ## Introduction
