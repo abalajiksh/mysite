@@ -1,6 +1,6 @@
 +++
 date = '2025-08-03T12:21:42+02:00'
-draft = false
+draft = true
 title = 'Self Hosting Music Library and DSEE Shenanigans'
 useAlpine = false
 tags = [
