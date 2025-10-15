@@ -36,7 +36,7 @@ $\forall \ i,j,k,l = \\{1,2,3,4\\}$, the following holds
 
 Let us use just the first two constraints and see how many variables we can reduce. I was lazy to count it by hand, so here is a Python code that will do just that for us.
 
-{{< highlight text >}}
+```python
 import itertools
 
 def generate_riemann_components():
@@ -63,7 +63,7 @@ riemann_components = generate_riemann_components()
 for component in riemann_components:
     print(f"R_{component[0][0]}{component[0][1]}{component[1][0]}{component[1][1]}")
 
-{{< /highlight >}}
+```
 
 Running this script provides us with the following list:
 
@@ -82,7 +82,7 @@ $R_{1312}$, $R_{1313}$, $R_{1323}$, $R_{2301}$, $R_{2302}$, $R_{2303}$, $R_{2312
 
 Initially, we had 256 components for the Riemann Tensor, now using the first two anti-symmetries, we have reduced it to just 36 components. Let us use the third symmetry to reduce the number of components further. As before, I wrote another Python code to achieve exactly the same:
 
-{{< highlight text >}}
+```python
 import itertools
 
 def generate_riemann_components():
@@ -116,7 +116,7 @@ riemann_components = generate_riemann_components()
 for component in riemann_components:
     print(f"R_{component[0][0]}{component[0][1]}{component[1][0]}{component[1][1]}")
 
-{{< /highlight >}}
+```
 
 Running the above script, we have the following:
 

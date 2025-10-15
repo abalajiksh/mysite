@@ -1,0 +1,50 @@
+{{- $result := transform.HighlightCodeBlock . -}}
+<div class="code-wrapper">
+  <div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code">
+      <span class="copy-icon">󰆒</span>
+      <span class="copy-text">Copy</span>
+    </button>
+    {{- if .Type -}}
+    <span class="code-lang-label">
+      {{- $langIcons := dict 
+        "javascript" " JS"
+        "typescript" " TS"
+        "python" " PY"
+        "rust" " RS"
+        "go" " GO"
+        "html" " HTML"
+        "css" " CSS"
+        "bash" " BASH"
+        "shell" " SH"
+        "yaml" " YAML"
+        "json" " JSON"
+        "markdown" " MD"
+        "c" " C"
+        "cpp" " C++"
+        "java" " JAVA"
+        "toml" " TOML"
+        "xml" " XML"
+        "mathematica" "󰘨 Mathematica"
+        "wolfram" "󰘨 Wolfram"
+        "wl" "󰘨 WL"
+        "mma" "󰘨 Mathematica"
+        "systemd" " systemd"
+        "service" " systemd"
+        "ini" " Config"
+        "conf" " Config"
+      -}}
+      {{- $lang := lower .Type -}}
+      {{- $icon := index $langIcons $lang -}}
+      {{- if $icon -}}
+        {{- $icon -}}
+      {{- else -}}
+        󰅩 {{ upper .Type }}
+      {{- end -}}
+    </span>
+    {{- end -}}
+  </div>
+  <div class="code-content">
+    {{- $result.Wrapped -}}
+  </div>
+</div>

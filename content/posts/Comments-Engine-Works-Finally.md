@@ -15,7 +15,7 @@ Turns out, I was adding `CORS` headers from Remark42, NGINX and CloudFlare at th
 ```nginx
 add_header 'Access-Control-Allow-Origin' 'https://ashwinbalaji.xyz' always;
 add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
-add_header 'Access-Control-Allow-Headers' 'Origin, X-Requested-With, Content-Type, Accept, Authorization, X-XSR>
+add_header 'Access-Control-Allow-Headers' 'Origin, X-Requested-With, Content-Type, Accept, Authorization, X-XSRF-Token' always;
 add_header 'Access-Control-Allow-Credentials' 'true' always;
 ```
 

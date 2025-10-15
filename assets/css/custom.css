@@ -1,0 +1,276 @@
+/* 󰊤 IosevkaTermSlab Nerd Font Loading */
+@font-face {
+  font-family: 'IosevkaTermSlab Nerd Font';
+  src: url('/fonts/IosevkaTermSlabNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IosevkaTermSlab Nerd Font';
+  src: url('/fonts/IosevkaTermSlabNerdFont-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IosevkaTermSlab Nerd Font';
+  src: url('/fonts/IosevkaTermSlabNerdFont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 󰅩 Code Wrapper - Contains header + scrollable content */
+.code-wrapper {
+  margin: 1.5em 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 󰅩 Header Bar - DOES NOT SCROLL */
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-size: 0.8em;
+  border-bottom: 1px solid;
+}
+
+/* 󰅩 Language Label */
+.code-lang-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 󰅩 Copy Button */
+.copy-code-button {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.3em 0.7em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-size: 0.9em;
+  transition: opacity 0.2s;
+}
+
+.copy-code-button:hover {
+  opacity: 0.8;
+}
+
+/* 󰅩 Scrollable Code Content */
+.code-content {
+  overflow-x: auto;
+}
+
+.code-content .highlight {
+  margin: 0;
+}
+
+.code-content pre {
+  margin: 0;
+  padding: 1.25em 1em;
+  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-size: 0.9em;
+  line-height: 1.6;
+  overflow-x: visible;
+}
+
+/* 󰅩 Inline Code */
+code {
+  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* 󰨡 Rosepine Dawn (Light Mode) */
+@media (prefers-color-scheme: light), .light-mode {
+  .code-wrapper {
+    border: 1px solid #dfdad9;
+  }
+  
+  .code-header {
+    background: #f2e9e1;
+    color: #575279;
+    border-bottom-color: #dfdad9;
+  }
+  
+  .copy-code-button {
+    background: #56949f;
+    color: #faf4ed;
+  }
+  
+  .copy-code-button:hover {
+    background: #286983;
+  }
+  
+  .code-content pre {
+    background: #fffaf3;
+    color: #575279;
+  }
+  
+  code {
+    background: #f2e9e1;
+    color: #575279;
+  }
+  
+  /* Syntax highlighting - Rosepine Dawn */
+  .highlight .c,
+  .highlight .cm,
+  .highlight .c1,
+  .highlight .cs { 
+    color: #9893a5; 
+    font-style: italic;
+  }
+  
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt { color: #286983; }
+  
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd { color: #ea9d34; }
+  
+  .highlight .n,
+  .highlight .na,
+  .highlight .nb,
+  .highlight .bp { color: #b4637a; }
+  
+  .highlight .nf,
+  .highlight .fm { color: #d7827e; }
+  
+  .highlight .m,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .il { color: #d7827e; }
+  
+  .highlight .o,
+  .highlight .ow { color: #797593; }
+  
+  .highlight .p { color: #797593; }
+  
+  .highlight .nc,
+  .highlight .nn,
+  .highlight .nt { color: #56949f; }
+  
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi { color: #575279; }
+  
+  .highlight .err { color: #b4637a; }
+  
+  .highlight .gd { color: #b4637a; }
+  .highlight .gi { color: #286983; }
+}
+
+/* 󰽥 Rosepine Main (Dark Mode) */
+@media (prefers-color-scheme: dark), .dark-mode {
+  .code-wrapper {
+    border: 1px solid #403d52;
+  }
+  
+  .code-header {
+    background: #26233a;
+    color: #e0def4;
+    border-bottom-color: #403d52;
+  }
+  
+  .copy-code-button {
+    background: #9ccfd8;
+    color: #191724;
+  }
+  
+  .copy-code-button:hover {
+    background: #31748f;
+  }
+  
+  .code-content pre {
+    background: #191724;
+    color: #e0def4;
+  }
+  
+  code {
+    background: #26233a;
+    color: #e0def4;
+  }
+  
+  /* Syntax highlighting - Rosepine Main */
+  .highlight .c,
+  .highlight .cm,
+  .highlight .c1,
+  .highlight .cs { 
+    color: #6e6a86; 
+    font-style: italic;
+  }
+  
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt { color: #31748f; }
+  
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd { color: #f6c177; }
+  
+  .highlight .n,
+  .highlight .na,
+  .highlight .nb,
+  .highlight .bp { color: #eb6f92; }
+  
+  .highlight .nf,
+  .highlight .fm { color: #ebbcba; }
+  
+  .highlight .m,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .il { color: #ebbcba; }
+  
+  .highlight .o,
+  .highlight .ow { color: #908caa; }
+  
+  .highlight .p { color: #908caa; }
+  
+  .highlight .nc,
+  .highlight .nn,
+  .highlight .nt { color: #9ccfd8; }
+  
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi { color: #e0def4; }
+  
+  .highlight .err { color: #eb6f92; }
+  
+  .highlight .gd { color: #eb6f92; }
+  .highlight .gi { color: #31748f; }
+}
+
+
+/* 󰅩 Hide any theme or browser copy buttons */
+.highlight button:not(.copy-code-button),
+pre button:not(.copy-code-button),
+code button:not(.copy-code-button) {
+  display: none !important;
+}

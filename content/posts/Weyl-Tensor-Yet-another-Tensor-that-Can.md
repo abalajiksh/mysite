@@ -272,7 +272,7 @@ $$\nabla_e R_{abcd} + \nabla_c R_{abde} + \nabla_d R_{abec} = 0$$
 
 I am lazy boy, so I delegate this task of simplification to Mathematica and `xAct` package. Here is the code for the Mathematica to simplify the expression:
 
-{{<highlight text>}}
+```mathematica
 (* Complete reset of Mathematica and xAct *)
 Quit[]
 
@@ -359,7 +359,7 @@ Print["Final canonical form:"]
 FinalCanonical = ToCanonical[CD[-\[Delta]][WeylCD[-\[Alpha], -\[Beta], -\[Gamma], \[Delta]]]]
 Print[FinalCanonical]
 
-{{</highlight>}}
+```
 
 Here is the [Mathematica Notebook](/downloads/Maxwell-Like_Wave_Equation.nb) and [PDF](/downloads/Maxwell-Like_Wave_Equation.pdf) of the output to the above code. What do we observe here?
 
