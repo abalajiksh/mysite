@@ -1,9 +1,6 @@
 /*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://comment.ashwinbalaji.xyz https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://comment.ashwinbalaji.xyz; frame-src 'self' https://comment.ashwinbalaji.xyz; connect-src 'self' https://comment.ashwinbalaji.xyz wss://comment.ashwinbalaji.xyz https://*.cloudflareinsights.com; img-src 'self' data: https: blob:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob: https://comment.ashwinbalaji.xyz;
   X-Content-Type-Options: nosniff
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Cache-Control: max-age=31536000, public
-  X-Frame-Options: deny
+  X-Frame-Options: DENY
   Referrer-Policy: no-referrer
   Permissions-Policy: microphone=(), payment=(), geolocation=(), midi=(), sync-xhr=(), camera=(), magnetometer=(), gyroscope=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' ajax.cloudflare.com cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://raw.githubusercontent.com; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
-  X-XSS-Protection: 1; mode=block
