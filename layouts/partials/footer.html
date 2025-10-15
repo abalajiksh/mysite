@@ -1,10 +1,41 @@
+<div class="footer">
+    {{ if .PrevInSection }}
+	    {{ if .Site.Params.brand.footerPrev }}
+            <a class="previous-post" href="{{ .PrevInSection.Permalink }}?ref=footer"><span style="font-weight:bold;">« {{ .Site.Params.brand.footerPrev }}</span><br>{{ .PrevInSection.Title }}</a>
+        {{ end }}
+	{{ end }}
+    {{ if .NextInSection }}
+	    {{ if .Site.Params.brand.footerNext }}
+            <a class="next-post" href="{{ .NextInSection.Permalink }}?ref=footer"><span style="font-weight:bold;">{{ .Site.Params.brand.footerNext }} »</span><br>{{ .NextInSection.Title }}</a>
+        {{ end }}
+	{{ end }}
+</div>
+
 <script>
+    themeFromLS = localStorage.getItem("theme")
+    themeFromHugo = document.body.classList.contains("dark-theme") ? "dark" : "light"
+    currentTheme = themeFromLS ? themeFromLS : themeFromHugo;
+
+    var remark_config = {
+        host: "https://comment.ashwinbalaji.xyz",
+        site_id: "ashwinbalaji",
+        theme: currentTheme,
+        max_shown_comments: 100,
+    }
+</script>
+
+<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+
+<script>
+console.log('Copy button script starting...');
+
 // 󰅙 Disable Poison's copy button functionality
 (function() {
   'use strict';
   
   function removePoisonButtons() {
     const poisonButtons = document.querySelectorAll('.copy-button:not(.code-wrapper .copy-code-button), .copy-success');
+    console.log('Removing Poison buttons:', poisonButtons.length);
     poisonButtons.forEach(function(btn) {
       btn.remove();
     });
@@ -17,11 +48,9 @@
   setTimeout(removePoisonButtons, 100);
 })();
 
-// 󰅩 Copy button functionality with HTTP fallback
+// 󰅩 Copy button functionality
 (function() {
   'use strict';
-  
-  console.log('Copy button script loaded');
   
   function fallbackCopyTextToClipboard(text) {
     const textArea = document.createElement("textarea");
@@ -53,7 +82,7 @@
   }
   
   function copyToClipboard(text) {
-    console.log('Attempting to copy:', text.substring(0, 50) + '...');
+    console.log('Attempting to copy, text length:', text.length);
     if (!navigator.clipboard) {
       console.log('Using fallback method');
       return Promise.resolve(fallbackCopyTextToClipboard(text));
@@ -65,7 +94,7 @@
         return true; 
       },
       function(err) { 
-        console.log('Clipboard API failed, using fallback', err);
+        console.log('Clipboard API failed, using fallback:', err);
         return fallbackCopyTextToClipboard(text); 
       }
     );
@@ -75,10 +104,14 @@
     const copyButtons = document.querySelectorAll('.code-wrapper .copy-code-button');
     console.log('Found copy buttons:', copyButtons.length);
     
+    if (copyButtons.length === 0) {
+      console.error('No copy buttons found! Check if render hook is working.');
+    }
+    
     copyButtons.forEach(function(button, index) {
       console.log('Attaching listener to button', index);
-      button.addEventListener('click', function(e) {
-        console.log('Button clicked:', index);
+      button.addEventListener('click', function() {
+        console.log('Button clicked!', index);
         const wrapper = button.closest('.code-wrapper');
         console.log('Found wrapper:', !!wrapper);
         
