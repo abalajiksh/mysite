@@ -132,7 +132,7 @@ Now, we blocked all the ports except the ones used by `HTTP`, `HTTPS` and `SSH`.
 
 ## Application Setup
 
-### Remark42
+### Remark the 42
 
 This is fairly straightforward. Follow along the documentation for the setup [here](https://remark42.com/docs/getting-started/installation/). I setup the binary instead of using a docker container. Why you ask? It is because I hate docker, and it just adds overhead and more maintenance work. I downloaded the latest binary from the GitHub releases and unpacked the file. Login to the server and then run the following commands. If you are reading this article at-least a month after its publication, update the URL to the latest release. If you went with an ARM CPU for your server, use the `arm64` version, else `amd64` will do.
 
