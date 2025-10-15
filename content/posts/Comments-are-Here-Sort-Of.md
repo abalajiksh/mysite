@@ -53,43 +53,43 @@ In this article, there are a lot of commands to follow through. Any place you se
 
 After server initialization, I `ssh` into the server as `root` from my Windows terminal. The first thing to do is create a new user account with administrative privileges and disable remote `root` access, for enhanced security. To create a new user, run the following commands:
 
-```bash
+```sh
 adduser abksh
 ```
 
-```bash
+```sh
 usermod -aG sudo abksh
 ```
 
 With the first line of command, it will ask for password, name, room, etc. The password is mandatory, but other details don't matter. After running these commands, open a new Terminal window and try `ssh`ing into the server as this user. Mine looked like `ssh abksh@remark42`. Of course you have to give your server's IP address instead of `remark42`or you can tell windows to know that the `hostname` called `remark42` points to the server's IP address. Then the above command will work just fine. I am lazy and didn't care to do it, FYI. Once you can login, setup `ssh` keys on your windows pc, then copy the PUBLIC key (the one with `.pub` extension) to the server, specifically to the location `~/.ssh/authorized_keys`. Here, `authorized_keys` is a text file, not a folder. Here is the list of commands as I described what I was doing:
 
-```bash
+```sh
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 Here we are using ECDSA algorithm to generate keys. Setup the password for the keys when it asks you to, do not skip this step. Other algorithms available are RSA and ECDSA. Quantum computers can crack RSA, which relies on prime multiplication. ECDSA and EDDSA are algorithms using Elliptic Curves. I am going to pretend you know what that means, cause I don't. All I know (for now) is that they are more difficult to crack and have smaller key sizes that are faster to check the signatures. Especially the EDDSA algorithm has small computational footprint to verify key signatures compared to the other two. Now copy the PUBLIC key to the server using the below commands:
 
-```bash
+```sh
 scp ~\.ssh\id_ed25519.pub abksh@remark42:~/.ssh/authorized_keys
 ```
 
 If the above command doesn't work, most probably this file and folder doesn't exist. Henceforth, if any command cannot run, just add `sudo` in front of the command provided. It will ask for user password to execute, provide it, and you are ready. So, go to the server terminal and run:
 
-```bash
+```sh
 cd ~
 mkdir /.ssh
 cd /.ssh
 touch authorized_keys
 ```
 
-```bash
+```sh
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
 Now, go back to windows, and collect the contents of `id_ed25519.pub` file. Easiest way to achieve that is to do:
 
-```bash
+```sh
 cd ~\.ssh
 
 notepad id_ed25519.pub
@@ -101,7 +101,7 @@ Instead of typing `notepad` in the terminal, you can type `cat` to display the c
 
 Copy the contents of the file, go back to the server terminal and run this command:
 
-```bash 
+```sh 
 cd ~/.ssh
 
 sudo nano authorized_keys
@@ -109,7 +109,7 @@ sudo nano authorized_keys
 
 A new window will open. Just follow my lead, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Press those keys, and you got the key copied into the server. Now, we edit the `ssh` config file to use this key for login, and remove using user password to login. Run the following commands:
 
-```bash
+```sh
 sudo nano /etc/ssh/sshd_config
 ```
 
@@ -127,14 +127,14 @@ LoginGraceTime 30
 
 Now, the same routine, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. If you noticed there is `.ssh/authorized_keys` and `.ssh/authorized_keys2`. This is one way of adding more keys to your server and sharing it with others for them to login and help you with something (can't think of anything). When they are done, you can just remove the key, and they can't login again. Proper cool if you ask me. Now, in the server terminal, type the following:
 
-```bash
+```sh
 sudo systemctl reload sshd
 sudo systemctl restart sshd
 ```
 
 Now, don't logout from the server terminal, open another and try logging in with the same user, if you can login, then you did it right, if not you did something wrong and it is time for you to retrace all steps and double-check them. Now, you can close the first window by running the command `exit`. Now, nobody but you can login to the server who has the `ssh` keys, knows the password to the `ssh` keys and the password of the user. Now, we do some updating and set security updates to automatic updates, so we can forget about it after we set it up now. Run the following commands:
 
-```bash
+```sh
 sudo apt update && sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo apt install unattended-upgrades
@@ -142,13 +142,13 @@ sudo apt install unattended-upgrades
 
 Now, time to secure all the ports that aren't in use. Run the following:
 
-```bash
+```sh
 sudo apt install ufw -y
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
-```bash
+```sh
 sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw allow https
@@ -165,45 +165,45 @@ Now, we blocked all the ports except the ones used by `HTTP`, `HTTPS` and `SSH`.
 
 This is fairly straightforward. Follow along the documentation for the setup [here](https://remark42.com/docs/getting-started/installation/). I setup the binary instead of using a docker container. Why you ask? It is because I hate docker, and it just adds overhead and more maintenance work. I downloaded the latest binary from the GitHub releases and unpacked the file. Login to the server and then run the following commands. If you are reading this article at-least a month after its publication, update the URL to the latest release. If you went with an ARM CPU for your server, use the `arm64` version, else `amd64` will do.
 
-```bash
+```sh
 wget https://github.com/umputun/remark42/releases/download/v1.14.0/remark42.linux-amd64.tar.gz
 ```
 
-```bash
+```sh
 tar -xvzf remark42.linux-amd64.tar.gz
 ```
 
 We have now unpacked the contents. Let us move it to a working directory for ease of management for future purposes. Ideally executables in Linux systems are loaded up in `/usr/local/bin` directory. We will not do that. We copy to a directory where this binary generates files and does other stuff. Execute the following commands:
 
-```bash
+```sh
 cd /var/www
 ```
 
-```bash
+```sh
 mkdir remark42 && cd ~
 ```
 
-```bash
+```sh
 cp remark42.linux-amd64 /var/www/remark42
 ```
 
 If these command don't work (they usually don't), prefix `sudo` to these commands and then they would work just fine. Now, we setup directory ownership, permissions and executability of this binary. Execute:
 
-```bash
+```sh
 sudo chown -R www-data:www-data /var/www/remark42
 ```
 
-```bash
+```sh
 sudo chmod -R 755 /var/www/remark42
 ```
 
-```bash
+```sh
 sudo chown www-data:www-data /var/www/remark42/remark42.linux-amd64
 ```
 
 We are changing the binary executable to a user named `www-data`. Wait, we didn't create an user like that. How does it exist? `www-data` is the user that runs stuff in your server every time someone tries to access the webpage, and is available by default. To check the executable runs perfectly fine, run the following command:
 
-```bash
+```sh
 sudo -u www-data /var/www/remark42/remark42.linux-amd64 server --secret=12345 --url=http://127.0.0.1:8080
 ```
 
@@ -211,24 +211,24 @@ Change that 12345 to some other number for security reasons. I am not sure what 
 
 First let us create a environment variables file that contains the `SECRET` and `URL` data. Run this:
 
-```bash
+```sh
 touch /etc/remark42.env
 ```
 
-```bash
+```sh
 nano /etc/remark42.env
 ```
 
 Now copy the below stuff, changing 12345 to some other secure number that you used earlier.
 
-```bash
+```sh
 SECRET=12345
 REMARK_URL=http://127.0.0.1:8080
 ```
 
 Now, the same routine, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Again, change the `12345`to the number you used before; do this just after the `Ctrl + V` step. Let us ensure `www-data` can read this file.
 
-```bash
+```sh
 chown www-data /etc/remark42.env && chmod 664 /etc/remark42.env
 ```
 
@@ -236,11 +236,11 @@ chown www-data /etc/remark42.env && chmod 664 /etc/remark42.env
 
 Now, we create a `systemd` file that says where to find all the bits and pieces are and how to execute it. Execute the below commands:
 
-```bash
+```sh
 sudo touch /etc/systemd/system/remark42.service
 ```
 
-```bash
+```sh
 sudo nano /etc/systemd/system/remark42.service
 ```
 
@@ -267,11 +267,11 @@ WantedBy=multi-user.target
 
 Again, `Ctrl + V`, `Ctrl + X`, `Y` and `Return`. Note in line 9, change to arm-64, just after the `Ctrl + V`, if using an ARM server. Execute these commands to enable and run the server as a service.
 
-```bash
+```sh
 systemctl enable remark42
 ```
 
-```bash
+```sh
 systemctl start remark42
 ```
 
@@ -290,21 +290,21 @@ And obtain Origin server certificates from Cloudflare if you are also using the 
 ### `NGINX`
 This section will fly like a breeze. Execute this command to install `NGINX`.
 
-```bash
+```sh
 sudo apt install nginx -y
 ```
 
-```bash
+```sh
 sudo systemctl enable nginx && sudo systemctl start nginx
 ```
 
 Next, we upload SSL certificates to our web server. I believe you already have a blog set up with SSL certificates. Use the same if this is going to be in the same domain. If not you can get a free one using `Lets Encrypt SSL` which is free. I am not going to do that either. I am going to proxy the server through Cloudflare's edge servers, so Cloudflare gives free SSL certificates. I generated them (you want Origin Certificates, because server is the origin in Cloudflare's terminology) and uploaded them to a directory I know where. Once you have this ready, execute the below commands:
 
-```bash
+```sh
 sudo touch /etc/nginx/sites-available/remark42.conf
 ```
 
-```bash
+```sh
 sudo nano /etc/nginx/sites-available/remark42.conf
 ```
 
@@ -349,19 +349,19 @@ Once you have done that, follow our gold standard routine to save the file, yet 
 
 Now execute the following command, so `NGINX` knows that such a configuration file exists. This is called symlinking. It is like creating a shortcut to an original file. So, if you edit the original, the symlinked one will also update automatically.
 
-```bash
+```sh
 sudo ln -s /etc/nginx/sites-available/remark42.conf /etc/nginx/sites-enabled/
 ```
 
 Now, time to test if we configured everything correctly. Execute the below command to check:
 
-```bash
+```sh
 sudo nginx -t
 ```
 
 You will know if there are errors, or if it is alright, based on the output you get. Now, we reload NGINX and see if everything went just fine.
 
-```bash
+```sh
 sudo systemctl reload nginx
 ```
 
