@@ -85,7 +85,7 @@ Code used to Run the below programs:
 {{% /tab %}}
 
 {{< tab tabName="fibo_func.cpp" >}}
-{{< highlight text >}}
+```c++
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -104,11 +104,11 @@ int main() {
 int fibo(int x){
     return (int) 0.4472135955 * (pow(phi1, x) - pow(phi2, x));
 }
-{{< /highlight >}}
+```
 {{< /tab >}}
 
 {{< tab tabName="fibo_loop.cpp" >}}
-{{< highlight text >}}
+```c++
 #include <iostream>
 using namespace std;
 
@@ -128,11 +128,11 @@ int main() {
 
     return 0;
 }
-{{< /highlight >}}
+```
 {{< /tab >}}
 
 {{< tab tabName="fibo_recu.cpp" >}}
-{{< highlight text >}}
+```c++
 #include <iostream>
 using namespace std;
 
@@ -155,7 +155,7 @@ int fibo(int x){
         return fibo(x - 1) + fibo(x - 2);
     }
 }
-{{< /highlight >}}
+```
 {{< /tab >}}
 
 {{< /tabs >}}

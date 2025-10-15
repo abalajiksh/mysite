@@ -45,7 +45,7 @@ Let's have a look at a few examples as shown below:
 Here is a simple playground to experiment with the Game of Life.
 
 
-{{<highlight text>}}
+```js
 let w;
 let columns;
 let rows;
@@ -199,7 +199,7 @@ function generate() {
   board = next;
   next = temp;
 }
-{{</highlight>}}
+```
 
 
 

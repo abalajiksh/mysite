@@ -40,9 +40,9 @@ The softwares I needed to use are:
 
 Luckily, there is an installation process that ties these two nicely in one simple command. I am running inferences on CPU only and don’t plan on adding a GPU; for reasons, see the last subsection of this article. 
 
-{{<highlight text>}}
+```sh
 docker run -d -p 3010:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
-{{</highlight>}}
+```
 
 I ran that in the Ubuntu’s Terminal Emulator and accessed it from my MacBook Pro as all of these devices are connected locally. However, If I haven't mentioned already, I have Tailscale Zero-Tier VPN installed on this Mini-PC and other devices I own. This means I can access the webui as long as I am connected to the internet and have one of the devices on my hand.
 

@@ -148,21 +148,6 @@ fn check_status(status: Status) -> &'static str {
 }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```go
 package main
 
@@ -191,4 +176,4 @@ func worker(ctx context.Context, id int, jobs <-chan int, results chan<- int) {
 
 
 
-Now, i have wrecked all the old articles by bringing about this change. I will have to go through every one of them and modify it to unwreck the wreckage I have brought forth.
+~~Now, I have wrecked all the old articles by bringing about this change. I will have to go through every one of them and modify it to unwreck the wreckage I have brought forth.~~ Nevermind, fixed most of them.

@@ -26,19 +26,19 @@ You will have to enable CPU Virtualization in your BIOS/UEFI settings. This is u
 
 I tried running the same `docker` command as posted on the previous article and it doesn’t setup `ollama` that is optimized for Apple Silicon. It was slow, as it wasn’t using the NPU/GPU or whatever they call those tensor/matrix circuits on SoC. It was using just the CPU. I had to install `ollama` bare-metal to get it to use the hardware-acceleration(HWA). Another slap in the face for trusting `docker`. I still run `openwebui` using `docker` but give access to the host’s `zsh`(??) to access `ollama`.
 
-{{<highlight text>}}
+```sh
 
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
-{{</highlight>}}
+```
 
 Another crazy idea, we can run `ollama` externally on a server and only install `openwebui` on our system to use that. For that, we have to use this command below, replacing the actual URL we can access the remote `ollama` instance.
 
-{{<highlight text>}}
+```sh
 
 docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://example.com -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
-{{</highlight>}}
+```
 
 I know that there is a flag you can add to force `docker` to install GPU optimized version of `ollama` and I tried that but it doesn’t detect Apple’s SoC iGPU as GPU and throws an error, it doesn’t get the Metal API(Apple’s proprietary version of DirectX on Windows or Vulcan on Linux or the good old openGL that leverages HWA) version by default either.
 
@@ -101,11 +101,11 @@ So, for the next set of tests, these models are left out.
 
 Here, before testing in my Laptop, I was querying some math related topics and sometimes the LLMs used LaTeX to print equations, which are more easy-going with the eyes than all the `_`, `^` and `{}` that comes out sometimes. So, there is a hack that can be leveraged. We give an extra **System Prompt** that will force the LLMs to use LaTeX when printing outputs. The prompt is as follows:
 
-{{<highlight text>}}
+```
 
 Use LaTeX for all mathematical expressions. For example, represent a quadratic equation as \( ax^2 + bx + c = 0 \).
 
-{{</highlight>}}
+```
 
 ![](/images/Screenshot-2025-01-24-at-12.34.36.png)
 
@@ -121,11 +121,11 @@ I like the answers from Mistral AI’s *Le Chat* for mathematically complex topi
 
 However, when I asked a „Mathematical Physics“ query such as: 
 
-{{<highlight text>}}
+```
 
 compute koszul tate resolution of cohomology for a free qed/maxwell theory
 
-{{</highlight>}}
+```
 
 Almost all the models failed. Only `llama3.3`and `mistral-large-2`gave proper answers. I wouldn’t blame LLMs for that, this is an extreme example and I would refer a textbook like „Quantization of Gauge Systems by Marc Henneaux and Claudio Teitelboim“ to learn the topic rather than trust the LLMs. 
 
