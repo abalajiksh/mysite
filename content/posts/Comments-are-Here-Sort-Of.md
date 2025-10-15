@@ -134,6 +134,8 @@ Now, we blocked all the ports except the ones used by `HTTP`, `HTTPS` and `SSH`.
 
 ### Remark the 42
 
+**PS:** When I title this section as Remark42, the comments engine adds the javascript here for some reason and it is not where it is supposed to go. Hence I changed the title.
+
 This is fairly straightforward. Follow along the documentation for the setup [here](https://remark42.com/docs/getting-started/installation/). I setup the binary instead of using a docker container. Why you ask? It is because I hate docker, and it just adds overhead and more maintenance work. I downloaded the latest binary from the GitHub releases and unpacked the file. Login to the server and then run the following commands. If you are reading this article at-least a month after its publication, update the URL to the latest release. If you went with an ARM CPU for your server, use the `arm64` version, else `amd64` will do.
 
 {{<highlight text>}}wget https://github.com/umputun/remark42/releases/download/v1.14.0/remark42.linux-amd64.tar.gz{{</highlight>}}
