@@ -32,7 +32,7 @@ menu = [
 
     remark42 = true
     remark42_host = "https://comment.ashwinbalaji.xyz"
-    remark42_site_id = "abksh"
+    remark42_site_id = "ashwinbalaji"
 
 [taxonomies]
     series = 'series'
