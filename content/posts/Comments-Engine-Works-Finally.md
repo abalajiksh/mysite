@@ -23,7 +23,7 @@ This way, NGINX will process the request only if the request originates from my 
 
 ## The Promised Detour
 
-Turns out I forgot the access credentials for my server at Hetzner Cloud and lost access. So I had to delete the server, create a new one and set up all over again. This time, as I realized lately, I need an internal documentation, just like my company uses Confluence, to maintain all this crazy stuff I do for fun. So, I installed LogSeq and stored all critical information there, but sooner I will move to a self-hosted application to do the same as I jump between computers and platforms to work on these things and I don't want to run Syncthing everywhere just to keep them synced. I am looking at Outline[^2] and Bookstack[^3], and quite confused with one to opt-for. Let me know in the comments!!
+Turns out I forgot the access credentials for my server at Hetzner Cloud and lost access. So I had to delete the server, create a new one and set up all over again. This time, as I realized lately, I need an internal documentation, just like my company uses Confluence, to maintain all this crazy stuff I do for fun. So, I installed LogSeq and stored all critical information there. However, sooner I will move to a self-hosted application to do the same as I jump between computers and platforms to work on these things. I don't want to run Syncthing everywhere just to keep them synced. I am looking at Outline[^2] and Bookstack[^3], and quite confused with one to opt-for. Let me know in the comments!!
 
 ## More Setup
 
