@@ -1,4 +1,22 @@
 <script>
+// 󰅙 Disable Poison's copy button functionality
+(function() {
+  'use strict';
+  
+  function removePoisonButtons() {
+    const poisonButtons = document.querySelectorAll('.copy-button:not(.code-wrapper .copy-code-button), .copy-success');
+    poisonButtons.forEach(function(btn) {
+      btn.remove();
+    });
+  }
+  
+  removePoisonButtons();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removePoisonButtons);
+  }
+  setTimeout(removePoisonButtons, 100);
+})();
+
 // 󰅩 Copy button functionality with HTTP fallback
 (function() {
   'use strict';
@@ -42,7 +60,7 @@
   }
   
   function initCopyButtons() {
-    const copyButtons = document.querySelectorAll('.copy-code-button');
+    const copyButtons = document.querySelectorAll('.code-wrapper .copy-code-button');
     
     copyButtons.forEach(function(button) {
       button.addEventListener('click', function() {

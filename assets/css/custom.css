@@ -81,7 +81,7 @@
   overflow-x: visible;
 }
 
-/* 󰅩 Inline Code */
+/*  Inline Code */
 code {
   font-family: 'IosevkaTermSlab Nerd Font', monospace;
   padding: 0.2em 0.4em;
@@ -89,7 +89,21 @@ code {
   font-size: 0.9em;
 }
 
-/* 󰨡 Rosepine Dawn (Light Mode) */
+  /* 󰅙 Completely disable Poison theme's built-in copy buttons */
+.copy-button,
+.copy-success,
+button.copy-button,
+.code-container .copy-button,
+.code-container .copy-success,
+.highlight .copy-button:not(.code-wrapper .copy-code-button),
+pre .copy-button:not(.code-wrapper .copy-code-button) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/*  Rosepine Dawn (Light Mode) */
 @media (prefers-color-scheme: light), .light-mode {
   .code-wrapper {
     border: 1px solid #dfdad9;
@@ -119,7 +133,7 @@ code {
     background: #f2e9e1;
     color: #575279;
   }
-  
+ 
   /* Syntax highlighting - Rosepine Dawn */
   .highlight .c,
   .highlight .cm,
