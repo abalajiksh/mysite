@@ -163,6 +163,14 @@ H.266 shows promise but needs significant maturation before production adoption.
 
 **Next steps:** Testing AV1 encoding performance and investigating Intel QuickSync QSV for comparison against AMD AMF.
 
+## Why No AV1 Testing?
+
+While AV1 offers impressive compression efficiency, it remains impractical for self-hosted media libraries in 2025 due to hardware decode limitations. AV1 hardware decoding only became available starting with Intel's 11th gen Tiger Lake processors (2020), AMD's RX 6000 series GPUs (2020), and Nvidia's RTX 30-series cards (2020). Without dedicated hardware acceleration, AV1 decoding falls back to CPU processing, which causes stuttering playback even on quad-core systems at 1080p, let alone 4K HDR content.
+
+Most self-hosted Plex, Jellyfin, or Emby servers run on repurposed hardware—old Intel NUCs with 6th-8th gen processors, budget AMD APUs, or retired workstations. These systems handle H.264 and H.265 beautifully through Quick Sync or integrated hardware decode blocks, but software-decoding AV1 in real-time simply isn't feasible. Even client devices present challenges, as many streaming boxes, smart TVs, and older tablets lack AV1 support, forcing servers to transcode on-the-fly.
+
+For self-hosted scenarios where you control both encoding and playback infrastructure, H.265 remains the pragmatic choice. It's universally hardware-decoded across devices from the last 8+ years, delivers excellent quality at reasonable bitrates, and doesn't require expensive hardware upgrades across your entire playback ecosystem. AV1 will eventually replace H.265, but not until the installed base catches up—likely another 3-5 years.
+
 ---
 
 *All tests conducted on Windows 11 using FFmpeg 6.x with appropriate HDR metadata preservation. VMAF calculated using libvmaf filter with default model.*
