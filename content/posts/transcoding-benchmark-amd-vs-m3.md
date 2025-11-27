@@ -1,10 +1,10 @@
----
-title: "FFmpeg Transcoding Showdown: AMD Ryzen 9 7940HS vs Apple M3 Pro"
-date: 2025-11-27
-draft: true
-tags: ["ffmpeg", "transcoding", "video-encoding", "benchmarks", "h265", "h266", "hdr"]
-categories: ["multimedia", "performance"]
----
++++
+title = "FFmpeg Transcoding Showdown: AMD Ryzen 9 7940HS vs Apple M3 Pro"
+date = '2025-11-27T13:44:51+02:00'
+draft = false
+tags = ["ffmpeg", "transcoding", "video-encoding", "benchmarks", "h265", "h266", "hdr"]
+useAlpine = false
++++
 
 After spending countless hours (and I mean *countless*—over 20 hours of encoding time) benchmarking video transcoding performance, I've compiled comprehensive data comparing AMD's Ryzen 9 7940HS against Apple's M3 Pro chip. The results reveal some fascinating insights about hardware acceleration, quality metrics, and the current state of H.266 encoding.
 
@@ -153,7 +153,7 @@ $outputFiles | ForEach-Object {
 }
 ```
 
-Full scripts include PSNR/SSIM batch testing, 2-pass encoding automation, and comprehensive logging—check the attached `LogFiles.7z` for implementation details [attached_file:1].
+Full scripts include PSNR/SSIM batch testing, 2-pass encoding automation, and comprehensive logging—check the attached `LogFiles.7z` for implementation details[^1].
 
 ## Conclusion
 
@@ -166,3 +166,6 @@ H.266 shows promise but needs significant maturation before production adoption.
 ---
 
 *All tests conducted on Windows 11 using FFmpeg 6.x with appropriate HDR metadata preservation. VMAF calculated using libvmaf filter with default model.*
+
+
+[^1]: [All Logs and Random Data Here](https://docmost.insightsintoinfinite.com/share/6c92us7yj4/p/ffmpeg-transcode-test-amd-vs-m3-pro-BJu36zzO9T)
