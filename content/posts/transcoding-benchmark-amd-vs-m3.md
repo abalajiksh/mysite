@@ -157,7 +157,7 @@ Full scripts include PSNR/SSIM batch testing, 2-pass encoding automation, and co
 
 ## Conclusion
 
-For my automotive infotainment testing workflows, AMD's hardware acceleration provides the best balance: 3-minute encoding times with 94+ VMAF quality. Software encoding remains the gold standard for archival work, but the time investment (28+ minutes per 10-minute clip) limits its practicality.
+For my hobbies and testing workflows, AMD's hardware acceleration provides the best balance: 3-minute encoding times with 94+ VMAF quality. Software encoding remains the gold standard for archival work, but the time investment (28+ minutes per 10-minute clip) limits its practicality.
 
 H.266 shows promise but needs significant maturation before production adoption. The encoding speed and quality consistency aren't there yet—but the compression efficiency suggests it will eventually replace H.265 for delivery formats.
 
