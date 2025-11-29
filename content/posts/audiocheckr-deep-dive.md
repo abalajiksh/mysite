@@ -297,7 +297,6 @@ or just use your favourite tool like `grep` or `Select-String` depending on whic
 **Platform Expansion**:
 - ⬜ Docker container for easy deployment
 - ⬜ REST API for integration with other tools
-- ⬜ Mobile app (iOS/Android)
 - ⬜ Plugin architecture for custom detectors
 
 ## Lessons Learned
