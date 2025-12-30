@@ -14,6 +14,7 @@ I am studying Masters in Physics at Ruprecht Karl Universität Heidelberg. I am 
 1. You can contact me on Instagram [here](https://www.instagram.com/ashwinbalaji00/).
 1. You can check the books I am reading [here](https://www.goodreads.com/ashwinbalaji).
 1. You can check my Cycling Activities [here](https://www.strava.com/athletes/ashwinbalaji). Live ones are [here](https://live.garmin.com/ashwinbalaji).
+1. You can check my Music scrobbling history at [Listenbrainz](https://listenbrainz.org/user/abksh) and [Lastfm](https://www.last.fm/user/abksh).
 {{< /notice >}}
 
 I am a Master's student at [Heidelberg University](https://www.physik.uni-heidelberg.de/?lang=en) and earned my Bachelor's (BTech) at National Institute of Technology, Calicut ([NITC](https://depcent.nitc.ac.in/physics/)). I worked on 2 theses titled "Introduction to Lattice Gauge Theory with Wilson Loops" and "Coherent State Path Integral Formalism for Fermions in Quantum Mechanics" under my esteemed supervisor [Dr. Sreeraj](https://nitc.ac.in/department/physics/faculty-and-staff/faculty/3a45fbe4-3831-4589-bfdc-27d07d5dfa49).

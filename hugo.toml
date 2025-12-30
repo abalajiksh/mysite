@@ -22,6 +22,7 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
     strava_url = "https://www.strava.com/athletes/ashwinbalaji"
     lastfm_url = "https://www.last.fm/user/abksh"
     listenbrainz_url = "https://listenbrainz.org/user/abksh"
+    discord_url=""
 
     
 
