@@ -3,7 +3,7 @@ title: "Ditching Bluetooth: Building a Low-Latency Hi-Res Audio Streamer with Ra
 date: 2026-02-02T10:00:00+01:00
 draft: false
 tags: ["audio", "raspberry-pi", "snapcast", "pipewire", "hifiberry", "network-streaming", "low-latency"]
-description: "How I built a multi-room audio system using a Raspberry Pi with HiFiBerry Digi+ Pro, replaced unreliable AirPlay with Snapcast, and optimized latency from 500ms down to 100ms."
+description: "How I replaced Bluetooth with a low-latency network audio streamer using a Raspberry Pi with HiFiBerry Digi+ Pro, and optimized latency from 500 ms down to 100 ms with room to expand to multi-room and Plexamp."
 ---
 
 ## The Goal: Hi-Res Audio Without Bluetooth Limitations
