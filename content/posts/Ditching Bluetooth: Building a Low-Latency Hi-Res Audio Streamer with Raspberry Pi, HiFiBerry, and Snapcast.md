@@ -8,7 +8,7 @@ description: "How I built a multi-room audio system using a Raspberry Pi with Hi
 
 ## The Goal: Hi-Res Audio Without Bluetooth Limitations
 
-I wanted to stream hi-res audio from my Fedora desktop to my living room soundbar—without the compression, dropouts, and latency of Bluetooth. Bluetooth's bandwidth limitations (especially with A2DP) cap quality, and the 200-300ms latency makes it unusable for video.
+I wanted to stream hi-res audio from my Fedora Sway desktop (or my Sony Xperia 1 V or M3 Pro Macbook Pro) to my living room soundbar, or in general any audio like YouTube—without the compression, dropouts, and latency of Bluetooth. Bluetooth's bandwidth limitations (especially with A2DP) cap quality, and the 200-300ms latency makes it unusable for video.
 
 The solution: a **Raspberry Pi 4 with HiFiBerry Digi+ Pro hat** feeding my soundbar via S/PDIF, using **Snapcast** for network streaming. This setup gives me:
 - **Uncompressed PCM audio** (no codec limitations)
@@ -219,6 +219,8 @@ For my use case, 100ms is imperceptible for video sync and rock-solid reliable.
 - Snapcast is overkill for one room, but future-proof—the multi-room capability is a bonus
 
 **The result:** hi-res, low-latency audio from any PipeWire source to my soundbar. No Bluetooth compression. No dropouts. Room to grow.
+
+**Limitations:** No hi-res for now, everything is resampled or dithered to 16-bit 48 kHz sampling rate PCM audio, which is more than enough for normal audio. Wasapi in Windows resamples everything to 48 kHz, so does Android-I say it is better than Apple's iAP2 protocol downscaling to 16 bit 44.1 kHz sampling rate forcefully. There is AirPlay available for Apple devices as well. For hi-res audio, I need to setup Plexamp headless and use Plexamp on desktop or smartphone as remote player controller, so Plex streams music directly to Rpi and plays hi-res without DSP.
 
 
 **Hardware used:** Raspberry Pi 4(2GB) with Rpi OS Lite, HiFiBerry Digi+ Pro, Fedora Sway Desktop 43, PipeWire 1.0+, Snapcast 0.31.0
