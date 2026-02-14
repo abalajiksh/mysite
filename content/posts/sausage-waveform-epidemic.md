@@ -101,7 +101,15 @@ The problem was never the format. The problem is what happens to the music befor
 
 The audiophile industry's focus on ever-higher resolution formats was, in hindsight, a distraction from the real issue: the masters themselves were getting worse. Selling people 24-bit files of a recording that was brick-wall-limited to −6 LUFS is like selling a 4K Blu-ray of a film that was shot out of focus. The extra resolution faithfully captures every detail of the damage.
 
+## The Million-Dollar Rebellion
 
+In 2013, Daft Punk spent over a million dollars and four years making *Random Access Memories* — an album that, by every rational industry metric, should not exist. They were two of the most successful electronic musicians alive, and they chose to abandon laptops entirely. They booked legendary studios — Henson, Conway, Capitol, Electric Lady — hired session musicians whose credits read like a history of American funk and disco, and recorded everything to Ampex analog tape running simultaneously alongside Pro Tools sessions. Thomas Bangalter described the late 1970s and early 1980s as "the zenith of a certain craftsmanship in sound recording." That wasn't nostalgia. It was a design specification.
+
+The engineering was obsessive to the point of absurdity. They auditioned multiple units of the same compressor model — several 1176s, several LA-2As — because each individual piece of analog hardware sounds slightly different. They swapped a vintage Neve 33609 they'd spent a fortune reconditioning for the one that happened to live at Conway Studios, because it sounded better. Engineer Mick Guzauski tracked with minimal EQ, preferring to get the tone right at the microphone rather than fix it in the mix. Everything was mixed through a 72-input analog console at 96 kHz. When the final master tapes were ready, engineer Peter Franco drove them by car from Los Angeles to Bob Ludwig's mastering studio in Portland, Maine — because they refused to hand the tapes to a courier service or let them pass through airport scanners. As Franco put it, it would have been like handing over your own child.
+
+The result? The vinyl pressing of *Random Access Memories* hits a dynamic range rating of DR13 — extraordinary for any modern release, let alone one that debuted at number one in over twenty countries. It won Album of the Year, Best Engineered Album, and proved that you don't need to slam your master into a limiter at −6 LUFS to achieve commercial success.
+
+And here's the part that should haunt every label executive: *Get Lucky* became one of the best-selling digital singles of all time. An album recorded on analog tape, mixed through a vintage console, mastered with care for dynamic range, and driven across a continent by hand — outsold the sausage waveforms. The market didn't punish craft. It rewarded it. The industry just chose not to notice.
 ## What Gets Lost
 
 I want to be specific about what we're losing, because it's easy to dismiss this as audiophile neurosis.
