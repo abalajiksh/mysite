@@ -1,6 +1,6 @@
 +++
 date = '2026-05-04T13:30:00+02:00'
-draft = false
+draft = true
 title = "Trial by ListenBrainz: How I Used 13,477 Scrobbles to Prove My Friend is a Swiftie"
 tags = ["Data Analysis", "ListenBrainz", "Python", "Music", "Friendship", "Taylor Swift", "Privacy", "Surveillance"]
 useAlpine = false
