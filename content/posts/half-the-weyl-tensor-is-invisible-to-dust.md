@@ -539,7 +539,7 @@ Half the Weyl tensor is invisible to dust. It took a gyroscope, a Jordan form, a
 
 - **`petrov_q.wl`** — the Part III notebook. Proves the $Q = E + iB$ dictionary on a generic Weyl tensor, derives the MPD spin-curvature force, runs all six metrics, exports `petrov_tides.json`. No `xAct`. [Download](/downloads/petrov_q.wl)
 - **`petrov_classification.wl`** — the Part II notebook, for comparison. [Download](/downloads/petrov_classification.wl)
-- **`petrov_viz`** — the visualisation repository: `petrov_core.py` (physics, pure numpy, no Blender), `validate_core.py`, and the two `bpy` scripts. [codeberg.org/abksh/petrov_viz](https://codeberg.org/abksh/petrov_viz)
+- **`petrov_viz`** — the visualisation repository: `petrov_core.py` (physics, pure numpy, no Blender), `validate_core.py`, and the two `bpy` scripts. [codeberg.org/abksh/petrov_vis](https://codeberg.org/abksh/petrov_vis)
 
 Full-resolution renders (the inline GIFs above are compressed for the page):
 
