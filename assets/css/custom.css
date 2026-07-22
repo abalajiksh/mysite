@@ -1,23 +1,34 @@
-/* 󰊤 IosevkaTermSlab Nerd Font Loading */
+/* 󰊤 JetBrainsMono Nerd Font Loading */
 @font-face {
-  font-family: 'IosevkaTermSlab Nerd Font';
-  src: url('/fonts/IosevkaTermSlabNerdFont-Regular.ttf') format('truetype');
+  font-family: 'JetBrainsMono Nerd Font';
+  src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'IosevkaTermSlab Nerd Font';
-  src: url('/fonts/IosevkaTermSlabNerdFont-Italic.ttf') format('truetype');
+  font-family: 'JetBrainsMono Nerd Font';
+  src: url('/fonts/JetBrainsMonoNerdFont-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'IosevkaTermSlab Nerd Font';
-  src: url('/fonts/IosevkaTermSlabNerdFont-Bold.ttf') format('truetype');
+  font-family: 'JetBrainsMono Nerd Font';
+  src: url('/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  src: url('/fonts/JetBrainsMonoNerdFont-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* 󰅙 Completely disable Poison theme's built-in copy buttons */
@@ -47,7 +58,7 @@ pre .copy-button:not(.code-wrapper .copy-code-button) {
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
-  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
   font-size: 0.8em;
   border-bottom: 1px solid;
 }
@@ -68,7 +79,7 @@ pre .copy-button:not(.code-wrapper .copy-code-button) {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
   font-size: 0.9em;
   transition: opacity 0.2s;
 }
@@ -89,7 +100,7 @@ pre .copy-button:not(.code-wrapper .copy-code-button) {
 .code-content pre {
   margin: 0;
   padding: 1.25em 1em;
-  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
   font-size: 0.9em;
   line-height: 1.6;
   overflow-x: visible;
@@ -97,7 +108,7 @@ pre .copy-button:not(.code-wrapper .copy-code-button) {
 
 /* 󰅩 Inline Code */
 code {
-  font-family: 'IosevkaTermSlab Nerd Font', monospace;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
   padding: 0.2em 0.4em;
   border-radius: 3px;
   font-size: 0.9em;
