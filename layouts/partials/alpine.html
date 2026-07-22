@@ -1,0 +1,13 @@
+{{/* Site override of the theme's alpine.html.
+     The theme loads the standard Alpine build from cdnjs, which (a) is
+     blocked by our CSP (script-src has no cdnjs) and (b) needs 'unsafe-eval'
+     for its inline-expression evaluator. We self-host the @alpinejs/csp
+     build (v3.15.12, assets/js/lib/alpine-csp.min.js) instead — no eval,
+     but components must be registered in assets/js/alpine-components.js.
+     Components file is concatenated FIRST so its alpine:init listener is
+     registered before Alpine boots. */}}
+{{ $alpine := slice
+      (resources.Get "js/alpine-components.js")
+      (resources.Get "js/lib/alpine-csp.min.js") }}
+{{ $alpine_bundle := $alpine | resources.Concat "js/alpine.js" | minify | fingerprint }}
+<script defer src="{{ $alpine_bundle.RelPermalink }}"></script>
