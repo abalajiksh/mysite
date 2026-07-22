@@ -36,6 +36,3 @@ You can indulge in my distractions by following the articles or other social med
 | MS in Physics                | Oct 22 - Ongoing   | Heidelberg University |
 | BTech in Engineering Physics | July 17 - April 21 | NIT Calicut           |
 
-## Currently Reading
-
-{{< goodreads >}}
