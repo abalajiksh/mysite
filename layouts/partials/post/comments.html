@@ -1,0 +1,14 @@
+{{/* Site override of the theme's comments.html. The theme inlines two
+     <script> blocks (remark_config + Remark42 loader), which forces
+     'unsafe-inline' in the CSP script-src. We build them into an external,
+     fingerprinted script instead (assets/js/remark42.js, templated so the
+     host/site_id params from hugo.toml are baked in). */}}
+<div class="comments">
+    {{ if .Site.Params.remark42 }}
+        <div id="remark42"></div>
+        {{ $r42 := resources.Get "js/remark42.js" | resources.ExecuteAsTemplate "js/remark42.built.js" . | minify | fingerprint }}
+        <script defer src="{{ $r42.RelPermalink }}"></script>
+    {{ else if .Site.Config.Services.Disqus.Shortname }}
+        {{ template "_internal/disqus.html" . }}
+    {{ end }}
+</div>

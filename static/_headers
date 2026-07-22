@@ -1,6 +1,6 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://comment.ashwinbalaji.xyz https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://comment.ashwinbalaji.xyz; frame-src 'self' https://comment.ashwinbalaji.xyz; connect-src 'self' https://comment.ashwinbalaji.xyz wss://comment.ashwinbalaji.xyz https://*.cloudflareinsights.com; img-src 'self' data: https: blob:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob: https://comment.ashwinbalaji.xyz;
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://comment.ashwinbalaji.xyz https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://comment.ashwinbalaji.xyz; frame-src 'self' https://comment.ashwinbalaji.xyz; connect-src 'self' https://comment.ashwinbalaji.xyz wss://comment.ashwinbalaji.xyz https://*.cloudflareinsights.com; img-src 'self' data: https: blob:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob: https://comment.ashwinbalaji.xyz; object-src 'none'; base-uri 'self'; form-action 'self' https://comment.ashwinbalaji.xyz; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
