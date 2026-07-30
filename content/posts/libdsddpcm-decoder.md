@@ -18,6 +18,7 @@ tags = [
     "measurement",
     "open-source"
 ]
+series = "libdsddpcm"
 +++
 
 *On why every open-source DSD decoder ships coefficients without proof, what happens when you try to regenerate someone else's filter tables from first principles, and the 44 dB of aliasing rejection nobody was collecting.*
