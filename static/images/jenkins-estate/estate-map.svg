@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 846" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="846" rx="16" fill="#faf4ed"/>
+  <text x="32" y="42" font-size="22" font-weight="700" fill="#1f1d2e">One controller — it started minimal, and keeps growing</text>
+  <text x="32" y="66" font-size="13" fill="#797593">jenkins.insightsintoinfinite.com · the controller never builds — every job declares a label and lands on an agent</text>
+
+  <!-- Triggers legend (no folder is tied to one trigger) -->
+  <text x="32" y="102" font-size="13" font-weight="700" fill="#575279">TRIGGERS IN USE</text>
+  <g font-size="12" fill="#1f1d2e">
+    <rect x="170" y="88" width="150" height="26" rx="13" fill="#f2e9e1" stroke="#cecacd"/><text x="245" y="105" text-anchor="middle">Codeberg webhook</text>
+    <rect x="336" y="88" width="90" height="26" rx="13" fill="#f2e9e1" stroke="#cecacd"/><text x="381" y="105" text-anchor="middle">cron</text>
+    <rect x="442" y="88" width="130" height="26" rx="13" fill="#f2e9e1" stroke="#cecacd"/><text x="507" y="105" text-anchor="middle">another job</text>
+    <rect x="588" y="88" width="110" height="26" rx="13" fill="#f2e9e1" stroke="#cecacd"/><text x="643" y="105" text-anchor="middle">by hand</text>
+  </g>
+  <text x="714" y="105" font-size="11" fill="#9893a5">(different jobs, different triggers)</text>
+
+  <!-- CRETE -->
+  <rect x="32" y="130" width="300" height="398" rx="12" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="48" y="156" font-size="16" font-weight="700" fill="#b4637a">Crete /</text>
+  <text x="48" y="173" font-size="11" fill="#9893a5">C++17 dynamic-range meter · 8 jobs</text>
+  <g font-size="12.5" fill="#fffaf3">
+    <rect x="48" y="184" width="268" height="28" rx="7" fill="#286983"/><text x="58" y="202">Crete-Tag — qualify + cut the tag</text>
+    <rect x="48" y="218" width="268" height="28" rx="7" fill="#56949f"/><text x="58" y="236">Crete-Weekly — full corpus, Mondays</text>
+    <rect x="48" y="252" width="268" height="28" rx="7" fill="#286983"/><text x="58" y="270">Crete-Compare — vs the golden run</text>
+    <rect x="48" y="286" width="268" height="28" rx="7" fill="#56949f"/><text x="58" y="304">Crete-Manual — pick suites by hand</text>
+    <rect x="48" y="320" width="268" height="28" rx="7" fill="#286983"/><text x="58" y="338">Crete-Release — OBS + Homebrew</text>
+    <rect x="48" y="354" width="268" height="28" rx="7" fill="#b4637a"/><text x="58" y="372">Crete-Windows — zip + sha256</text>
+    <rect x="48" y="388" width="268" height="28" rx="7" fill="#286983"/><text x="58" y="406">Crete-Site — changelog to the site</text>
+    <rect x="48" y="422" width="268" height="28" rx="7" fill="#286983"/><text x="58" y="440">Crete-Wasm — check.crete-dr.com</text>
+  </g>
+  <text x="48" y="474" font-size="11" fill="#797593">crete-pytest's own two jobs feed the</text>
+  <text x="48" y="490" font-size="11" fill="#797593">Weekly / Manual test harness, sharing</text>
+  <text x="48" y="506" font-size="11" fill="#797593">one audio-corpus cache on the agent.</text>
+
+  <!-- TAPEDECK -->
+  <rect x="350" y="130" width="300" height="398" rx="12" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="366" y="156" font-size="16" font-weight="700" fill="#b4637a">Tapedeck /</text>
+  <text x="366" y="173" font-size="11" fill="#9893a5">Rust music journal · td-pipelines library · 9 jobs</text>
+  <g font-size="12.5" fill="#fffaf3">
+    <rect x="366" y="184" width="268" height="28" rx="7" fill="#907aa9"/><text x="376" y="202">tapedeck-main — test, build, staging</text>
+    <rect x="366" y="218" width="268" height="28" rx="7" fill="#d7827e"/><text x="376" y="236">tapedeck-arm — k3s cross-build → Pi 5</text>
+    <rect x="366" y="252" width="268" height="28" rx="7" fill="#907aa9"/><text x="376" y="270">tapedeck-deploy — install built bytes</text>
+    <rect x="366" y="286" width="268" height="28" rx="7" fill="#907aa9"/><text x="376" y="304">tapedeck-staging-refresh — nightly</text>
+    <rect x="366" y="320" width="268" height="28" rx="7" fill="#907aa9"/><text x="376" y="338">tapedeck-spec-sync — openapi → web</text>
+    <rect x="366" y="354" width="268" height="28" rx="7" fill="#286983"/><text x="376" y="372">tapedeck-obs-release — Linux packages</text>
+    <rect x="366" y="388" width="268" height="28" rx="7" fill="#d7827e"/><text x="376" y="406">tapedeck-pr / pr-scan — PR guard pod</text>
+    <rect x="366" y="422" width="268" height="28" rx="7" fill="#d7827e"/><text x="376" y="440">tapedeck-strix — LLM pentest scan</text>
+    <rect x="366" y="456" width="268" height="28" rx="7" fill="#907aa9"/><text x="376" y="474">td-security-sync — move issues along</text>
+  </g>
+  <text x="366" y="505" font-size="11" fill="#797593">Shared steps live once in the library —</text>
+  <text x="366" y="520" font-size="11" fill="#797593">tapedeckDeploy · sonarScan · strixScan.</text>
+
+  <!-- OWN PROJECTS: Starling + libdsddpcm -->
+  <rect x="668" y="130" width="300" height="398" rx="12" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="684" y="156" font-size="16" font-weight="700" fill="#b4637a">Starling / · libdsddpcm /</text>
+  <text x="684" y="173" font-size="11" fill="#9893a5">the smaller own-projects · 3 jobs</text>
+  <g font-size="12.5" fill="#fffaf3">
+    <rect x="684" y="184" width="268" height="28" rx="7" fill="#56949f"/><text x="694" y="202">starling-android — build + sign APK</text>
+  </g>
+  <g font-size="12.5" fill="#575279">
+    <rect x="684" y="222" width="268" height="28" rx="7" fill="#f2e9e1" stroke="#cecacd"/><text x="694" y="240">libdsddpcm — build + test the library</text>
+    <rect x="684" y="256" width="268" height="28" rx="7" fill="#f2e9e1" stroke="#cecacd"/><text x="694" y="274">dsddpcm-listening — listening checks</text>
+  </g>
+  <text x="684" y="310" font-size="11.5" fill="#575279">Starling is the Android client; it fires</text>
+  <text x="684" y="326" font-size="11.5" fill="#575279">on a version tag, tests and builds on</text>
+  <text x="684" y="342" font-size="11.5" fill="#575279">chade, checks the signing certificate,</text>
+  <text x="684" y="358" font-size="11.5" fill="#575279">archives the APK.</text>
+  <text x="684" y="384" font-size="11.5" fill="#575279">libdsddpcm is the BSD-2 DSD→PCM</text>
+  <text x="684" y="400" font-size="11.5" fill="#575279">library crête consumes — its own build</text>
+  <text x="684" y="416" font-size="11.5" fill="#575279">and listening jobs run beside it.</text>
+  <text x="684" y="442" font-size="11" fill="#9893a5">muted chip = agent varies / not shown</text>
+
+  <!-- Utility band -->
+  <rect x="32" y="544" width="936" height="112" rx="12" fill="#fdf0e9" stroke="#e6d9d1"/>
+  <text x="48" y="568" font-size="14" font-weight="700" fill="#b4637a">…and the rest, on the same controller</text>
+  <text x="48" y="586" font-size="11.5" fill="#797593">Not every pipeline is a headline project. Plenty of the estate just packages third-party software or self-hosted apps.</text>
+  <g font-size="11.5" fill="#575279">
+    <text x="48" y="614" font-weight="700" fill="#1f1d2e">FedoraBuilds /</text>
+    <rect x="150" y="602" width="70" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="185" y="617" text-anchor="middle">Signal</text>
+    <rect x="226" y="602" width="72" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="262" y="617" text-anchor="middle">ffmpeg</text>
+    <rect x="304" y="602" width="78" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="343" y="617" text-anchor="middle">melonDS</text>
+    <rect x="388" y="602" width="62" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="419" y="617" text-anchor="middle">mgba</text>
+    <rect x="456" y="602" width="86" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="499" y="617" text-anchor="middle">Notepadqq</text>
+  </g>
+  <g font-size="11.5" fill="#575279">
+    <text x="560" y="614" font-weight="700" fill="#1f1d2e">arm_builds /</text>
+    <rect x="652" y="602" width="90" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="697" y="617" text-anchor="middle">vaultwarden</text>
+    <rect x="748" y="602" width="78" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="787" y="617" text-anchor="middle">bytestash</text>
+  </g>
+  <g font-size="11.5" fill="#575279">
+    <text x="48" y="644" font-weight="700" fill="#1f1d2e">k3s /</text>
+    <rect x="100" y="632" width="108" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="154" y="647" text-anchor="middle">cognee-ingest</text>
+    <rect x="214" y="632" width="62" height="22" rx="11" fill="#fffaf3" stroke="#dfdad9"/><text x="245" y="647" text-anchor="middle">hello</text>
+    <text x="300" y="647" font-size="11" fill="#9893a5">— scheduled ingests and the odd smoke job; the folders multiply as the homelab does.</text>
+  </g>
+
+  <!-- Agents legend -->
+  <text x="32" y="692" font-size="13" font-weight="700" fill="#575279">AGENTS (colour = where the job runs; every label · host is a Realm of the Elderlings name)</text>
+  <g font-size="12" fill="#fffaf3">
+    <rect x="32" y="706" width="150" height="30" rx="7" fill="#286983"/><text x="107" y="725" text-anchor="middle">bee · prophetfool x86</text>
+    <rect x="192" y="706" width="150" height="30" rx="7" fill="#56949f"/><text x="267" y="725" text-anchor="middle">chade · fallstar x86</text>
+    <rect x="352" y="706" width="150" height="30" rx="7" fill="#907aa9"/><text x="427" y="725" text-anchor="middle">optiplex · verity x86</text>
+    <rect x="512" y="706" width="150" height="30" rx="7" fill="#d7827e"/><text x="587" y="725" text-anchor="middle">k3s pod · fallstar</text>
+    <rect x="32" y="742" width="120" height="30" rx="7" fill="#ea9d34"/><text x="92" y="761" text-anchor="middle">pi5 · arm64</text>
+    <rect x="162" y="742" width="210" height="30" rx="7" fill="#575279"/><text x="267" y="761" text-anchor="middle">sacrifice · kettriken riscv64</text>
+    <rect x="382" y="742" width="160" height="30" rx="7" fill="#b4637a"/><text x="462" y="761" text-anchor="middle">windows · kelsingra</text>
+  </g>
+  <text x="32" y="800" font-size="11.5" fill="#797593">arm builds cross-compile in a k3s pod on fallstar, then smoke-start on the Pi 5. The RISC-V board runs crête's three-way cross-arch identity check.</text>
+  <text x="32" y="818" font-size="11.5" fill="#797593">SonarQube (CT 103) and the OBS build service sit off-box.</text>
+</svg>

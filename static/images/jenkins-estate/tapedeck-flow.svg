@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#575279"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="700" rx="16" fill="#faf4ed"/>
+  <text x="32" y="42" font-size="22" font-weight="700" fill="#1f1d2e">Tapedeck: four questions, four jobs, one provenance file</text>
+  <text x="32" y="66" font-size="13" fill="#797593">Do these commits pass? Does the source compile everywhere? Is this binary fit to install? And: is a PR safe to build?</text>
+
+  <!-- push to main lane -->
+  <rect x="32" y="92" width="150" height="40" rx="20" fill="#f2e9e1" stroke="#cecacd"/>
+  <text x="107" y="117" font-size="13" font-weight="600" fill="#1f1d2e" text-anchor="middle">push to main</text>
+
+  <rect x="214" y="86" width="250" height="140" rx="10" fill="#fffaf3" stroke="#907aa9" stroke-width="1.6"/>
+  <text x="230" y="110" font-size="14" font-weight="700" fill="#1f1d2e">tapedeck-main</text>
+  <text x="230" y="127" font-size="11" fill="#907aa9">optiplex (x86)</text>
+  <text x="230" y="148" font-size="11.5" fill="#575279">fmt · clippy · SonarQube</text>
+  <text x="230" y="164" font-size="11.5" fill="#575279">test SQLite + Postgres + pg_live</text>
+  <text x="230" y="180" font-size="11.5" fill="#575279">build amd64, write build-info.env</text>
+  <text x="230" y="196" font-size="11.5" fill="#575279">deploy amd64 → staging replica</text>
+  <text x="230" y="214" font-size="11" fill="#9893a5">tests run once — both targets are IEEE-754</text>
+
+  <rect x="500" y="86" width="250" height="140" rx="10" fill="#fffaf3" stroke="#d7827e" stroke-width="1.6"/>
+  <text x="516" y="110" font-size="14" font-weight="700" fill="#1f1d2e">tapedeck-arm</text>
+  <text x="516" y="127" font-size="11" fill="#d7827e">k3s pod (fallstar) → pi5</text>
+  <text x="516" y="148" font-size="11.5" fill="#575279">cross-build aarch64 {sqlite,pg}</text>
+  <text x="516" y="164" font-size="11.5" fill="#575279">glibc floor pinned to 2.35</text>
+  <text x="516" y="180" font-size="11.5" fill="#575279">smoke-start on the Pi 5</text>
+  <text x="516" y="196" font-size="11.5" fill="#575279">full suite on the Pi — tag only</text>
+  <text x="516" y="214" font-size="11" fill="#9893a5">triggered with a RESOLVED SHA, wait:true</text>
+
+  <rect x="786" y="86" width="182" height="140" rx="10" fill="#fffaf3" stroke="#907aa9" stroke-width="1.6"/>
+  <text x="802" y="110" font-size="14" font-weight="700" fill="#1f1d2e">tapedeck-deploy</text>
+  <text x="802" y="127" font-size="11" fill="#907aa9">optiplex · by hand</text>
+  <text x="802" y="148" font-size="11.5" fill="#575279">builds nothing — it</text>
+  <text x="802" y="164" font-size="11.5" fill="#575279">installs the exact bytes</text>
+  <text x="802" y="180" font-size="11.5" fill="#575279">that were tested, paired</text>
+  <text x="802" y="196" font-size="11.5" fill="#575279">by build-info.env, glibc</text>
+  <text x="802" y="212" font-size="11.5" fill="#575279">gate, then /health.</text>
+
+  <g stroke="#575279" stroke-width="1.6" fill="none" marker-end="url(#t)">
+    <path d="M182,112 L214,112"/>
+    <path d="M464,150 L500,150"/>
+    <path d="M625,226 L625,250 L880,250 L880,226" stroke-dasharray="5 4"/>
+  </g>
+  <text x="648" y="245" font-size="10.5" fill="#9893a5">newest arm build, SHA-verified</text>
+
+  <!-- tag lane -->
+  <rect x="32" y="286" width="150" height="40" rx="20" fill="#f2e9e1" stroke="#cecacd"/>
+  <text x="107" y="311" font-size="13" font-weight="600" fill="#1f1d2e" text-anchor="middle">push a v* tag</text>
+  <text x="32" y="346" font-size="11" fill="#797593">tags are re-resolved from the API — the webhook payload is unauthenticated input</text>
+
+  <g font-size="12" fill="#1f1d2e">
+    <rect x="214" y="286" width="178" height="40" rx="8" fill="#fffaf3" stroke="#286983"/><text x="303" y="304" text-anchor="middle" font-weight="600">tapedeck-obs-release</text><text x="303" y="319" text-anchor="middle" font-size="10.5" fill="#9893a5">Linux packages (bee)</text>
+    <rect x="408" y="286" width="178" height="40" rx="8" fill="#fffaf3" stroke="#907aa9"/><text x="497" y="304" text-anchor="middle" font-weight="600">tapedeck-spec-sync</text><text x="497" y="319" text-anchor="middle" font-size="10.5" fill="#9893a5">openapi.yaml → website</text>
+    <rect x="602" y="286" width="178" height="40" rx="8" fill="#fffaf3" stroke="#d7827e"/><text x="691" y="304" text-anchor="middle" font-weight="600">tapedeck-strix</text><text x="691" y="319" text-anchor="middle" font-size="10.5" fill="#9893a5">LLM pentest (k3s)</text>
+    <rect x="796" y="286" width="172" height="40" rx="8" fill="#fffaf3" stroke="#907aa9"/><text x="882" y="304" text-anchor="middle" font-weight="600">demo deploy</text><text x="882" y="319" text-anchor="middle" font-size="10.5" fill="#9893a5">from main, CT 102</text>
+  </g>
+  <g stroke="#575279" stroke-width="1.4" fill="none" marker-end="url(#t)">
+    <path d="M182,306 L214,306"/>
+  </g>
+
+  <line x1="32" y1="356" x2="968" y2="356" stroke="#e4dfde" stroke-width="1"/>
+
+  <!-- PR lane -->
+  <text x="32" y="388" font-size="14" font-weight="700" fill="#b4637a">The PR guard — untrusted code never touches the LAN</text>
+  <rect x="32" y="402" width="150" height="40" rx="20" fill="#f2e9e1" stroke="#cecacd"/>
+  <text x="107" y="427" font-size="12.5" font-weight="600" fill="#1f1d2e" text-anchor="middle">Codeberg PR</text>
+
+  <rect x="214" y="398" width="178" height="118" rx="10" fill="#fffaf3" stroke="#907aa9" stroke-width="1.5"/>
+  <text x="230" y="420" font-size="13" font-weight="700" fill="#1f1d2e">Resolve</text>
+  <text x="230" y="436" font-size="10.5" fill="#907aa9">optiplex (trusted)</text>
+  <text x="230" y="456" font-size="11" fill="#575279">PR facts from the API,</text>
+  <text x="230" y="471" font-size="11" fill="#575279">may-build gate, static</text>
+  <text x="230" y="486" font-size="11" fill="#575279">analysis of the diff,</text>
+  <text x="230" y="501" font-size="11" fill="#575279">pending statuses, seed</text>
+
+  <rect x="408" y="398" width="178" height="118" rx="10" fill="#fffaf3" stroke="#d7827e" stroke-width="1.5"/>
+  <text x="424" y="420" font-size="13" font-weight="700" fill="#1f1d2e">Test</text>
+  <text x="424" y="436" font-size="10.5" fill="#d7827e">throwaway k3s pod</text>
+  <text x="424" y="456" font-size="11" fill="#575279">no credentials mounted,</text>
+  <text x="424" y="471" font-size="11" fill="#575279">internet-only egress,</text>
+  <text x="424" y="486" font-size="11" fill="#575279">Postgres sidecar; both</text>
+  <text x="424" y="501" font-size="11" fill="#575279">suites, UI, clippy, migs</text>
+
+  <rect x="602" y="398" width="178" height="118" rx="10" fill="#fffaf3" stroke="#907aa9" stroke-width="1.5"/>
+  <text x="618" y="420" font-size="13" font-weight="700" fill="#1f1d2e">Report</text>
+  <text x="618" y="436" font-size="10.5" fill="#907aa9">optiplex (trusted)</text>
+  <text x="618" y="456" font-size="11" fill="#575279">one sticky comment,</text>
+  <text x="618" y="471" font-size="11" fill="#575279">two commit statuses,</text>
+  <text x="618" y="486" font-size="11" fill="#575279">close the PR if a</text>
+  <text x="618" y="501" font-size="11" fill="#575279">required check failed</text>
+
+  <rect x="796" y="398" width="172" height="118" rx="10" fill="#f2e9e1" stroke="#cecacd"/>
+  <text x="812" y="420" font-size="12.5" font-weight="700" fill="#575279">tapedeck-pr-scan</text>
+  <text x="812" y="440" font-size="11" fill="#575279">every 10 min + on the</text>
+  <text x="812" y="455" font-size="11" fill="#575279">PR webhook: start the</text>
+  <text x="812" y="470" font-size="11" fill="#575279">guard for each open PR</text>
+  <text x="812" y="485" font-size="11" fill="#575279">head with no result yet</text>
+
+  <g stroke="#575279" stroke-width="1.4" fill="none" marker-end="url(#t)">
+    <path d="M182,422 L214,422"/>
+    <path d="M392,457 L408,457"/>
+    <path d="M586,457 L602,457"/>
+  </g>
+
+  <!-- nightly -->
+  <rect x="32" y="548" width="420" height="120" rx="10" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="48" y="572" font-size="13" font-weight="700" fill="#1f1d2e">tapedeck-staging-refresh · nightly</text>
+  <text x="48" y="594" font-size="11.5" fill="#575279">Production snapshot → sanitise (strip credentials) → staging.</text>
+  <text x="48" y="610" font-size="11.5" fill="#575279">Data only, no binary. The point: re-run every migration against a</text>
+  <text x="48" y="626" font-size="11.5" fill="#575279">production-shaped DB nightly — the one thing the suite can't, because</text>
+  <text x="48" y="642" font-size="11.5" fill="#575279">every test starts from an empty file (v0.61.1 crash-looped 297 times).</text>
+
+  <rect x="470" y="548" width="498" height="120" rx="10" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="486" y="572" font-size="13" font-weight="700" fill="#1f1d2e">td-security-sync + tapedeck-strix</text>
+  <text x="486" y="594" font-size="11.5" fill="#575279">On a minor tag, tapedeck-strix runs an LLM pentester against the source and a</text>
+  <text x="486" y="610" font-size="11.5" fill="#575279">throwaway live instance in an isolated pod; findings become td-security issues.</text>
+  <text x="486" y="626" font-size="11.5" fill="#575279">td-security-sync reads `Security-Fix: td-security#N` trailers on main, comments</text>
+  <text x="486" y="642" font-size="11.5" fill="#575279">when a fix lands, and closes it once a tag ships the fix. No model, idempotent.</text>
+</svg>

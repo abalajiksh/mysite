@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#575279"/>
+    </marker>
+    <marker id="a2g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b4637a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="640" rx="16" fill="#faf4ed"/>
+  <text x="32" y="42" font-size="22" font-weight="700" fill="#1f1d2e">Cutting a crête release is one guarded tag push</text>
+  <text x="32" y="66" font-size="13" fill="#797593">A published tag is never moved, so everything is checked before it exists. Pushing it is the release.</text>
+
+  <!-- Qualify path -->
+  <rect x="32" y="92" width="210" height="88" rx="10" fill="#fffaf3" stroke="#56949f" stroke-width="1.5"/>
+  <text x="48" y="116" font-size="14" font-weight="700" fill="#286983">Crete-Tag</text>
+  <text x="48" y="136" font-size="11.5" fill="#575279">resolve SHA, check VERSION,</text>
+  <text x="48" y="152" font-size="11.5" fill="#575279">tag must not exist yet</text>
+  <text x="48" y="170" font-size="11" fill="#9893a5">DRY_RUN on by default</text>
+
+  <rect x="282" y="92" width="210" height="88" rx="10" fill="#fffaf3" stroke="#56949f" stroke-width="1.5"/>
+  <text x="298" y="116" font-size="14" font-weight="700" fill="#286983">Crete-Weekly</text>
+  <text x="298" y="136" font-size="11.5" fill="#575279">run the full suite on that</text>
+  <text x="298" y="152" font-size="11.5" fill="#575279">exact SHA (~2 h), copy its</text>
+  <text x="298" y="168" font-size="11.5" fill="#575279">qualification + measurements</text>
+
+  <rect x="532" y="92" width="210" height="88" rx="10" fill="#fffaf3" stroke="#56949f" stroke-width="1.5"/>
+  <text x="548" y="116" font-size="14" font-weight="700" fill="#286983">tag_message.py</text>
+  <text x="548" y="136" font-size="11.5" fill="#575279">compose the release record;</text>
+  <text x="548" y="152" font-size="11.5" fill="#b4637a">REFUSE on a failed gate or a</text>
+  <text x="548" y="168" font-size="11.5" fill="#b4637a">false &quot;identical&quot;</text>
+
+  <rect x="782" y="92" width="186" height="88" rx="10" fill="#286983"/>
+  <text x="875" y="130" font-size="14" font-weight="700" fill="#fffaf3" text-anchor="middle">push annotated</text>
+  <text x="875" y="150" font-size="14" font-weight="700" fill="#fffaf3" text-anchor="middle">tag vX.Y.Z</text>
+
+  <g stroke="#575279" stroke-width="1.6" fill="none" marker-end="url(#a2)">
+    <path d="M242,136 L282,136"/>
+    <path d="M492,136 L532,136"/>
+    <path d="M742,136 L782,136"/>
+  </g>
+
+  <!-- webhook -->
+  <rect x="402" y="214" width="196" height="40" rx="20" fill="#f2e9e1" stroke="#cecacd"/>
+  <text x="500" y="239" font-size="13" font-weight="600" fill="#1f1d2e" text-anchor="middle">Codeberg tag webhook</text>
+  <g stroke="#575279" stroke-width="1.6" fill="none" marker-end="url(#a2)">
+    <path d="M875,180 L875,200 L500,200 L500,214"/>
+  </g>
+
+  <!-- fan-out -->
+  <text x="32" y="298" font-size="13" font-weight="700" fill="#575279">THE SAME TAG WAKES THREE JOBS DIRECTLY</text>
+  <g stroke="#b4637a" stroke-width="1.6" fill="none" marker-end="url(#a2g)">
+    <path d="M500,254 L500,272 L150,272 L150,320"/>
+    <path d="M500,254 L500,272 L686,272 L686,320"/>
+    <path d="M500,254 L500,290 L286,290 L286,511 L300,511"/>
+  </g>
+  <!-- Release triggers Windows -->
+  <g stroke="#9893a5" stroke-width="1.4" fill="none" marker-end="url(#a2)" stroke-dasharray="5 4">
+    <path d="M268,386 L300,386"/>
+  </g>
+
+  <!-- Crete-Release -->
+  <rect x="32" y="320" width="236" height="250" rx="10" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="48" y="344" font-size="14" font-weight="700" fill="#1f1d2e">Crete-Release</text>
+  <text x="48" y="362" font-size="11" fill="#9893a5">agent: bee</text>
+  <g font-size="11.5" fill="#fffaf3">
+    <rect x="48" y="372" width="204" height="26" rx="6" fill="#286983"/><text x="58" y="389">assemble OBS source + smoke</text>
+    <rect x="48" y="404" width="204" height="26" rx="6" fill="#286983"/><text x="58" y="421">publish to OBS, wait for all 15</text>
+    <rect x="48" y="436" width="204" height="26" rx="6" fill="#286983"/><text x="58" y="453">then bump the Homebrew tap</text>
+  </g>
+  <text x="48" y="486" font-size="11.5" fill="#575279">In parallel: trigger Crete-Windows,</text>
+  <text x="48" y="502" font-size="11.5" fill="#575279">copy its zip+sha256, attach them to</text>
+  <text x="48" y="518" font-size="11.5" fill="#575279">the Codeberg release, point Scoop at</text>
+  <text x="48" y="534" font-size="11.5" fill="#575279">it. A Windows fail → UNSTABLE only,</text>
+  <text x="48" y="550" font-size="11.5" fill="#575279">OBS/Homebrew carry on.</text>
+
+  <!-- Crete-Windows -->
+  <rect x="300" y="320" width="236" height="118" rx="10" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="316" y="344" font-size="14" font-weight="700" fill="#1f1d2e">Crete-Windows</text>
+  <text x="316" y="362" font-size="11" fill="#b4637a">agent: windows (kelsingra)</text>
+  <text x="316" y="384" font-size="11.5" fill="#575279">native MinGW build → crete.exe,</text>
+  <text x="316" y="400" font-size="11.5" fill="#575279">zip + sha256 + harness binary.</text>
+  <text x="316" y="416" font-size="11.5" fill="#575279">Builds only; publishes nothing.</text>
+  <text x="316" y="432" font-size="11" fill="#9893a5">(called by Crete-Release)</text>
+
+  <!-- Crete-Wasm -->
+  <rect x="300" y="452" width="236" height="118" rx="10" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="316" y="476" font-size="14" font-weight="700" fill="#1f1d2e">Crete-Wasm</text>
+  <text x="316" y="494" font-size="11" fill="#286983">agent: bee</text>
+  <text x="316" y="516" font-size="11.5" fill="#575279">build crête+FFmpeg to wasm, prove</text>
+  <text x="316" y="532" font-size="11.5" fill="#575279">parity vs native, headless-Chromium</text>
+  <text x="316" y="548" font-size="11.5" fill="#575279">e2e, publish engine, deploy the UI</text>
+  <text x="316" y="564" font-size="11.5" fill="#575279">to check.crete-dr.com (Cloudflare).</text>
+
+  <!-- Crete-Site -->
+  <rect x="568" y="320" width="236" height="118" rx="10" fill="#fffaf3" stroke="#dfdad9"/>
+  <text x="584" y="344" font-size="14" font-weight="700" fill="#1f1d2e">Crete-Site</text>
+  <text x="584" y="362" font-size="11" fill="#286983">agent: bee · started by Crete-Tag</text>
+  <text x="584" y="384" font-size="11.5" fill="#575279">add the release entry to the</text>
+  <text x="584" y="400" font-size="11.5" fill="#575279">crete-dr changelog, prove the site</text>
+  <text x="584" y="416" font-size="11.5" fill="#575279">builds, push to main → Cloudflare</text>
+  <text x="584" y="432" font-size="11.5" fill="#575279">rebuilds. Daily cron is the backstop.</text>
+
+  <!-- idempotent note -->
+  <rect x="568" y="452" width="400" height="118" rx="10" fill="#f2e9e1" stroke="#cecacd"/>
+  <text x="584" y="476" font-size="13" font-weight="700" fill="#575279">Everything here is idempotent</text>
+  <text x="584" y="498" font-size="11.5" fill="#575279">The source tarball is deterministic, so re-running a job for a</text>
+  <text x="584" y="514" font-size="11.5" fill="#575279">tag that is already out finds OBS byte-identical, skips the</text>
+  <text x="584" y="530" font-size="11.5" fill="#575279">commit, passes the wait at once and leaves the formulae</text>
+  <text x="584" y="546" font-size="11.5" fill="#575279">unchanged. The daily crons are safe precisely because of this.</text>
+</svg>
