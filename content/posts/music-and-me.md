@@ -2,6 +2,7 @@
 title = 'Music and Me: A Journey of Understanding and Exploring Music'
 date = '2026-05-25T11:20:18+02:00'
 draft = false
+topics = ["audio"]
 useAlpine = false
 loadNerdFont = false
 tags = ["audio", "music", "hi-fi", "dynamic-range", "loudness-war", "linux", "alsa", "plex", "crete", "scrobbling"]

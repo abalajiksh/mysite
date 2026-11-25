@@ -2,6 +2,7 @@
 title= "Hyper-V Is Underrated"
 date= 2022-06-30T10:01:24+01:00
 draft= false
+topics = ["homelab"]
 tags= ["Virtualization", "Virtual-Machines", "Operating-Systems", "Linux"]
 useAlpine = false
 +++

@@ -2,6 +2,7 @@
 title = 'Mastering Is the Damage, the Codec Is the Alibi'
 date = '2026-07-02T09:30:00+02:00'
 draft = false
+topics = ["audio"]
 useAlpine = false
 tags = [
     "audio-quality",

@@ -1,6 +1,7 @@
 +++
 date = '2025-01-21T17:01:21+01:00'
 draft = false
+topics = ["homelab"]
 title = 'The Mutable Landscape of Running LLMs Locally'
 tags= ["Computers", "Server", "Technology", "Linux", "LLMs", "Inference"]
 series = "Local LLMs"

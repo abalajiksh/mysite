@@ -1,6 +1,7 @@
 +++
 date = '2025-08-03T19:01:29+02:00'
 draft = false
+topics = ["miscellaneous"]
 title = 'Oneness in Cycling'
 useAlpine = false
 tags = [

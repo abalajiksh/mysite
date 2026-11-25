@@ -1,6 +1,7 @@
 +++
 date = '2025-10-15T15:18:05+02:00'
 draft = false
+topics = ["homelab"]
 title = 'Comments Engine Works Finally; After I Fixed My Stupidity'
 useAlpine = false
 tags = ["CSP", "CORS", "Server Setup", "Internal Documentation", "Remark42"]

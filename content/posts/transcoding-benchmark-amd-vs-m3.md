@@ -2,6 +2,7 @@
 title = "FFmpeg Transcoding Showdown: AMD Ryzen 9 7940HS vs Apple M3 Pro"
 date = '2025-11-27T13:44:51+02:00'
 draft = false
+topics = ["homelab"]
 tags = ["ffmpeg", "transcoding", "video-encoding", "benchmarks", "h265", "h266", "hdr"]
 useAlpine = false
 +++

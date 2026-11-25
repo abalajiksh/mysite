@@ -2,6 +2,7 @@
 title= "Calculus to Linear Algebra"
 date= 2022-03-29T11:43:36+01:00
 draft= false
+topics = ["physics"]
 tags= ["Mathematics", "Calculus", "Linear-Algebra", "Matrix"]
 useAlpine = false
 +++

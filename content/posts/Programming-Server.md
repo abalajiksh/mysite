@@ -1,6 +1,7 @@
 +++
 date = '2025-04-24T13:44:51+02:00'
 draft = false
+topics = ["homelab"]
 title = 'A Programming Server'
 useAlpine = false
 tags = [

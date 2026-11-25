@@ -1,6 +1,7 @@
 +++
 date = '2026-07-21T18:40:00+02:00'
 draft = false
+topics = ["audio"]
 title = 'libdsddpcm: I Wrote a DSD Decoder Because Nobody Would Show Me Their Homework'
 useAlpine = false
 loadNerdFont = false

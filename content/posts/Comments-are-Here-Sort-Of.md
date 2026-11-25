@@ -1,6 +1,7 @@
 +++
 date = '2025-07-14T15:55:58+02:00'
 draft = false
+topics = ["homelab"]
 title = 'Comments Are Here! Sort of'
 useAlpine = false
 tags = [

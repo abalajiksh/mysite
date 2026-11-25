@@ -1,6 +1,7 @@
 +++
 date = '2026-07-12T22:40:00+02:00'
 draft = false
+topics = ["physics"]
 title = 'Half the Weyl Tensor Is Invisible to Dust'
 useAlpine = false
 loadNerdFont = false

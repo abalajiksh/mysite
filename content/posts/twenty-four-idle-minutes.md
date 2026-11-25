@@ -1,6 +1,7 @@
 +++
 date = '2026-09-06T20:15:00+02:00'
 draft = false
+topics = ["homelab"]
 title = "Twenty-Four Idle Minutes: Splitting One Jenkins Pipeline Into Four"
 useAlpine = false
 tags = [

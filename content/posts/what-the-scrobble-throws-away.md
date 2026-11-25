@@ -2,6 +2,7 @@
 title = 'What the Scrobble Throws Away: Building Tapedeck, a Personal Music Journal in Rust'
 date = '2026-08-08T07:12:00+02:00'
 draft = false
+topics = ["audio"]
 useAlpine = false
 loadNerdFont = false
 tags = [

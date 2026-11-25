@@ -1,6 +1,7 @@
 +++
 date = '2025-05-13T11:48:01+02:00'
 draft = false
+topics = ["physics"]
 title = 'Independent Components of a 4D Riemann Tensor et al.'
 useAlpine = false
 tags = [

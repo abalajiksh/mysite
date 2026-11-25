@@ -1,0 +1,38 @@
+{{/*
+  "Start here" block for page 1 of the homepage.
+  Content lives in content/topics/<topic>/_index.md:
+    title, weight (order), featured (path of one post), pitch (one sentence).
+  To change what new readers see, edit those files; no template changes needed.
+*/}}
+{{- with site.GetPage "/topics" -}}
+<section class="start-here" aria-labelledby="start-here-heading">
+  <h2 id="start-here-heading" class="section-heading">Start here</h2>
+  <p class="start-here-intro">
+    I write about a few things that keep pulling me back. Pick whichever you're curious about;
+    the newest posts are <a href="#latest">further down</a>.
+  </p>
+  <ul class="start-here-list">
+    {{- range .Pages.ByWeight }}
+    {{- $topic := . }}
+    {{- with .Params.featured }}{{ with site.GetPage . }}
+    <li class="start-here-item">
+      <h3 class="start-here-topic">
+        <a href="{{ $topic.RelPermalink }}">{{ $topic.Title }}</a>
+      </h3>
+      <p class="start-here-post">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="start-here-meta">{{ .ReadingTime }} min read</span>
+      </p>
+      {{ with $topic.Params.pitch }}<p class="start-here-pitch">{{ . }}</p>{{ end }}
+      <p class="start-here-all">
+        <a href="{{ $topic.RelPermalink }}">All {{ len $topic.Pages }} {{ lower $topic.Title }} posts</a>
+      </p>
+    </li>
+    {{- end }}{{ end }}
+    {{- end }}
+  </ul>
+  <p class="start-here-projects">
+    Curious what I'm building right now? See <a href="{{ "projects/" | relLangURL }}">projects</a>.
+  </p>
+</section>
+{{- end -}}

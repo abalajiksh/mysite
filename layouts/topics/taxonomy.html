@@ -1,0 +1,16 @@
+{{ define "main" -}}
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Description }}<p class="topic-description">{{ . }}</p>{{ end }}
+
+<ul class="topic-index">
+  {{ range .Pages.ByWeight }}
+  <li>
+    <h2 class="topic-index-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>
+      {{ with .Description }}{{ . }}{{ end }}
+      <span class="topic-count">{{ len .Pages }} posts</span>
+    </p>
+  </li>
+  {{ end }}
+</ul>
+{{- end }}
