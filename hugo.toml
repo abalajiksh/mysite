@@ -6,7 +6,7 @@ pluralizelisttitles = false
 
 [params]
 
-front_page_content = ["posts", "projects"]
+front_page_content = ["posts"]
 
 brand = "Ashwin Balaji"                      # name of your site - appears in the sidebar
     # brand_image = "dont_know.png"    # path to the image shown in the sidebar
@@ -36,10 +36,11 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
 
 menu = [
     {Name = "About", URL = "/about/", HasChildren = false},
+    {Name = "Projects", URL = "/projects/", HasChildren = false},
     {Name = "Topics", URL = "/topics/", HasChildren = false},
-    {Name = "Datenschutzerklärung", URL = "/datenschutz/", HasChildren = false},
     {Name = "Series", URL = "/series/", HasChildren = false},
     {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 2},
+    {Name = "Datenschutzerklärung", URL = "/datenschutz/", HasChildren = false},
     ]
 
     remark42 = true

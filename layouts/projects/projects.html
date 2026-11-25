@@ -1,0 +1,23 @@
+{{ define "main" -}}
+<h1 class="title">{{ .Title }}</h1>
+{{ .Content }}
+
+<ul class="project-list">
+  {{ range site.Data.projects.project }}
+  <li class="project-item">
+    <h2 class="project-name">{{ .name }}</h2>
+    <p class="project-summary">{{ .summary }}</p>
+    <ul class="project-links">
+      {{ with .topic }}{{ with site.GetPage (printf "/topics/%s" .) }}
+      <li>Topic: <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}{{ end }}
+      {{ with .source }}<li><a href="{{ . }}">Source code</a></li>{{ end }}
+      {{ with .site }}<li><a href="{{ . }}">Live site</a></li>{{ end }}
+      {{ range .posts }}{{ with site.GetPage . }}
+      <li>Read: <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}{{ end }}
+    </ul>
+  </li>
+  {{ end }}
+</ul>
+{{- end }}

@@ -1,0 +1,40 @@
+# Projects page (/projects/). One [[project]] block per project, shown in this order.
+#   name     — project name
+#   summary  — one sentence: what it is, for someone who's never heard of it
+#   topic    — audio | homelab | physics | miscellaneous (links to the topic page)
+#   source   — repository URL (optional)
+#   site     — live site / demo URL (optional)
+#   posts    — paths of blog posts about it (optional)
+
+[[project]]
+name = "Tapedeck"
+summary = "A self-hosted personal music journal in Rust: one binary on SQLite that records what I listen to, and on what gear."
+topic = "audio"
+source = "https://codeberg.org/abksh/tapedeck"
+posts = ["/posts/what-the-scrobble-throws-away", "/posts/twenty-four-idle-minutes"]
+
+[[project]]
+name = "crête"
+summary = "A C++17 dynamic-range meter, packaged for Linux, macOS and Windows, with a WebAssembly build that runs in the browser."
+topic = "audio"
+source = "https://codeberg.org/abksh/Crete"
+site = "https://check.crete-dr.com"
+posts = ["/posts/music-and-me"]
+
+[[project]]
+name = "libdsddpcm"
+summary = "A clean-room DSD-to-PCM decoder whose filter coefficients come with their derivation and measurements."
+topic = "audio"
+source = "https://codeberg.org/abksh/libdsddpcm"
+posts = ["/posts/libdsddpcm-decoder", "/posts/libdsddpcm-real-corpus"]
+
+[[project]]
+name = "Starling"
+summary = "The Android client for Tapedeck."
+topic = "audio"
+
+[[project]]
+name = "The Jenkins estate"
+summary = "The self-hosted CI that builds, tests and packages all of the above, on hardware in my flat."
+topic = "homelab"
+posts = ["/posts/jenkins-estate-field-guide", "/posts/twenty-four-idle-minutes"]
