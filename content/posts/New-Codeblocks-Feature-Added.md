@@ -1,6 +1,7 @@
 +++
 date = '2025-10-15T17:40:08+02:00'
 draft = false
+topics = ["homelab"]
 title = 'New Codeblocks Feature Added'
 useAlpine = false
 loadNerdFont = true

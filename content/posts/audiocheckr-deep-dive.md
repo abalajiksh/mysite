@@ -2,6 +2,7 @@
 title = 'Audiocheckr Deep Dive'
 date = '2025-11-29T14:55:15+01:00'
 draft = false
+topics = ["audio"]
 useAlpine = false
 loadNerdFont = true
 tags = ["rust", "audio", "dsp", "ci-cd", "jenkins", "testing", "fft", "spectral-analysis"]

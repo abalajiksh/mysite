@@ -1,0 +1,31 @@
+{{ define "main" -}}
+{{/* Paginate first, so the paginator exists before we ask which page we are on. */}}
+{{- $frontPageTypes := default (slice "posts") .Site.Params.front_page_content -}}
+{{- $pag := .Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes) -}}
+
+{{- if eq $pag.PageNumber 1 }}
+{{ partial "start-here.html" . }}
+<h2 class="section-heading" id="latest">Latest posts</h2>
+{{- else }}
+<h1 class="section-heading">Posts, page {{ $pag.PageNumber }}</h1>
+{{- end }}
+
+<div class="posts">
+    {{ range $pag.Pages }}
+    <article class="post">
+        {{ partial "post/info.html" . }}
+        {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
+        {{ .Content }}
+        {{ else }}
+        {{ .Summary }}
+        {{ if .Truncated }}
+        <div class="read-more-link">
+            <a href="{{ .RelPermalink }}" aria-label="Read more: {{ .Title }}">Read More…</a>
+        </div>
+        {{ end }}
+        {{ end }}
+    </article>
+    {{- end }}
+</div>
+{{ partial "pagination.html" . }}
+{{- end }}

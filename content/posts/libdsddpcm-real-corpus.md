@@ -1,6 +1,7 @@
 +++
 date = '2026-07-30T19:15:00+02:00'
 draft = false
+topics = ["audio"]
 title = 'libdsddpcm Meets Real Music: 44 GB of DSD, and the Yardstick I Had to Build First'
 useAlpine = false
 loadNerdFont = false

@@ -1,0 +1,26 @@
+{{ define "main" -}}
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Description }}<p class="topic-description">{{ . }}</p>{{ end }}
+{{ with .Params.featured }}{{ with site.GetPage . }}
+<p class="topic-featured">
+  If you only read one: <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</p>
+{{ end }}{{ end }}
+
+<ul class="entries">
+    {{ range .Pages.GroupByDate "2006" }}
+        <li class="entries-year"><h2>{{ .Key }}</h2></li>
+        {{ range .Pages }}
+            <li>
+                <span class="title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </span>
+                <span class="published">
+                    <time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+                </span>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>
+<p><a href="{{ "topics/" | relLangURL }}">All topics</a></p>
+{{- end }}

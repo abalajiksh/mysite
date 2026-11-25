@@ -1,6 +1,7 @@
 +++
 date = '2026-11-06T15:50:00+01:00'
 draft = false
+topics = ["homelab"]
 title = "It Started Minimal: A Field Guide to My Growing Jenkins Estate"
 useAlpine = false
 loadNerdFont = false

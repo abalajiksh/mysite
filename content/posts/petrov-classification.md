@@ -1,6 +1,7 @@
 +++
 date = '2026-07-12T11:40:00+02:00'
 draft = false
+topics = ["physics"]
 title = 'Petrov Classification: Six Ways for a Quartic to Collapse'
 useAlpine = false
 series = "Weyl Tensor and All the Good Stuff that comes with it"

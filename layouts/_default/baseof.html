@@ -1,0 +1,13 @@
+{{ partial "head/head.html" . }}
+    <body class="{{if .Site.Params.layoutReverse}}layout-reverse {{end}}{{if .Site.Params.dark_mode}}dark-theme{{end}}">
+        {{/* a11y: lets keyboard and screen-reader users jump past the sidebar */}}
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="wrapper">
+            {{ partial "sidebar/sidebar.html" . }}
+            <main id="main" class="content container" tabindex="-1">
+                {{ block "main" . -}}{{- end }}
+            </main>
+            {{ block "sidebar" . }}{{ end }}
+        </div>
+    </body>
+</html>

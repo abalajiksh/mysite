@@ -2,6 +2,7 @@
 title = 'The Sausage Waveform Epidemic: How Apple Killed the Headphone Jack and the Music Industry Followed'
 date = '2026-02-13T13:18:02+01:00'
 draft = false
+topics = ["audio"]
 useAlpine = false
 loadNerdFont = false
 tags = [

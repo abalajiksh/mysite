@@ -2,6 +2,7 @@
 title= "On McTaggart's Unreality of Time"
 date= 2021-12-06T10:48:38+01:00
 draft= false
+topics = ["miscellaneous"]
 useAlpine = false
 tags= ["Philosophy", "Time", "Reality", "McTaggart"]
 +++

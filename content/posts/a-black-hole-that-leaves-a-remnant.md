@@ -1,6 +1,7 @@
 +++
 date = '2026-11-01T12:00:00+02:00'
 draft = false
+topics = ["physics"]
 title = 'A Black Hole That Leaves a Remnant'
 useAlpine = false
 tags = [

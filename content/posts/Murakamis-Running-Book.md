@@ -1,6 +1,7 @@
 +++
 date = '2025-05-04T14:56:58+02:00'
 draft = false
+topics = ["miscellaneous"]
 title = "Murakami's Running Book"
 tags = [
     "Cycling",

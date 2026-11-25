@@ -1,0 +1,72 @@
+{{/*
+  Override of the theme's post/info.html.
+  Changes:
+  - On a single post the title is the page's <h1>. In lists (homepage) it is an
+    <h3>, under the "Start here" / "Latest posts" <h2>s, so headings nest.
+  - In lists only the first few tags are shown; the post page shows all of them.
+  - Tag list gets an accessible name.
+  `page` is the page being rendered (needs Hugo >= 0.111), `.` is the post.
+*/}}
+{{- $single := page.IsPage -}}
+{{- $maxTags := cond $single 1000 (site.Params.list_max_tags | default 4) -}}
+{{- $tag := cond $single "h1" "h3" -}}
+<div class="info">
+  {{ printf "<%s class=\"post-title\">" $tag | safeHTML }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ printf "</%s>" $tag | safeHTML }}
+
+  <div class="headline">
+    <div>
+      {{ with .Params.author }}
+        {{ with site.Taxonomies.author.Get . }}
+          <span><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> - </span>
+        {{ else }}
+          <span>{{ . }} - </span>
+        {{ end }}
+      {{ end }}
+      {{ if .Date }}
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="post-date">
+        {{ .Date.Format "January 2, 2006" }}
+      </time>
+      {{ end }}
+      <span class="sep" aria-hidden="true">·</span>
+      <span class="reading-time">
+        <span>{{ .ReadingTime }} {{ cond (gt .ReadingTime 1) "mins" "min" }} read</span>
+      </span>
+      {{ if $single }}{{ with .Params.topics }}
+        {{ with site.GetPage (printf "/topics/%s" (index . 0)) }}
+          <span class="sep" aria-hidden="true">·</span>
+          <a class="topic-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+      {{ end }}{{ end }}
+    </div>
+
+    {{ with .Params.tags }}
+    {{- $total := len . -}}
+    <ul class="tags" aria-label="Tags">
+      {{ range first $maxTags . }}
+      <li class="tag-{{ . | urlize }}">
+        <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+      </li>
+      {{ end }}
+      {{ if gt $total $maxTags }}
+      <li class="tags-more">
+        <a href="{{ $.RelPermalink }}" aria-label="{{ sub $total $maxTags }} more tags on the post">+{{ sub $total $maxTags }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+
+  {{ if .Params.series }}
+  <p class="seriesname">
+    Series: <a href="{{ "series/" | absLangURL }}{{ .Params.series | urlize }}">{{ .Params.series }}</a>
+  </p>
+  {{ end }}
+
+  {{ if .Params.featuredImage }}
+  <p>
+    <img src="{{ .Params.featuredImage }}" alt="{{ .Params.featuredImageAlt | default "" }}"><br>
+  </p>
+  {{ end }}
+</div>
