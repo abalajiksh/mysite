@@ -3,7 +3,7 @@
 {{ .Content }}
 
 <ul class="project-list">
-  {{ range site.Data.projects.project }}
+  {{ range hugo.Data.projects.project }}
   <li class="project-item">
     <h2 class="project-name">{{ .name }}</h2>
     <p class="project-summary">{{ .summary }}</p>
