@@ -3,7 +3,10 @@
 {{ .Content }}
 
 <ul class="project-list">
-  {{ range hugo.Data.projects.project }}
+  {{/* site.Data, not hugo.Data: Cloudflare Pages builds with Hugo 0.147,
+       which has no hugo.Data yet. site.Data warns as deprecated on newer
+       Hugo but works on both; keep it until Cloudflare's Hugo is bumped. */}}
+  {{ range site.Data.projects.project }}
   <li class="project-item">
     <h2 class="project-name">{{ .name }}</h2>
     <p class="project-summary">{{ .summary }}</p>
