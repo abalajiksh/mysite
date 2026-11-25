@@ -1,0 +1,22 @@
+<div class="sidebar-about">
+    {{/* a11y: was an <h1> wrapping another <h1>; outer is now a div so the page has one site-name heading */}}
+    <div class="brand">
+        {{ if .Site.Params.remote_brand_image }}
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.Params.remote_brand_image }}" alt="{{ .Site.Params.brand | default "Home" }}">
+            </a>
+        {{ else if .Site.Params.brand_image }}
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.Params.brand_image }}" alt="{{ .Site.Params.brand | default "Home" }}">
+            </a>
+        {{ end }}
+        {{ if .Site.Params.brand }}
+            <a href="{{ .Site.BaseURL }}">
+                <h1>{{ .Site.Params.brand }}</h1>
+            </a>
+        {{ end }}
+    </div>
+    <p class="lead">
+    {{ with .Site.Params.description }}{{. | safeHTML}}{{end}}
+    </p>
+</div>

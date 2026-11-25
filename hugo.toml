@@ -25,7 +25,13 @@ brand = "Ashwin Balaji"                      # name of your site - appears in th
     listenbrainz_url = "https://listenbrainz.org/user/abksh"
     discord_url="https://discord.com/users/1100676348172836884"
 
-    
+    # Accessibility: theme default link blue (#268bd2) is 3.5:1 on the light
+    # background, below WCAG AA (4.5:1). Same hue, darker in light mode,
+    # slightly lighter in dark mode so it also clears 4.5:1 inside notice boxes.
+    link_color = "#1a6fb0"
+    link_color_dark = "#3b9be6"
+
+
 
 
 menu = [

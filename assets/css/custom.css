@@ -148,7 +148,7 @@ body:not(.dark-theme) .highlight .c,
 body:not(.dark-theme) .highlight .cm,
 body:not(.dark-theme) .highlight .c1,
 body:not(.dark-theme) .highlight .cs { 
-  color: #9893a5; 
+  color: #625e80; /* a11y: was #9893a5 (2.7:1); now 5.1:1 on the code background */
   font-style: italic;
 }
 
@@ -259,7 +259,7 @@ body.dark-theme .highlight .c,
 body.dark-theme .highlight .cm,
 body.dark-theme .highlight .c1,
 body.dark-theme .highlight .cs { 
-  color: #6e6a86; 
+  color: #908caa; /* a11y: was #6e6a86 (3.4:1); Rosé Pine "subtle", 5.5:1 */
   font-style: italic;
 }
 
@@ -335,3 +335,181 @@ body.dark-theme .highlight .gd {
 body.dark-theme .highlight .gi { 
   color: #31748f; 
 }
+
+/* ==================================================================
+   Accessibility + "Start here" (2026-11)
+   Everything below uses the theme's own CSS variables, so it follows
+   light/dark mode and any colour you set in hugo.toml.
+   ================================================================== */
+
+/* Skip link: hidden until a keyboard user tabs to it */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  background: var(--bkg-color);
+  color: var(--link-color);
+  border: 2px solid var(--link-color);
+  border-radius: 4px;
+}
+.skip-link:focus { top: 1rem; }
+main:focus { outline: none; }
+
+/* Visible keyboard focus everywhere (the theme only underlined on focus) */
+:focus-visible {
+  outline: 3px solid var(--link-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.sidebar :focus-visible { outline-color: var(--sidebar-a-color); }
+
+/* Links inside running text are underlined, so they don't rely on colour alone */
+.content p a,
+.content blockquote a,
+.content td a,
+.post ul:not(.tags) li a,
+.post ol li a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+.content p a:hover,
+.content p a:focus { text-decoration-thickness: 2px; }
+.post-title a,
+.tags a { text-decoration: none; }
+
+/* Sidebar name: the outer wrapper used to be an <h1> (an h1 inside an h1).
+   As a div it must get the sizing that ".sidebar-about h1" gave it. */
+.sidebar-about div.brand {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Metadata separators. The theme's " - " sat inside inline-block spans,
+   which ate the spaces ("2026-24 mins read"). */
+/* Keep "date · reading time" on one line; tags wrap below it when space runs out */
+.headline { flex-wrap: wrap; gap: 0.25rem 1rem; }
+.headline > div:first-child { white-space: nowrap; }
+.info ul.tags { float: none; margin: 0 0 0.75rem; }
+.headline .sep { margin: 0 0.4em; color: var(--date-color); }
+
+/* Theme's reading time was plain gray: 3.75:1 on the light background */
+.reading-time { color: var(--date-color); }
+.topic-link { font-style: normal; }
+
+/* Notice boxes: white titles on light blue/orange/green were 1.7–2.9:1.
+   Light mode now uses the darker title colours the theme uses in dark mode. */
+body:not(.dark-theme) .notice.note { --title-background-color: #006699; }
+body:not(.dark-theme) .notice.info { --title-background-color: #aa5500; }
+body:not(.dark-theme) .notice.tip  { --title-background-color: #336633; }
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Headings in lists: post titles are <h3> on the homepage but should look
+   exactly as the theme's <h1> post titles did. */
+h3.post-title { font-size: 2rem; }
+.section-heading {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--date-color);
+  margin: 0 0 1rem;
+}
+.posts { margin-top: 0; }
+
+/* ---------- Start here ---------- */
+.start-here {
+  margin-bottom: 3.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--table-border-color);
+}
+.start-here-intro { color: var(--list-color); }
+.start-here-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 1.75rem 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+.start-here-item {
+  border-left: 3px solid var(--link-color);
+  padding-left: 1rem;
+}
+.start-here-item p { margin: 0 0 0.4rem; }
+.start-here-topic {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.35rem;
+}
+.start-here-topic a { color: var(--date-color); text-decoration: none; }
+.start-here-post { font-size: 1.1rem; line-height: 1.35; }
+.start-here-post a { font-weight: 600; }
+.content .start-here-post a,
+.content .start-here-all a { text-decoration: none; }
+.content .start-here-post a:hover, .content .start-here-post a:focus,
+.content .start-here-all a:hover, .content .start-here-all a:focus { text-decoration: underline; }
+.start-here-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--date-color);
+  margin-top: 0.15rem;
+}
+.start-here-pitch { color: var(--text-color); }
+.start-here-all { font-size: 0.9rem; }
+.start-here-projects { margin-bottom: 0; }
+
+/* ---------- Tags: "+N" chip after the first few ---------- */
+.tags li.tags-more a {
+  background-color: transparent;
+  color: var(--list-color);
+  border: 1px solid var(--list-color);
+}
+
+/* ---------- Topics ---------- */
+.topic-description { color: var(--list-color); font-size: 1.1rem; }
+.topic-featured {
+  border-left: 3px solid var(--link-color);
+  padding-left: 1rem;
+}
+.topic-index { list-style: none; padding: 0; }
+.topic-index li { margin-bottom: 1.75rem; }
+.topic-index-title { margin-bottom: 0.25rem; }
+.topic-count {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--date-color);
+}
+.entries li.entries-year { justify-content: center; }
+.entries li.entries-year::after { display: none; }
+.entries li.entries-year h2 { font-size: 1.17rem; margin: 1.25rem 0 0.5rem; }
+
+/* ---------- Projects ---------- */
+.project-list { list-style: none; padding: 0; }
+.project-item {
+  border-left: 3px solid var(--link-color);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.project-name { margin-bottom: 0.3rem; font-size: 1.4rem; }
+.project-summary { margin-bottom: 0.4rem; }
+.project-links {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: var(--date-color);
+}
+.project-links li { margin-bottom: 0.15rem; }
