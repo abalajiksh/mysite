@@ -2,6 +2,11 @@
     <body class="{{if .Site.Params.layoutReverse}}layout-reverse {{end}}{{if .Site.Params.dark_mode}}dark-theme{{end}}">
         {{/* a11y: lets keyboard and screen-reader users jump past the sidebar */}}
         <a class="skip-link" href="#main">Skip to content</a>
+        {{/* Reading-progress bar: published posts only (not lists, not other
+             sections, not drafts). reading-progress.js no-ops without this. */}}
+        {{ if and .IsPage (eq .Section "posts") (not .Draft) }}
+        <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+        {{ end }}
         <div class="wrapper">
             {{ partial "sidebar/sidebar.html" . }}
             <main id="main" class="content container" tabindex="-1">

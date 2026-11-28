@@ -30,6 +30,11 @@
 {{ $js = $js | append (resources.Get "js/copyblock.js") }}
 
 
+{{/* Personal/custom reading-progress bar; the script no-ops unless the post
+     template rendered #reading-progress (published posts only) */}}
+{{ $js = $js | append (resources.Get "js/reading-progress.js") }}
+
+
 {{ $js_bundle := $js | resources.Concat "js/bundle.js" | minify | fingerprint }}
 
 

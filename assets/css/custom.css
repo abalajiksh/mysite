@@ -513,3 +513,27 @@ h3.post-title { font-size: 2rem; }
   color: var(--date-color);
 }
 .project-links li { margin-bottom: 0.15rem; }
+
+/* ----------------------------------------------------------------------------
+   Reading-progress bar (published posts only)
+   Rendered as #reading-progress in baseof.html and driven by
+   reading-progress.js. Uses the site link accent (--link-color) so it matches
+   the body links and switches automatically between light and dark themes.
+---------------------------------------------------------------------------- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1000;
+  background: var(--link-color);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  will-change: transform;
+  transition: transform 0.08s linear;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress { transition: none; }
+}
