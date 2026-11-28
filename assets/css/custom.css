@@ -525,9 +525,11 @@ h3.post-title { font-size: 2rem; }
   top: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 7px;
   z-index: 1000;
   background: var(--link-color);
+  /* Soft glow so the bar stays legible over images and dark sections */
+  box-shadow: 0 0 8px 1px var(--link-color);
   transform: scaleX(0);
   transform-origin: 0 50%;
   will-change: transform;
